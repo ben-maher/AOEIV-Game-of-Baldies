@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--Mod/-->
+	<DataObject Name="Game of Baldies" Type="Mod" Id="2386591640200313845" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">2386591644836315657</DataValue>
+			<!--Mod/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="2386591644836315657" OwnerId="2386591640200313845">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="709574291"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="827280287"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2486023069"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1140056924"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">2386591643554485765</DataValue>
+			<!--Mod/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="2386591643554485765" OwnerId="2386591640200313845">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="709574291"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="827280287"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="2486023069"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1140056924"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+

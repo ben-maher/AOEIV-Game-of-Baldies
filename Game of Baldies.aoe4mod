@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Essence.Editor.Modding">
+	<DataGenericPath>assets</DataGenericPath>
+	<DataIntermediatePath>cache</DataIntermediatePath>
+	<ID>942db39d-e35c-43f3-933e-4b2a9f4b4f31</ID>
+	<LocDBPath>locdb\Game of Baldies.locdb</LocDBPath>
+	<Type>Extension</Type>
+</Mod>

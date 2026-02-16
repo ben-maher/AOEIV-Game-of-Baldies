@@ -1,0 +1,179 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1665731298" List.ParentItemID="-1665731298">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-923432552" List.ParentItemID="-923432552">
+			<float name="hitpoints" value="15000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1280637521" List.ParentItemID="1280637521">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="520047091" />
+				<enum name="unit_type" value="castle" List.ItemID="-865818750" />
+				<enum name="unit_type" value="defensive_structure" List.ItemID="998201299" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-954409245" />
+				<enum name="unit_type" value="scar_keep" List.ItemID="-2142786476" />
+				<enum name="unit_type" value="town_bell_target" List.ItemID="-1804651673" />
+				<enum name="unit_type" value="has_default_building_weapons" List.ItemID="1177566714" />
+				<enum name="unit_type" value="military" List.ItemID="693778511" />
+				<enum name="unit_type" value="golden_age_tier_1_building_abb" List.ItemID="-1302008266" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="1408940114" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1012034169" List.ParentItemID="-1012034169">
+			<file name="stamp_blockers" value="" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-173798993" List.ParentItemID="-173798993">
+			<list name="ui_extra_infos" overrideParent="True">
+				<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-2045568032">
+					<file name="icon" value="influence_buff" overrideParent="True" />
+					<locstring name="description" value="0" />
+					<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
+						<list name="formatter_arguments">
+							<int name="int_value" value="5" overrideParent="True" List.ItemID="-795984277" />
+						</list>
+						<locstring name="formatter" value="11197638" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1348367870" List.ParentItemID="-1348367870">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-2064263263" List.ParentItemID="-2064263263">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="189440593" List.ParentItemID="189440593">
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+			<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1662668880" List.ParentItemID="-1662668880">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1926286005" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="1725810289" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\passives\golden_age_bonus_1_abb" List.ItemID="-1694678973" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\medical_centers_abb" List.ItemID="1827961805" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199622" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_keep" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1483057283" List.ParentItemID="1483057283">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="1123762235" />
+					<enum name="unit_type" value="castle" List.ItemID="1440300658" />
+					<enum name="unit_type" value="defensive_structure" List.ItemID="1696119945" />
+					<enum name="unit_type" value="siegeable" List.ItemID="1753778894" />
+					<enum name="unit_type" value="scar_keep" List.ItemID="-1847343669" />
+					<enum name="unit_type" value="town_bell_target" List.ItemID="-1212208312" />
+					<enum name="unit_type" value="has_default_building_weapons" List.ItemID="2015015689" />
+					<enum name="unit_type" value="military" List.ItemID="442332428" />
+					<enum name="unit_type" value="golden_age_tier_1_building_abb" List.ItemID="-65889716" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="986518209" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="2117530927" List.ParentItemID="2117530927">
+				<file name="stamp_blockers" value="" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1773743434" List.ParentItemID="1773743434">
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-536728723">
+						<file name="icon" value="influence_buff" overrideParent="True" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
+							<list name="formatter_arguments">
+								<int name="int_value" value="5" overrideParent="True" List.ItemID="1150348657" />
+							</list>
+							<locstring name="formatter" value="11197638" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1773684009" List.ParentItemID="-1773684009">
+				<list name="hardpoints">
+					<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1324992440" List.ParentItemID="1324992440">
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1925677083" List.ParentItemID="1925677083">
+				<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+				<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-863542574" List.ParentItemID="-863542574">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-396781666" />
+					<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="522241114" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\passives\golden_age_bonus_1_abb" List.ItemID="1606423996" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199622" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_keep" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1620801676" List.ParentItemID="-1620801676">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1421311218" List.ParentItemID="-1421311218">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="-1796649568" />
+					<enum name="unit_type" value="castle" List.ItemID="-98536057" />
+					<enum name="unit_type" value="defensive_structure" List.ItemID="792966672" />
+					<enum name="unit_type" value="siegeable" List.ItemID="-3105567" />
+					<enum name="unit_type" value="scar_keep" List.ItemID="1839311024" />
+					<enum name="unit_type" value="town_bell_target" List.ItemID="923014641" />
+					<enum name="unit_type" value="has_default_building_weapons" List.ItemID="-797240039" />
+					<enum name="unit_type" value="military" List.ItemID="710269396" />
+					<enum name="unit_type" value="golden_age_tier_1_building_abb" List.ItemID="-2116689174" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="965148166" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-187777189" List.ParentItemID="-187777189">
+				<file name="stamp_blockers" value="" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1047670935" List.ParentItemID="-1047670935">
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-1299059116">
+						<file name="icon" value="influence_buff" overrideParent="True" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
+							<list name="formatter_arguments">
+								<int name="int_value" value="5" overrideParent="True" List.ItemID="957955588" />
+							</list>
+							<locstring name="formatter" value="11197638" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2074627917" List.ParentItemID="-2074627917">
+				<list name="hardpoints">
+					<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="854371580" List.ParentItemID="854371580">
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1191926859" List.ParentItemID="1191926859">
+				<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+				<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="603349299" List.ParentItemID="603349299">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="418672004" />
+					<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="-1358686980" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\passives\golden_age_bonus_1_abb" List.ItemID="893658723" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\medical_centers_abb" List.ItemID="-329618163" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199622" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_keep" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+</instance>
