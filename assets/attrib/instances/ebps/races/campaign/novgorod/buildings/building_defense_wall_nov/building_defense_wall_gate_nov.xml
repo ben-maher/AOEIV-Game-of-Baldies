@@ -1,0 +1,34 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="136446993" List.ParentItemID="136446993" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+				<instance_reference name="blueprint_to_replace" value="ebps\races\campaign\novgorod\buildings\building_defense_wall_nov\building_defense_wall_nov" overrideParent="True" />
+			</template_reference>
+			<enum name="destructible_type" value="normal" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="188096" />
+	<instance_reference name="parent_pbg" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_gate_rus" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1790520439" List.ParentItemID="-1790520439">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign\novgorod" overrideParent="True" List.ItemID="1637666209" List.ParentItemID="1637666209" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1699419502" List.ParentItemID="-1699419502">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\campaign\novgorod\buildings\building_defense_wall_nov\building_defense_wall_nov" overrideParent="True" />
+				</template_reference>
+				<enum name="destructible_type" value="normal" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="188096" />
+		<instance_reference name="parent_pbg" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_gate_rus" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+</instance>
