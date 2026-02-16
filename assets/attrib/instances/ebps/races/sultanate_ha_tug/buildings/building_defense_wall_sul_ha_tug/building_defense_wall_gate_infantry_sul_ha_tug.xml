@@ -1,5 +1,4 @@
 <instance version="4" description="Needed by campaign data split - do not delete. Use the parent pbg (building_defense_wall_gate_sul) for non-campaign modes." template="ebps">
-	<uniqueid name="pbgid" value="3080391" />
 	<instance_reference name="parent_pbg" value="ebps\races\sultanate_ha_tug\buildings\building_defense_wall_sul_ha_tug\building_defense_wall_gate_sul_ha_tug" mod="942db39de35c43f3933e4b2a9f4b4f31" />
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">

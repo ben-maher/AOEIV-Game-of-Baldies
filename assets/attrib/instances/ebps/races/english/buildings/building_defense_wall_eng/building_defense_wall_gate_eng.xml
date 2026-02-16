@@ -85,7 +85,6 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="166252" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
 	<variant name="campaign">
 		<list name="extensions">
@@ -174,7 +173,6 @@
 				</list>
 			</template_reference>
 		</list>
-		<uniqueid name="pbgid" value="166252" />
 		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
 	</variant>
 	<variant name="xp3">
@@ -264,7 +262,6 @@
 				</list>
 			</template_reference>
 		</list>
-		<uniqueid name="pbgid" value="166252" />
 		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
 	</variant>
 </instance>

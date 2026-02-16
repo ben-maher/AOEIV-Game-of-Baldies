@@ -12,7 +12,6 @@
 			<enum name="destructible_type" value="normal" overrideParent="True" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="188096" />
 	<instance_reference name="parent_pbg" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_gate_rus" mod="942db39de35c43f3933e4b2a9f4b4f31" />
 	<variant name="campaign">
 		<list name="extensions">
@@ -28,7 +27,6 @@
 				<enum name="destructible_type" value="normal" overrideParent="True" />
 			</template_reference>
 		</list>
-		<uniqueid name="pbgid" value="188096" />
 		<instance_reference name="parent_pbg" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_gate_rus" mod="942db39de35c43f3933e4b2a9f4b4f31" />
 	</variant>
 </instance>

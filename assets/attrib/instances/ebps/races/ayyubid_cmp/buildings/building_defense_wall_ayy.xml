@@ -769,7 +769,6 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="120739" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_alpha" />
 	<variant name="campaign">
 		<list name="extensions">
@@ -1471,7 +1470,6 @@
 				</list>
 			</template_reference>
 		</list>
-		<uniqueid name="pbgid" value="120739" />
 		<instance_reference name="parent_pbg" value="" />
 	</variant>
 	<variant name="xp3">
@@ -2243,7 +2241,6 @@
 				</list>
 			</template_reference>
 		</list>
-		<uniqueid name="pbgid" value="120739" />
 		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_alpha" />
 	</variant>
 </instance>

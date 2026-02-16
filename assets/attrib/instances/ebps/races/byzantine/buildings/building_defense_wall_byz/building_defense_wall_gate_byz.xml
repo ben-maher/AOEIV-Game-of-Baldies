@@ -114,6 +114,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="5472991" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
 </instance>
