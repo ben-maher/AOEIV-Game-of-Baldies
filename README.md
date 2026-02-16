@@ -15,10 +15,11 @@ Increases the **total resources available per node** by modifying the `initial_a
 This changes the *amount in the ground*, not gather rate.
 
 ### 3) Wall HP adjustment
-- Sets **Stone Wall segment** hitpoints to **6000** via:
-  - `assets/attrib/instances/ebps/races/core/buildings/building_defense_wall.xml`
+- Sets **Stone Wall segment** hitpoints to **6000** for core + per-race wall EBPS overrides.
+  - Core: `assets/attrib/instances/ebps/races/core/buildings/building_defense_wall.xml`
+  - Per-race: `assets/attrib/instances/ebps/races/<race>/buildings/building_defense_wall_<code>.xml`
 
-Note: Walls are defined in `races/core` in this project, so this change should apply game-wide unless a specific civilization overrides wall EBPS elsewhere.
+(Needed because the Content Editor commonly uses per-civilization EBPS instances for walls.)
 
 ## Files of interest
 
