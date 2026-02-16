@@ -1,0 +1,196 @@
+<instance version="6" description="Entity used as objective in Combat game mode." template="ebps">
+	<list name="extensions" comment="NOT USED">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1544196321" List.ParentItemID="1544196321">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\defense_outpost_eng\defense_outpost_layout_eng" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
+			<bool name="can_repair" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">
+			<group name="sight_package">
+				<float name="inner_radius" value="20" overrideParent="True" />
+				<float name="outer_height" value="-6" overrideParent="True" />
+				<float name="outer_radius" value="25" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
+			<enum name="weapon_targeting" value="no_targeting" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1221151512" List.ParentItemID="-1221151512">
+			<bool name="ap_killed_kicker" value="False" overrideParent="True" />
+			<bool name="ap_loss_kicker" value="False" overrideParent="True" />
+			<enum name="selection_type" value="single_entity_select" overrideParent="True" />
+			<file name="minimap_icon" value="minimap\wonder" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.5" overrideParent="True" />
+			<enum name="decorator_visibility" value="hidden" overrideParent="True" />
+			<bool name="use_combat_range_on_selection" value="False" overrideParent="True" />
+			<enum name="map_mark" value="CustomStructure" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="536671903" List.ParentItemID="536671903">
+			<list name="standard_upgrades" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="389041388" List.ParentItemID="389041388">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1700796307" List.ParentItemID="1700796307">
+			<float name="orientation" value="0" overrideParent="True" />
+			<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="32036034" List.ParentItemID="32036034">
+			<list name="spawn_items" overrideParent="True">
+			</list>
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="2086910227" List.ParentItemID="2086910227">
+			<list name="hardpoints" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-773066302" List.ParentItemID="-773066302">
+			<list name="acceptable_types" overrideParent="True">
+			</list>
+			<bool name="move_on_remove_hold" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-589861990" List.ParentItemID="-589861990">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\always_on_abilities\combat_mode\outpost_capture_area_neu" List.ItemID="-1412008846" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-965014348" List.ParentItemID="-965014348">
+			<list name="select_audible_to_relation_list" overrideParent="True">
+				<enum name="relationship_type" value="neutral" List.ItemID="-1732996925" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="169566" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" />
+	<variant name="campaign">
+		<list name="extensions" comment="NOT USED">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1097396820" List.ParentItemID="-1097396820">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\defense_outpost_eng\defense_outpost_layout_eng" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2095670651" List.ParentItemID="2095670651">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1847896003" List.ParentItemID="-1847896003">
+				<group name="sight_package">
+					<float name="inner_radius" value="20" overrideParent="True" />
+					<float name="outer_height" value="-6" overrideParent="True" />
+					<float name="outer_radius" value="25" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1052651549" List.ParentItemID="-1052651549">
+				<enum name="weapon_targeting" value="no_targeting" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1841931908" List.ParentItemID="1841931908">
+				<bool name="ap_killed_kicker" value="False" overrideParent="True" />
+				<bool name="ap_loss_kicker" value="False" overrideParent="True" />
+				<enum name="selection_type" value="single_entity_select" overrideParent="True" />
+				<file name="minimap_icon" value="minimap\wonder" overrideParent="True" />
+				<float name="minimap_icon_scale" value="0.4" overrideParent="True" />
+				<enum name="decorator_visibility" value="hidden" overrideParent="True" />
+				<bool name="use_combat_range_on_selection" value="False" overrideParent="True" />
+				<enum name="map_mark" value="CustomStructure" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1230187710" List.ParentItemID="-1230187710">
+				<list name="standard_upgrades" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1466097282" List.ParentItemID="1466097282">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1545136981" List.ParentItemID="1545136981">
+				<float name="orientation" value="0" overrideParent="True" />
+				<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="366977626" List.ParentItemID="366977626">
+				<list name="spawn_items" overrideParent="True">
+				</list>
+				<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="412599691" List.ParentItemID="412599691">
+				<list name="hardpoints" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-217881951" List.ParentItemID="-217881951">
+				<list name="acceptable_types" overrideParent="True">
+				</list>
+				<bool name="move_on_remove_hold" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1837452725" List.ParentItemID="-1837452725">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\always_on_abilities\combat_mode\outpost_capture_area_neu" List.ItemID="-874478419" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="169566" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions" comment="NOT USED">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1544196321" List.ParentItemID="1544196321">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\defense_outpost_eng\defense_outpost_layout_eng" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">
+				<group name="sight_package">
+					<float name="inner_radius" value="20" overrideParent="True" />
+					<float name="outer_height" value="-6" overrideParent="True" />
+					<float name="outer_radius" value="25" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
+				<enum name="weapon_targeting" value="no_targeting" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1221151512" List.ParentItemID="-1221151512">
+				<bool name="ap_killed_kicker" value="False" overrideParent="True" />
+				<bool name="ap_loss_kicker" value="False" overrideParent="True" />
+				<enum name="selection_type" value="single_entity_select" overrideParent="True" />
+				<file name="minimap_icon" value="minimap\wonder" overrideParent="True" />
+				<float name="minimap_icon_scale" value="0.5" overrideParent="True" />
+				<enum name="decorator_visibility" value="hidden" overrideParent="True" />
+				<bool name="use_combat_range_on_selection" value="False" overrideParent="True" />
+				<enum name="map_mark" value="CustomStructure" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="536671903" List.ParentItemID="536671903">
+				<list name="standard_upgrades" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="389041388" List.ParentItemID="389041388">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1700796307" List.ParentItemID="1700796307">
+				<float name="orientation" value="0" overrideParent="True" />
+				<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="32036034" List.ParentItemID="32036034">
+				<list name="spawn_items" overrideParent="True">
+				</list>
+				<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="2086910227" List.ParentItemID="2086910227">
+				<list name="hardpoints" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-773066302" List.ParentItemID="-773066302">
+				<list name="acceptable_types" overrideParent="True">
+				</list>
+				<bool name="move_on_remove_hold" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-589861990" List.ParentItemID="-589861990">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\always_on_abilities\combat_mode\outpost_capture_area_neu" List.ItemID="313740770" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-965014348" List.ParentItemID="-965014348">
+				<list name="select_audible_to_relation_list" overrideParent="True">
+					<enum name="relationship_type" value="neutral" List.ItemID="1879013734" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="169566" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" />
+	</variant>
+</instance>
