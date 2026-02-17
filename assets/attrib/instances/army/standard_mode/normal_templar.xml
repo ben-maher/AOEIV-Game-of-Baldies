@@ -102,7 +102,7 @@
 		<enum_table name="resource_starting_amount">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="popcap" value="0" />
+			<float name="popcap" value="1000" />
 			<float name="food" value="200" />
 			<float name="wood" value="100" />
 			<float name="stone" value="0" />
