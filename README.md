@@ -1,5 +1,7 @@
 # AOEIV – Game of Baldies
 
+![Game of Baldies mod logo](./mod.png)
+
 A small **Age of Empires IV Content Editor** mod (“tuning pack”) made for our group.
 
 ## What this mod changes
