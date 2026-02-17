@@ -4,10 +4,9 @@
 			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\defense_outpost_ott\defense_outpost_control_ott" overrideParent="True" />
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\health_ext">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
 			<float name="hitpoints" value="5000" overrideParent="True" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
+		</template_reference><template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\ottoman" overrideParent="True" List.ItemID="-409271741" />
 			</list>
