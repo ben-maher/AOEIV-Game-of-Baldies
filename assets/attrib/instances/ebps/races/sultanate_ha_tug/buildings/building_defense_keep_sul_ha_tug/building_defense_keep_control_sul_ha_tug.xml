@@ -6,7 +6,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="125304692" List.ParentItemID="125304692">
 			<bool name="regeneration_disabled" value="False" overrideParent="True" />
-			<float name="hitpoints" value="2000" overrideParent="True" />
+			<float name="hitpoints" value="15000" overrideParent="True" />
 			<state_tree_node name="death_action_tree" value="building_death_actions\tughluqabad_fort_death_actions" overrideParent="True" />
 			<bool name="can_repair" comment=" " />
 			<enum_table name="armor_scaler_by_damage_type">
