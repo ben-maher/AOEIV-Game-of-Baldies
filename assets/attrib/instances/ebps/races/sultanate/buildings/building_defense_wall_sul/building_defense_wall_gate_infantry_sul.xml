@@ -2,7 +2,7 @@
 	<uniqueid name="pbgid" value="203944" />
 	<instance_reference name="parent_pbg" value="ebps\races\sultanate\buildings\building_defense_wall_sul\building_defense_wall_gate_sul" mod="942db39de35c43f3933e4b2a9f4b4f31" />
 	<list name="extensions">
-		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="771482978" List.ParentItemID="771482978">
 			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
 				<template_reference name="gap_fillers" value="options\ebpextensions\hexmapext\gap_fillers">
 					<list name="visuals" overrideParent="True">
@@ -33,7 +33,7 @@
 	</list>
 	<variant name="campaign">
 		<list name="extensions">
-			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-685837910" List.ParentItemID="-685837910">
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-343747523" List.ParentItemID="-343747523">
 				<list name="requirement_table" overrideParent="True">
 					<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="-1692768785">
 						<locstring name="ui_name" value="0" />

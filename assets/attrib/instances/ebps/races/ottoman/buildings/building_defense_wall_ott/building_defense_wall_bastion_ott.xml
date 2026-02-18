@@ -10,6 +10,7 @@
 			<enum_table name="armor_scaler_by_damage_type">
 				<float name="Melee" value="0" overrideParent="True" />
 			</enum_table>
+			<float name="hitpoints" value="9000" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-936535524" List.ParentItemID="-936535524">
 			<list name="race_type_list" overrideParent="True">
