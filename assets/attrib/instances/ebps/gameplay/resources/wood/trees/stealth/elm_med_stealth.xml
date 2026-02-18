@@ -3,13 +3,12 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1216464913" List.ParentItemID="-1216464913">
 			<instance_reference name="animator_attachments" value="attachments\attachment_lists\gameplay\resources\wood\trees\stealth\elm_med_stealth" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627">
-			
-			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627"><group name="on_depletion">
 				<file name="depleted_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_med_wild\elm_med_wild_depleted" overrideParent="True" />
 			</group>
 			<file name="enabled_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_med_wild\elm_med_wild" overrideParent="True" />
-		</template_reference>
+			<float name="initial_amount" value="1500" overrideParent="True" />
+</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2057663" />
 	<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\stealth_tree" mod="942db39de35c43f3933e4b2a9f4b4f31" />
@@ -18,13 +17,12 @@
 			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1216464913" List.ParentItemID="-1216464913">
 				<instance_reference name="animator_attachments" value="attachments\attachment_lists\gameplay\resources\wood\trees\stealth\elm_med_stealth" overrideParent="True" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627">
-				
-			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627"><group name="on_depletion">
 					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_med_wild\elm_med_wild_depleted" overrideParent="True" />
 				</group>
 				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_med_wild\elm_med_wild" overrideParent="True" />
-			</template_reference>
+			<float name="initial_amount" value="1500" overrideParent="True" />
+</template_reference>
 		</list>
 		<uniqueid name="pbgid" value="2057663" />
 		<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\stealth_tree" mod="942db39de35c43f3933e4b2a9f4b4f31" />

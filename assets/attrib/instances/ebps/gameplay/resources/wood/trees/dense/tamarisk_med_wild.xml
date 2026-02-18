@@ -6,13 +6,12 @@
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="973995323" List.ParentItemID="973995323">
 			<file name="icon_name" value="gaia\tamarisk_med_wild" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773" List.ParentItemID="653873773">
-			
-			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773" List.ParentItemID="653873773"><group name="on_depletion">
 				<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\tamarisk_med_wild\tamarisk_med_wild_depleted" overrideParent="True" />
 			</group>
 			<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\tamarisk_med_wild\tamarisk_med_wild" overrideParent="True" />
-		</template_reference>
+			<float name="initial_amount" value="1500" overrideParent="True" />
+</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2061859" />
 	<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\core_tree" mod="942db39de35c43f3933e4b2a9f4b4f31" />
@@ -24,13 +23,12 @@
 			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-522989721" List.ParentItemID="-522989721">
 				<file name="icon_name" value="gaia\tamarisk_med_wild" overrideParent="True" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480" List.ParentItemID="217008480">
-				
-			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480" List.ParentItemID="217008480"><group name="on_depletion">
 					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\tamarisk_med_wild\tamarisk_med_wild_depleted" overrideParent="True" />
 				</group>
 				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\tamarisk_med_wild\tamarisk_med_wild" overrideParent="True" />
-			</template_reference>
+			<float name="initial_amount" value="1500" overrideParent="True" />
+</template_reference>
 		</list>
 		<uniqueid name="pbgid" value="2061859" />
 		<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\core_tree" mod="942db39de35c43f3933e4b2a9f4b4f31" />

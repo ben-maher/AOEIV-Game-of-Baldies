@@ -7,13 +7,12 @@
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="973995323" List.ParentItemID="973995323">
 			<file name="icon_name" value="gaia\elm_small_dead" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773" List.ParentItemID="653873773">
-			
-			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773" List.ParentItemID="653873773"><group name="on_depletion">
 				<file name="depleted_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_small_dead\elm_small_dead_depleted" overrideParent="True" />
 			</group>
 			<file name="enabled_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_small_dead\elm_small_dead" overrideParent="True" />
-		</template_reference>
+			<float name="initial_amount" value="1500" overrideParent="True" />
+</template_reference>
 		<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="86957307" List.ParentItemID="86957307">
 			<bool name="allow_cells_on_wall" value="False" overrideParent="True" />
 		</template_reference>
@@ -34,13 +33,12 @@
 			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-522989721" List.ParentItemID="-522989721">
 				<file name="icon_name" value="gaia\elm_small_dead" overrideParent="True" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480" List.ParentItemID="217008480">
-				
-			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480" List.ParentItemID="217008480"><group name="on_depletion">
 					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_small_dead\elm_small_dead_depleted" overrideParent="True" />
 				</group>
 				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_small_dead\elm_small_dead" overrideParent="True" />
-			</template_reference>
+			<float name="initial_amount" value="1500" overrideParent="True" />
+</template_reference>
 			<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="654766858" List.ParentItemID="654766858">
 				<bool name="allow_cells_on_wall" value="False" overrideParent="True" />
 			</template_reference>
@@ -63,13 +61,12 @@
 				<file name="icon_name" value="gaia\elm_small_dead" overrideParent="True" />
 				<enum name="selection_type" value="no_select" overrideParent="True" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="611721008" List.ParentItemID="611721008">
-				
-			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="611721008" List.ParentItemID="611721008"><group name="on_depletion">
 					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_small_dead\elm_small_dead_depleted" overrideParent="True" />
 				</group>
 				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\elm_small_dead\elm_small_dead" overrideParent="True" />
-			</template_reference>
+			<float name="initial_amount" value="1500" overrideParent="True" />
+</template_reference>
 			<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="612105883" List.ParentItemID="612105883">
 				<bool name="allow_cells_on_wall" value="False" overrideParent="True" />
 			</template_reference>
