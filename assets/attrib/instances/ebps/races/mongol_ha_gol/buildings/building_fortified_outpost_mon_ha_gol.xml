@@ -4,7 +4,11 @@
 			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\buildings\fortified_outpost_mon_ha_gol\tier1_fortified_outpost_mon_ha_gol" overrideParent="True" />
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 			<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
-		</template_reference><template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1618369463" List.ParentItemID="-1618369463">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext">
+			<float name="hitpoints" value="5000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1618369463" List.ParentItemID="-1618369463">
 			<group name="time_cost">
 				<enum_table name="cost">
 					<float name="wood" value="150" overrideParent="True" />

@@ -1,5 +1,9 @@
 <instance version="6" description="" template="ebps">
-	<list name="extensions"><template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext">
+			<float name="hitpoints" value="5000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="442608036" />
 			</list>

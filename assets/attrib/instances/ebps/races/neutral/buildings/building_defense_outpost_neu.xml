@@ -2,8 +2,11 @@
 	<list name="extensions" comment="NOT USED">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1544196321" List.ParentItemID="1544196321">
 			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\defense_outpost_eng\defense_outpost_layout_eng" overrideParent="True" />
-		</template_reference><template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext">
 			<float name="hitpoints" value="5000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
 			<bool name="can_repair" value="True" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">
@@ -70,7 +73,6 @@
 				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\defense_outpost_eng\defense_outpost_layout_eng" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2095670651" List.ParentItemID="2095670651">
-			<float name="hitpoints" value="5000" overrideParent="True" />
 				<bool name="can_repair" value="True" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1847896003" List.ParentItemID="-1847896003">
@@ -133,7 +135,6 @@
 				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\defense_outpost_eng\defense_outpost_layout_eng" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
-			<float name="hitpoints" value="5000" overrideParent="True" />
 				<bool name="can_repair" value="True" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">

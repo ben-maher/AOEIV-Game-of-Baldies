@@ -1,5 +1,9 @@
 <instance version="6" description="" template="ebps">
-	<list name="extensions"><template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext">
+			<float name="hitpoints" value="5000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">
 			<group name="sight_package">
 				<float name="inner_height" value="10" overrideParent="True" />
 			</group>
