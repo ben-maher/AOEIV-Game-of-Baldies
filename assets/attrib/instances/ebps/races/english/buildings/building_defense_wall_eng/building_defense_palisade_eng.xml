@@ -6,7 +6,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="261052378" List.ParentItemID="261052378">
 			<bool name="can_repair" value="True" overrideParent="True" />
-			<float name="hitpoints" value="9000" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-1181036222" List.ParentItemID="-1181036222">
 			<list name="blocked_weapon_types" overrideParent="True">
@@ -42,7 +41,6 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2106082170" List.ParentItemID="-2106082170">
 				<bool name="can_repair" value="True" overrideParent="True" />
-			<float name="hitpoints" value="9000" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-821251318" List.ParentItemID="-821251318">
 				<list name="blocked_weapon_types" overrideParent="True">
@@ -76,7 +74,6 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="261052378" List.ParentItemID="261052378">
 				<bool name="can_repair" value="True" overrideParent="True" />
-			<float name="hitpoints" value="9000" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-1181036222" List.ParentItemID="-1181036222">
 				<list name="blocked_weapon_types" overrideParent="True">
