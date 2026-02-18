@@ -11,7 +11,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2028962899" List.ParentItemID="2028962899">
 			<bool name="can_repair" value="True" overrideParent="True" />
-			<float name="hitpoints" value="9000" overrideParent="True" />
 			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\tower_death_actions\tower_death_actions_hre" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-923485527" List.ParentItemID="-923485527">
