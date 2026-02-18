@@ -3,6 +3,9 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1544196321" List.ParentItemID="1544196321">
 			<bool name="browsable_in_editor" value="False" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
+			<float name="hitpoints" value="7500" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1400996372" List.ParentItemID="1400996372">
 			<list name="district_bonuses">
 				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1937942562" List.ParentItemID="-1937942562">

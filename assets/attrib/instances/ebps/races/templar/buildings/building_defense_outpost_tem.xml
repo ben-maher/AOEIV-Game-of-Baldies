@@ -6,6 +6,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
 			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="7500" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">
 			<group name="sight_package">

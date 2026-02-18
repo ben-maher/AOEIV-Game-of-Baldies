@@ -3,6 +3,9 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-315500114" List.ParentItemID="-315500114">
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="125304692" List.ParentItemID="125304692">
+			<float name="hitpoints" value="15000" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="2022824018" List.ParentItemID="2022824018">
 			<list name="unit_type_list" overrideParent="True">
 				<enum name="unit_type" value="building" List.ItemID="-119938934" />
