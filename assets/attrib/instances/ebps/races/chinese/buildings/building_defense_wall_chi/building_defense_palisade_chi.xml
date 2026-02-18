@@ -6,6 +6,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="261052378" List.ParentItemID="261052378">
 			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="9000" overrideParent="True" />
 			<enum_table name="armor_scaler_by_damage_type">
 				<float name="Fire" value="0" overrideParent="True" />
 			</enum_table>
@@ -34,6 +35,7 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2106082170" List.ParentItemID="-2106082170">
 				<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="9000" overrideParent="True" />
 				<enum_table name="armor_scaler_by_damage_type">
 					<float name="Fire" value="0" overrideParent="True" />
 				</enum_table>

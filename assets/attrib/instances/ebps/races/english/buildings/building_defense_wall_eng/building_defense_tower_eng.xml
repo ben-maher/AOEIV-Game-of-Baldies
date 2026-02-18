@@ -6,6 +6,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2028962899" List.ParentItemID="2028962899">
 			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="9000" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-923485527" List.ParentItemID="-923485527">
 			<list name="race_type_list" overrideParent="True">
@@ -41,6 +42,7 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1787291477" List.ParentItemID="-1787291477">
 				<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="9000" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-504935898" List.ParentItemID="-504935898">
 				<list name="race_type_list" overrideParent="True">
@@ -77,6 +79,7 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2028962899" List.ParentItemID="2028962899">
 				<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="9000" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-923485527" List.ParentItemID="-923485527">
 				<list name="race_type_list" overrideParent="True">
