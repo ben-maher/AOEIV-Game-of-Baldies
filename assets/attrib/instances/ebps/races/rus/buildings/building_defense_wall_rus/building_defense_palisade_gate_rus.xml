@@ -6,8 +6,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="204034348" List.ParentItemID="204034348">
 			<float name="hitpoints" value="9000" overrideParent="True" />
-
-			<float name="hitpoints" value="2500" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1100494298" List.ParentItemID="1100494298">
 			<list name="race_type_list" overrideParent="True">
@@ -43,8 +41,6 @@
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1901319237" List.ParentItemID="1901319237">
 			<float name="hitpoints" value="9000" overrideParent="True" />
-
-				<float name="hitpoints" value="3000" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="2006275906" List.ParentItemID="2006275906">
 				<list name="race_type_list" overrideParent="True">
