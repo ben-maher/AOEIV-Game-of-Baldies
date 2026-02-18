@@ -242,7 +242,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773">
-			<float name="initial_amount" value="150" />
+			<float name="initial_amount" value="1500" />
 			<float name="gather_distance" value="1" />
 			<instance_reference name="resource_sub_type" value="resource_sub_type\tree" />
 			<bool name="is_resource_spawner" value="False" />
@@ -567,7 +567,7 @@
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480">
-				<float name="initial_amount" value="150" />
+				<float name="initial_amount" value="1500" />
 				<float name="gather_distance" value="1" />
 				<instance_reference name="resource_sub_type" value="resource_sub_type\tree" />
 				<bool name="is_resource_spawner" value="False" />
@@ -893,7 +893,7 @@
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="611721008">
-				<float name="initial_amount" value="150" />
+				<float name="initial_amount" value="1500" />
 				<float name="gather_distance" value="1" />
 				<instance_reference name="resource_sub_type" value="resource_sub_type\tree" />
 				<bool name="is_resource_spawner" value="False" />
