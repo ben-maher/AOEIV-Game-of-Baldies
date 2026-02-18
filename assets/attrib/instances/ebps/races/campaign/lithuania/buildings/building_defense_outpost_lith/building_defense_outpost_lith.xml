@@ -1,7 +1,6 @@
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
-			<float name="hitpoints" value="5000" overrideParent="True" />
 			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\outposts_death_actions_hre" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1700796307" List.ParentItemID="1700796307">
