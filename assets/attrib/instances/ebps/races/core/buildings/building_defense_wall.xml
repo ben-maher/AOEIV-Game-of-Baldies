@@ -27,7 +27,7 @@
 			<float name="death_seconds" value="-1" />
 			<bool name="delete_when_dead" value="False" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="6000" />
+			<float name="hitpoints" value="9000" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<instance_reference name="rebuilt_entity" value="" />
@@ -800,7 +800,7 @@
 				<float name="death_seconds" value="-1" />
 				<bool name="delete_when_dead" value="False" />
 				<bool name="force_attacker_memory" value="False" />
-				<float name="hitpoints" value="6000" />
+				<float name="hitpoints" value="2500" />
 				<bool name="is_invincible" value="False" />
 				<bool name="is_salvagable_wreck" value="False" />
 				<instance_reference name="rebuilt_entity" value="" />
@@ -1503,7 +1503,7 @@
 				<float name="death_seconds" value="-1" />
 				<bool name="delete_when_dead" value="False" />
 				<bool name="force_attacker_memory" value="False" />
-				<float name="hitpoints" value="6000" />
+				<float name="hitpoints" value="3000" />
 				<bool name="is_invincible" value="False" />
 				<bool name="is_salvagable_wreck" value="False" />
 				<instance_reference name="rebuilt_entity" value="" />
