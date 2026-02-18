@@ -1,0 +1,82 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1184830763" List.ParentItemID="-1184830763">
+			<enum name="subclass_type" value="Wall" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\hre" List.ItemID="-549016745" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1904123328" List.ParentItemID="-1904123328">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+				<instance_reference name="fence_cap_entity" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_wall_bastion_hre" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+			</template_reference>
+			<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_segments_west" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1841579960" List.ListAction="Append">
+			<list name="tier_group_list">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="134929" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1735264747" List.ParentItemID="1735264747">
+				<enum name="subclass_type" value="Wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2123635899" List.ParentItemID="-2123635899">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\hre" List.ItemID="743292322" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="2039514846" List.ParentItemID="2039514846">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_wall_bastion_hre" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+				</template_reference>
+				<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_segments_west" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="966603284" List.ListAction="Append">
+				<list name="tier_group_list">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="134929" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall" />
+	</variant>
+	<variant name="hre_brawl">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1184830763" List.ParentItemID="-1184830763">
+				<enum name="subclass_type" value="Wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1930986963" List.ParentItemID="-1930986963">
+				<bool name="is_invincible" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\hre" List.ItemID="-1248416892" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-2134914382" List.ParentItemID="-2134914382">
+				<enum name="selection_type" value="no_select" overrideParent="True" />
+				<float name="minimap_icon_scale" value="0.3" overrideParent="True" />
+				<float name="minimap_icon_zoom_scale" value="1" overrideParent="True" />
+				<colour name="minimap_color" value="4288256409" overrideParent="True" />
+				<bool name="minimap_teamcolor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1904123328" List.ParentItemID="-1904123328">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_wall_bastion_hre" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+				</template_reference>
+				<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_segments_west" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-416111577" List.ListAction="Append">
+				<list name="tier_group_list">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="134929" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall" />
+	</variant>
+</instance>

@@ -1,0 +1,9 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2116434983" List.ParentItemID="2116434983">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\rogue\buildings\building_rogue_siege_east" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9002840" />
+	<instance_reference name="parent_pbg" value="ebps\races\rogue\buildings\building_rogue_siegetrebuchets" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+</instance>

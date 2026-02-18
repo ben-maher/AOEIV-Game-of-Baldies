@@ -1,0 +1,112 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1605745194" List.ParentItemID="-1605745194">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1226653057" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="400767969" List.ParentItemID="400767969">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="971311117" List.ParentItemID="971311117">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_horseman_2_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1254681650" List.ParentItemID="1254681650">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_horseman_3_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-1634293158" List.ParentItemID="-1634293158">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_horseman_4_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1293141421" List.ParentItemID="1293141421">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_knight_3_ayy" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+							<int name="nominal_index" value="8" overrideParent="True" />
+						</template_reference>
+					</template_reference>
+				</group>
+				<group name="spawn_item" List.ItemID="-988331430" List.ParentItemID="-988331430">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_knight_4_ayy" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+							<int name="nominal_index" value="8" overrideParent="True" />
+						</template_reference>
+					</template_reference>
+				</group>
+				<group name="spawn_item" List.ItemID="1281746683" List.ParentItemID="1281746683">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_camel_rider_3_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1484137696" List.ParentItemID="1484137696">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_camel_rider_4_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1974999014" List.ParentItemID="1974999014">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_scout_ayy" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="609595785" List.ParentItemID="609595785">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-680269034" List.ParentItemID="-680269034">
+					<uniqueid name="id" value="1073741929" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101144" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_unit_cavalry_control_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1605745194" List.ParentItemID="-1605745194">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="348788497" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="400767969" List.ParentItemID="400767969">
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="971311117" List.ParentItemID="971311117">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_horseman_2_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1254681650" List.ParentItemID="1254681650">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_horseman_3_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-1634293158" List.ParentItemID="-1634293158">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_horseman_4_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1293141421" List.ParentItemID="1293141421">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_knight_3_ayy" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+								<int name="nominal_index" value="8" overrideParent="True" />
+							</template_reference>
+						</template_reference>
+					</group>
+					<group name="spawn_item" List.ItemID="-988331430" List.ParentItemID="-988331430">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_knight_4_ayy" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+								<int name="nominal_index" value="8" overrideParent="True" />
+							</template_reference>
+						</template_reference>
+					</group>
+					<group name="spawn_item" List.ItemID="1281746683" List.ParentItemID="1281746683">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_camel_rider_3_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1484137696" List.ParentItemID="1484137696">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_camel_rider_4_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1974999014" List.ParentItemID="1974999014">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_scout_ayy" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="609595785" List.ParentItemID="609595785">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="-680269034" List.ParentItemID="-680269034">
+						<uniqueid name="id" value="1073741930" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101144" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_unit_cavalry_control_abb" />
+	</variant>
+</instance>

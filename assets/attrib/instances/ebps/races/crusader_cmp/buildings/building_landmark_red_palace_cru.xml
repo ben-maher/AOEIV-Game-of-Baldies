@@ -1,0 +1,32 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="555024994" List.ParentItemID="555024994">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1152990751" List.ParentItemID="-1152990751" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1352379827" List.ParentItemID="-1352379827">
+			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\research\upgrade_enlistment_incentives_cru" overrideParent="True" List.ItemID="-1154141798" List.ParentItemID="-1154141798" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089037" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_landmark_age2_la_chateau_rouge_fre\building_landmark_age2_la_chateau_rouge_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="555024994" List.ParentItemID="555024994">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1152990751" List.ParentItemID="-1152990751" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1352379827" List.ParentItemID="-1352379827">
+				<list name="standard_upgrades">
+					<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\research\upgrade_enlistment_incentives_cru" overrideParent="True" List.ItemID="-1154141798" List.ParentItemID="-1154141798" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089037" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_landmark_age2_la_chateau_rouge_fre\building_landmark_age2_la_chateau_rouge_fre" />
+	</variant>
+</instance>

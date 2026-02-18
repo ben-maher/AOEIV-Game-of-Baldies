@@ -1,0 +1,50 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="119825962" List.ParentItemID="119825962">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="766496229" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-1410531980" List.ParentItemID="-1410531980">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_structure" List.ItemID="618950239" List.ParentItemID="618950239">
+					<instance_reference name="structure_name" value="ebps\races\crusader_cmp\buildings\building_town_center_capital_cru" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="956940221" List.ParentItemID="956940221">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="-367482167" List.ParentItemID="-367482167">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_trade_cart_cru" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089035" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_landmark_age1_chamber_of_commerce_fre\building_landmark_age1_chamber_of_commerce_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="119825962" List.ParentItemID="119825962">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="1178989505" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-1410531980" List.ParentItemID="-1410531980">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_structure" List.ItemID="618950239" List.ParentItemID="618950239">
+						<instance_reference name="structure_name" value="ebps\races\crusader_cmp\buildings\building_town_center_capital_cru" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="956940221" List.ParentItemID="956940221">
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="-367482167" List.ParentItemID="-367482167">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_trade_cart_cru" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089035" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_landmark_age1_chamber_of_commerce_fre\building_landmark_age1_chamber_of_commerce_fre" />
+	</variant>
+</instance>

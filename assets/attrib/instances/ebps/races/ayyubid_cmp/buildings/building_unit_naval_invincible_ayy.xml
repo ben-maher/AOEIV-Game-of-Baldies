@@ -1,0 +1,38 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="235383520" List.ParentItemID="235383520">
+			<bool name="is_invincible" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-844185006" List.ParentItemID="-844185006">
+			<enum name="weapon_targeting" value="no_targeting" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1530112391" List.ParentItemID="-1530112391">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="1270106609" List.ParentItemID="1270106609">
+					<uniqueid name="id" value="1073741935" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101660" />
+	<instance_reference name="parent_pbg" value="ebps\races\ayyubid_cmp\buildings\building_unit_naval_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="235383520" List.ParentItemID="235383520">
+				<bool name="is_invincible" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-844185006" List.ParentItemID="-844185006">
+				<enum name="weapon_targeting" value="no_targeting" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1530112391" List.ParentItemID="-1530112391">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="1270106609" List.ParentItemID="1270106609">
+						<uniqueid name="id" value="1073741936" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101660" />
+		<instance_reference name="parent_pbg" value="ebps\races\ayyubid_cmp\buildings\building_unit_naval_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+</instance>

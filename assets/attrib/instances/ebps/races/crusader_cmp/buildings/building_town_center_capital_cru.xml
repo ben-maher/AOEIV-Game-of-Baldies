@@ -1,0 +1,54 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965" List.ParentItemID="519261965">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-935147206" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1875812947" List.ParentItemID="-1875812947">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="-389734842" List.ParentItemID="-389734842">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_villager_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-430274810" List.ParentItemID="-430274810">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_scout_cru" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-211859969" List.ParentItemID="-211859969">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="399810318" List.ParentItemID="399810318">
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089044" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_town_center_fre\building_town_center_capital_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965" List.ParentItemID="519261965">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1687361709" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1875812947" List.ParentItemID="-1875812947">
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="-389734842" List.ParentItemID="-389734842">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_villager_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-430274810" List.ParentItemID="-430274810">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_scout_cru" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-211859969" List.ParentItemID="-211859969">
+				<list name="hardpoints">
+					<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="399810318" List.ParentItemID="399810318">
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089044" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_town_center_fre\building_town_center_capital_fre" />
+	</variant>
+</instance>

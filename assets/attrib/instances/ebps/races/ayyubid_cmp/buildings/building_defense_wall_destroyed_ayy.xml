@@ -1,0 +1,80 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions" removedIds="-1282455806, 1031449138, 802395660">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1458620782" List.ParentItemID="1458620782">
+			<instance_reference name="animator_attachments" value="" overrideParent="True" />
+			<bool name="is_visible_in_game" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1525051852" List.ParentItemID="1525051852">
+			<float name="hitpoints" value="0" overrideParent="True" />
+			<bool name="delete_when_dead" value="True" overrideParent="True" />
+			<bool name="remove_from_pathfinding_on_death" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1756953495" List.ParentItemID="1756953495">
+			<group name="shot_collision">
+				<enum_table name="pass_through_relation">
+					<bool name="undefined" value="True" overrideParent="True" />
+					<bool name="enemy" value="True" overrideParent="True" />
+					<bool name="neutral" value="True" overrideParent="True" />
+				</enum_table>
+				<enum_table name="pass_through_projectile">
+					<bool name="tp_collide" value="True" overrideParent="True" />
+					<bool name="tp_piercing_blockers_only" value="False" overrideParent="True" />
+				</enum_table>
+				<bool name="pass_through_weapon_ranged_non_projectile" value="True" overrideParent="True" />
+				<bool name="collide_with_missed_ranged_weapon_shots" value="False" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1077393518" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+				<instance_reference name="blueprint_to_replace" value="ebps\races\ayyubid_cmp\buildings\building_defense_wall_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2144720" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_wall_gate_abb" />
+	<variant name="xp3">
+		<list name="extensions" removedIds="-1282455806, 1031449138, 802395660">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1458620782" List.ParentItemID="1458620782">
+				<instance_reference name="animator_attachments" value="" overrideParent="True" />
+				<bool name="is_visible_in_game" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1525051852" List.ParentItemID="1525051852">
+				<float name="hitpoints" value="0" overrideParent="True" />
+				<bool name="delete_when_dead" value="True" overrideParent="True" />
+				<bool name="remove_from_pathfinding_on_death" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1756953495" List.ParentItemID="1756953495">
+				<group name="shot_collision">
+					<enum_table name="pass_through_relation">
+						<bool name="undefined" value="True" overrideParent="True" />
+						<bool name="enemy" value="True" overrideParent="True" />
+						<bool name="neutral" value="True" overrideParent="True" />
+					</enum_table>
+					<enum_table name="pass_through_projectile">
+						<bool name="tp_collide" value="True" overrideParent="True" />
+						<bool name="tp_piercing_blockers_only" value="False" overrideParent="True" />
+					</enum_table>
+					<bool name="pass_through_weapon_ranged_non_projectile" value="True" overrideParent="True" />
+					<bool name="collide_with_missed_ranged_weapon_shots" value="False" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-590290516" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\ayyubid_cmp\buildings\building_defense_wall_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2144720" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_wall_gate_abb" />
+	</variant>
+</instance>

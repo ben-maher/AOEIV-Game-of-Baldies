@@ -1,0 +1,90 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions" removedIds="-2091337955">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1942916370" List.ParentItemID="1942916370">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="Wall" overrideParent="True" />
+			<file name="alternate_sua" value="art\civilizations\byzantine\structures\aqueduct\byz_aqueduct_segment_6m\byz_aqueduct_segment_6m" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="261052378" List.ParentItemID="261052378">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="600" overrideParent="True" />
+			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\stone_wall_death_actions" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1630782411" List.ParentItemID="1630782411">
+			<instance_reference name="hit_material" value="hit_material\stone" overrideParent="True" />
+			<group name="shot_collision">
+				<enum_table name="pass_through_relation">
+					<bool name="ally" value="True" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-478749961" List.ParentItemID="-478749961">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\byzantine" overrideParent="True" List.ItemID="1239926120" />
+			</list>
+			<list name="unit_type_list" removedIds="-865194667, -688449052, -1529639766">
+				<enum name="unit_type" value="aqueduct" List.ItemID="-938546623" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="280898031" List.ParentItemID="280898031">
+			<list name="ignorable_entity_types" removedIds="1838577586">
+				<enum name="unit_class" value="farm" List.ItemID="1747338676" List.ListAction="Append" />
+				<enum name="unit_class" value="palisade_gate" List.ItemID="-1065453933" List.ListAction="Append" />
+				<enum name="unit_class" value="palisade_wall" List.ItemID="-1415076845" List.ListAction="Append" />
+				<enum name="unit_class" value="animal_corpse" List.ItemID="919568036" List.ListAction="Append" />
+				<enum name="unit_class" value="forage_bush" List.ItemID="397417814" List.ListAction="Append" />
+			</list>
+			<group name="placement_requirements">
+				<list name="placement_requirement_options" removedIds="-1869429593">
+				</list>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1479129305" List.ParentItemID="1479129305">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="stone" value="2" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="2" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1116589513" List.ParentItemID="-1116589513">
+			<file name="icon_name" value="races\byzantine\buildings\aquaeducts" overrideParent="True" />
+			<group name="ui_codex_info">
+				<int name="priority" value="5555" overrideParent="True" />
+			</group>
+			<template_reference name="help_text_formatter" value="" overrideParent="True">
+			</template_reference>
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1710736497" List.ParentItemID="-1710736497">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+				<instance_reference name="fence_cap_entity" value="ebps\races\byzantine\buildings\building_aqueduct_byz\building_aqueduct_bastion_byz" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+				<template_reference name="gap_fillers" value="" overrideParent="True">
+				</template_reference>
+				<bool name="split_fence_over_impass" value="False" overrideParent="True" />
+				<list name="linkable_spline_types">
+					<instance_reference name="spline_segment_ebp" value="ebps\races\byzantine\buildings\building_defense_wall_byz\building_defense_wall_byz" List.ItemID="2055244959" List.ListAction="Append" />
+				</list>
+				<bool name="can_be_placed_between_grid_aligned_buildings" value="True" overrideParent="True" />
+				<bool name="snap_end_points_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_aqueduct_segments" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-787551867" List.ParentItemID="-787551867">
+			<list name="abilities" removedIds="1212983076">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-2124336759" List.ParentItemID="-2124336759">
+			<string name="single_select_event" value="sfx_ui_aqueduct_building_selection_play" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\walkable_slottedspline_entity_ext" List.ItemID="-2140656394" List.ParentItemID="-2140656394">
+			<list name="boundary_blocked_pass_types" overrideParent="True">
+			</list>
+			<list name="surface_blocked_pass_types" removedIds="-1497343923">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101237" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_palisade" />
+</instance>
