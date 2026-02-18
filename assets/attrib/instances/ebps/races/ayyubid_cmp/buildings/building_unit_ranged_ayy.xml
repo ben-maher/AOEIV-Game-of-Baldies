@@ -1,0 +1,368 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1030773922" List.ParentItemID="1030773922">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="568756812" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="777570926" List.ParentItemID="777570926">
+			<list name="spawn_items" removedIds="-369327664, 288030476">
+				<group name="spawn_item" List.ItemID="1392103313" List.ParentItemID="1392103313">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_archer_2_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1740266292" List.ParentItemID="1740266292">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_archer_3_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="541329598" List.ParentItemID="541329598">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_archer_4_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="696506988" List.ParentItemID="696506988">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_crossbowman_3_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-1869459928" List.ParentItemID="-1869459928">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_crossbowman_4_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="86544556" List.ParentItemID="86544556">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_handcannon_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" comment="Turkic Horse Archer" List.ItemID="-244569801" List.ParentItemID="-244569801">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_turkic_horsearcher_2_ayy" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+							<instance_reference name="linked" value="upgrade\races\ayyubid_cmp\units\upgrade_unit_turkic_horse_archer_3_ayy" overrideParent="True" />
+						</template_reference>
+					</template_reference>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_archery_range\cmp_produce_turkichorsearcher_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" comment="Veteran Turkic Horse Archer" List.ItemID="-277283034" List.ListAction="Append">
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" />
+						<int name="ui_position_column" value="4" />
+					</group>
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_turkic_horsearcher_3_ayy" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_archery_range\cmp_produce_turkichorsearcher_ayy" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+							<int name="quick_commands_slot_index" value="1" overrideParent="True" />
+							<enum name="quick_commands_hotkey" value="x_quick_command_x" overrideParent="True" />
+							<int name="quick_commands_priority" value="5" overrideParent="True" />
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+							<int name="nominal_index" value="12" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="upgrade\races\ayyubid_cmp\units\upgrade_unit_turkic_horse_archer_4_ayy" overrideParent="True" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<file name="ui_icon_name" value="" />
+					<string name="ui_tooltip_data_template" value="" />
+				</group>
+				<group name="spawn_item" comment="Elite Turkic Horse Archer" List.ItemID="1885931797" List.ListAction="Append">
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" />
+						<int name="ui_position_column" value="4" />
+					</group>
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_turkic_horsearcher_4_ayy" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_archery_range\cmp_produce_turkichorsearcher_ayy" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+							<int name="quick_commands_slot_index" value="1" overrideParent="True" />
+							<enum name="quick_commands_hotkey" value="x_quick_command_x" overrideParent="True" />
+							<int name="quick_commands_priority" value="5" overrideParent="True" />
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+							<int name="nominal_index" value="12" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<file name="ui_icon_name" value="" />
+					<string name="ui_tooltip_data_template" value="" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-802392364" List.ParentItemID="-802392364">
+			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\units\upgrade_unit_turkic_horse_archer_3_ayy" overrideParent="True" List.ItemID="546779603" List.ParentItemID="546779603" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\units\upgrade_unit_turkic_horse_archer_4_ayy" overrideParent="True" List.ItemID="563658959" List.ParentItemID="563658959" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_mil_parthian_tactics_ayy" List.ItemID="1521318256" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="271678883" List.ParentItemID="271678883">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="42068754" List.ParentItemID="42068754">
+					<uniqueid name="id" value="1073741937" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101112" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_unit_ranged_control_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1030773922" List.ParentItemID="1030773922">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="158713176" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="777570926" List.ParentItemID="777570926">
+				<list name="spawn_items" removedIds="-369327664, 288030476">
+					<group name="spawn_item" List.ItemID="1392103313" List.ParentItemID="1392103313">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_archer_2_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1740266292" List.ParentItemID="1740266292">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_archer_3_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="541329598" List.ParentItemID="541329598">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_archer_4_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="696506988" List.ParentItemID="696506988">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_crossbowman_3_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-1869459928" List.ParentItemID="-1869459928">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_crossbowman_4_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="86544556" List.ParentItemID="86544556">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_handcannon_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" comment="Turkic Horse Archer" List.ItemID="-244569801" List.ParentItemID="-244569801">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_turkic_horsearcher_2_ayy" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+								<instance_reference name="linked" value="upgrade\races\ayyubid_cmp\units\upgrade_unit_turkic_horse_archer_3_ayy" overrideParent="True" />
+							</template_reference>
+						</template_reference>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_archery_range\cmp_produce_turkichorsearcher_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" comment="Veteran Turkic Horse Archer" List.ItemID="101596667" List.ListAction="Append">
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" />
+							<int name="ui_position_column" value="4" />
+						</group>
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_turkic_horsearcher_3_ayy" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_archery_range\cmp_produce_turkichorsearcher_ayy" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+								<int name="quick_commands_slot_index" value="1" overrideParent="True" />
+								<enum name="quick_commands_hotkey" value="x_quick_command_x" overrideParent="True" />
+								<int name="quick_commands_priority" value="5" overrideParent="True" />
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+								<int name="nominal_index" value="12" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="upgrade\races\ayyubid_cmp\units\upgrade_unit_turkic_horse_archer_4_ayy" overrideParent="True" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<file name="ui_icon_name" value="" />
+						<string name="ui_tooltip_data_template" value="" />
+					</group>
+					<group name="spawn_item" comment="Elite Turkic Horse Archer" List.ItemID="-1136781035" List.ListAction="Append">
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" />
+							<int name="ui_position_column" value="4" />
+						</group>
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_turkic_horsearcher_4_ayy" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_archery_range\cmp_produce_turkichorsearcher_ayy" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+								<int name="quick_commands_slot_index" value="1" overrideParent="True" />
+								<enum name="quick_commands_hotkey" value="x_quick_command_x" overrideParent="True" />
+								<int name="quick_commands_priority" value="5" overrideParent="True" />
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+								<int name="nominal_index" value="12" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<file name="ui_icon_name" value="" />
+						<string name="ui_tooltip_data_template" value="" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-802392364" List.ParentItemID="-802392364">
+				<list name="standard_upgrades">
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\units\upgrade_unit_turkic_horse_archer_3_ayy" overrideParent="True" List.ItemID="546779603" List.ParentItemID="546779603" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\units\upgrade_unit_turkic_horse_archer_4_ayy" overrideParent="True" List.ItemID="563658959" List.ParentItemID="563658959" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_mil_parthian_tactics_ayy" List.ItemID="98307964" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="271678883" List.ParentItemID="271678883">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="42068754" List.ParentItemID="42068754">
+						<uniqueid name="id" value="1073741938" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101112" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_unit_ranged_control_abb" />
+	</variant>
+</instance>

@@ -1,0 +1,29 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+			<file name="icon_name" value="races\campaign\buildings\tent_1" overrideParent="True" />
+			<string name="selection_group" value="tent" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-349572381" List.ParentItemID="-349572381">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\buildings\military_tent_b_cru" overrideParent="True" />
+			<float name="animator_scale" value="100" overrideParent="True" />
+			<float name="entity_scale" value="180" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089326" />
+	<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\buildings\building_military_tent_a_cru" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+				<file name="icon_name" value="races\campaign\buildings\tent_1" overrideParent="True" />
+				<string name="selection_group" value="tent" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-349572381" List.ParentItemID="-349572381">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\buildings\military_tent_b_cru" overrideParent="True" />
+				<float name="animator_scale" value="100" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089326" />
+		<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\buildings\building_military_tent_a_cru" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+</instance>

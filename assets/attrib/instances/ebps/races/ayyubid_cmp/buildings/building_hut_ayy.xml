@@ -1,0 +1,64 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+			<string name="selection_datatemplate" value="" overrideParent="True" />
+			<file name="icon_name" value="races\common\buildings\house" overrideParent="True" />
+			<bool name="minimap_enable" value="False" overrideParent="True" />
+			<float name="selection_scale" value="1" overrideParent="True" />
+			<enum name="selection_type" value="single_entity_select" overrideParent="True" />
+			<enum name="selection_method" value="obb_adjusted_to_terrain" overrideParent="True" />
+			<enum name="map_mark" value="" overrideParent="True" />
+			<string name="telemetry_name" value="Hut" overrideParent="True" />
+			<string name="selection_group" value="house" overrideParent="True" />
+			<float name="decorator_height" value="5" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1131493931" List.ParentItemID="-1131493931">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1791366944" List.ParentItemID="1791366944" />
+			</list>
+			<list name="unit_type_list" removedIds="941452871">
+				<enum name="unit_type" value="house" List.ItemID="-742161656" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-349572381" List.ParentItemID="-349572381">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\buildings\hut_ayy" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-589959009" List.ParentItemID="-589959009">
+			<bool name="is_invincible" value="True" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2144013" />
+	<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\buildings\building_military_tent_a_cru" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+				<string name="selection_datatemplate" value="" overrideParent="True" />
+				<file name="icon_name" value="races\common\buildings\house" overrideParent="True" />
+				<bool name="minimap_enable" value="False" overrideParent="True" />
+				<float name="selection_scale" value="1" overrideParent="True" />
+				<enum name="selection_type" value="single_entity_select" overrideParent="True" />
+				<enum name="selection_method" value="obb_adjusted_to_terrain" overrideParent="True" />
+				<enum name="map_mark" value="" overrideParent="True" />
+				<string name="telemetry_name" value="Hut" overrideParent="True" />
+				<string name="selection_group" value="house" overrideParent="True" />
+				<float name="decorator_height" value="5" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1131493931" List.ParentItemID="-1131493931">
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1791366944" List.ParentItemID="1791366944" />
+				</list>
+				<list name="unit_type_list" removedIds="941452871">
+					<enum name="unit_type" value="house" List.ItemID="802148128" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-349572381" List.ParentItemID="-349572381">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\buildings\hut_ayy" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-589959009" List.ParentItemID="-589959009">
+				<bool name="is_invincible" value="True" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2144013" />
+		<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\buildings\building_military_tent_a_cru" />
+	</variant>
+</instance>

@@ -1,0 +1,502 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="665441583" List.ParentItemID="665441583">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="364666413">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="13197226">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1924173393">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\sultanate\buildings\building_landmark_age3_bijay_mandal_palace_control_sul" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1971148682">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\sultanate\buildings\building_landmark_age3_madrasa_e_firoz_sul\building_landmark_age3_madrasa_e_firoz_sul" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-342251332">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="235839957">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-267997863" List.ParentItemID="-267997863">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="358360311">
+					<string name="state_tree" value="building_action_apply\buildings\landmark_age_3_action_apply" />
+				</group>
+				<group name="container" List.ItemID="-1555220822">
+					<string name="state_tree" value="building_action_apply\buildings\university_action_apply" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-334458322">
+					<string name="state_tree" value="influence_invalid_sul" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="77336098" List.ParentItemID="77336098">
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_landmark_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="901697529" List.ParentItemID="901697529">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<float name="animator_scale" value="115" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="555024994" List.ParentItemID="555024994">
+			<list name="unit_type_list">
+				<enum name="unit_type" value="university" List.ItemID="1880259805" List.ListAction="Append" />
+				<enum name="unit_type" value="research_building" List.ItemID="-624983929" List.ListAction="Append" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="-781242036" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="646243642" List.ParentItemID="646243642">
+			<float name="decorator_height" value="10" overrideParent="True" />
+			<file name="icon_name" value="races\sultanate\buildings\building_landmark_age3_madrasa_e_firoz" overrideParent="True" />
+			<string name="decorator_data_template" value="GarrisonsScholars" overrideParent="True" />
+			<template_reference name="help_text_formatter" value="ui_text_formatter" overrideParent="True">
+				<list name="formatter_arguments" overrideParent="True">
+					<int name="int_value" value="12" overrideParent="True" List.ItemID="-1374805227" />
+					<int name="int_value" value="3" List.ItemID="-1669296519" />
+				</list>
+				<locstring name="formatter" value="0" />
+			</template_reference>
+			<string name="telemetry_name" value="Hisar Academy" overrideParent="True" />
+			<string name="selection_group" value="university" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="669128015" List.ParentItemID="669128015">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\always_on_abilities\sultanate\hisar_academy_sul" List.ItemID="-1349664864" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\sultanate\scholar_research_behavior_sul" overrideParent="True" List.ItemID="-781387876" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\sultanate\mosque_influence_sul" overrideParent="True" List.ItemID="-1238844431" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" overrideParent="True" List.ItemID="862951296" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1077208244" List.ParentItemID="-1077208244">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\wonder_age3_sul" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-725703170" List.ParentItemID="-725703170">
+			<string name="single_select_event" value="sfx_ui_landmark_building_selection_play" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1352379827" List.ParentItemID="-1352379827">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_chemistry_sul" overrideParent="True" List.ItemID="1725484045" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_works_sul" overrideParent="True" List.ItemID="-440289129" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_biology_sul" overrideParent="True" List.ItemID="-1852391711" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_architecture_4_sul" overrideParent="True" List.ItemID="-1249989074" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_manatarms_elite_army_tactics_sul" List.ItemID="684543156" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_incendiary_sul" List.ItemID="546403730" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_leadshot_sul" List.ItemID="-148345884" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_archer_silkstring_sul" List.ItemID="798408046" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="-823671089" List.ParentItemID="-823671089">
+			<file name="construction_stamp" value="art\stamps\scaffolding\sultanate\sul_madrasa_e_firoz" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="517317631" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="996756346">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement" overrideParent="True">
+						<list name="dynamic_requirements">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" comment="Mosque Influence&#xD;&#xA;" List.ItemID="248403720">
+								<list name="satisfying_entities" overrideParent="True">
+									<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_unit_religious_sul\building_unit_religious_control_sul" List.ItemID="237838768" />
+									<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_tech_university_sul\building_tech_university_control_sul" List.ItemID="-1045474708" />
+									<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_quwwat_ul_islam_sul\building_landmark_age1_quwwat_ul_islam_control_sul" List.ItemID="-623409164" />
+									<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_qutub_minar_sul\building_landmark_age1_qutub_minar_control_sul" List.ItemID="-1699387354" />
+									<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age3_madrasa_e_firoz_sul\building_landmark_age3_madrasa_e_firoz_sul" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-1687254915" />
+									<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_unit_naval_sul\building_unit_naval_sul" List.ItemID="-2146207610" />
+									<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age2_khiji_mosque_sul\building_landmark_age2_khiji_mosque_control_sul" List.ItemID="1078524116" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073742315" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="district_mosque_sul" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="211011289" List.ListAction="Append">
+			<float name="range_metres" value="16" overrideParent="True" />
+			<bool name="is_root_generator" value="True" />
+			<int name="generator_value" value="0" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<int name="district_palette_id" value="1" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" overrideParent="True" List.ItemID="1423580531" List.ListAction="Append">
+			<list name="acceptable_types">
+				<enum name="acceptable_type" value="hold_monk" List.ItemID="-2041989906" />
+			</list>
+			<bool name="attach_passenger_animator" value="False" />
+			<bool name="can_attack_occupant" value="True" />
+			<bool name="invulnerable_in_hold" value="True" />
+			<bool name="disable_area_effect_on_overflow_slot" value="False" />
+			<bool name="disable_unload" value="False" />
+			<bool name="disallow_load_command" value="False" />
+			<bool name="enable_trigger_abilities_in_hold" value="True" />
+			<bool name="enable_trigger_attack_in_hold" value="False" />
+			<bool name="holds_produced_squads" value="False" />
+			<bool name="keep_abandoned_team_weapon" value="False" />
+			<float name="load_seconds" value="1" />
+			<float name="max_load_seconds" value="5" />
+			<float name="min_hold_seconds" value="1" />
+			<float name="num_slots" value="20" />
+			<float name="num_squad_slots" value="20" />
+			<float name="percent_unload_on_death" value="1" />
+			<bool name="revert_ownership" value="False" />
+			<bool name="scavenge_enabled" value="False" />
+			<enum_table name="scavenge_resource">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<bool name="shared_with_other_same_type_units" value="False" />
+			<float name="unload_seconds" value="0.5" />
+			<bool name="use_building_target_scan_radius" value="True" />
+			<bool name="use_crouching_posture" value="False" />
+			<list name="on_loading_modifiers">
+			</list>
+			<bool name="despawn_on_load" value="False" />
+			<float name="load_distance" value="1" />
+			<bool name="maintain_selection" value="True" />
+			<template_reference name="on_loaded_hold_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_loaded_squad_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="mosque_hold_event_sul\load_scholar" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_unloaded_squad_instant_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="mosque_hold_event_sul\unload_scholar" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<bool name="convert_garrision_on_owner_change" value="False" />
+			<bool name="move_on_remove_hold" value="False" />
+			<bool name="load_separate_entrances" value="False" />
+			<bool name="can_issue_retreat_to_hold_contents" value="True" />
+			<bool name="ensure_pathability_to_hold_for_unload" value="False" />
+			<float name="unload_path_distance_max" value="0" />
+			<bool name="is_indoors" value="True" />
+			<bool name="right_click_garrison_always_enabled" value="False" />
+			<bool name="exclude_allied_units" value="False" />
+			<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-696627154" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="-194808154">
+					<group name="tier" List.ItemID="-1986814506">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\landmark_madrasa_e_firoz_sul\landmark_madrasa_e_firoz_control_sul" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-1997373036">
+					<group name="tier" List.ItemID="1641748536">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\wonders\won_mfiroz" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="135890" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_wonder_age3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-1974919312" List.ParentItemID="-1974919312">
+				<list name="requirement_table" overrideParent="True">
+					<template_reference name="required" value="requirements\required_not" List.ItemID="135383941">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="2107786545">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements">
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1916476014">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\sultanate\buildings\building_landmark_age3_bijay_mandal_palace_control_sul" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1227001400">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\sultanate\buildings\building_landmark_age3_madrasa_e_firoz_sul\building_landmark_age3_madrasa_e_firoz_sul" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1872033273">
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="False" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+						<bool name="include_completed" value="True" />
+					</template_reference>
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="480185568">
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+						<bool name="include_completed" value="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1506339053" List.ParentItemID="-1506339053">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="-1548280506">
+						<string name="state_tree" value="campaignMod_building_action_apply\buildings\landmark_age_3_action_apply" />
+					</group>
+					<group name="container" List.ItemID="-1198263063">
+						<string name="state_tree" value="campaignMod_influence_invalid_sul" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1151140653" List.ParentItemID="1151140653">
+				<state_tree_node name="death_action_tree" value="campaignMod_building_death_actions\landmarks\landmarks_age3\sul_madrasa_e_firoz" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1667969906" List.ParentItemID="-1667969906">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="242642305" List.ParentItemID="242642305">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="-688288285" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-2001159684" List.ParentItemID="-2001159684">
+				<file name="icon_name" value="races\sultanate\buildings\building_landmark_age3_madrasa_e_firoz" overrideParent="True" />
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="2036143707">
+						<file name="icon" value="influence_buff" overrideParent="True" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+					</template_reference>
+				</list>
+				<string name="telemetry_name" value="Hisar Academy" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1715066672" List.ParentItemID="-1715066672">
+				<group name="on_construction_complete_state_tree_refs">
+					<string name="while_construction_complete_entity_state_tree_ref" value="landmark_completion_bonus_sul\age_3_madrasa_e_firoz_complete_sul" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-545791387" List.ParentItemID="-545791387">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\always_on_abilities\sultanate\scholar_research_behavior_sul" List.ItemID="-314388071" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="203214683" List.ParentItemID="203214683">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\wonder_age3_sul" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1641991730" List.ParentItemID="1641991730">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\unit\upgrade_unit_religious_zealous_4_sul" List.ItemID="1261776964" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="424759603" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" List.ItemID="-624796490">
+						<group name="tier" List.ItemID="419805731">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\landmark_madrasa_e_firoz_sul\landmark_madrasa_e_firoz_control_sul" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="-1370993226">
+						<group name="tier" List.ItemID="-133407733">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\wonders\won_mfiroz" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-462980156" List.ListAction="Append">
+				<bool name="update_on_upgrade_changed" value="False" />
+				<bool name="update_on_construction_complete" value="True" />
+				<list name="district_bonuses" comment="Influence Control&#xD;&#xA;" overrideParent="True">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="1649624756">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements">
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" comment="Mosque Influence&#xD;&#xA;" List.ItemID="-1212332072">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_unit_religious_sul\building_unit_religious_control_sul" List.ItemID="1716737652" />
+										<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_tech_university_sul\building_tech_university_control_sul" List.ItemID="-584077476" />
+										<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_quwwat_ul_islam_sul\building_landmark_age1_quwwat_ul_islam_control_sul" List.ItemID="21170052" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742316" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_district_mosque_sul" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="1805379939" List.ListAction="Append">
+				<float name="range_metres" value="4" overrideParent="True" />
+				<bool name="is_root_generator" value="False" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" />
+				<int name="district_palette_id" value="1" overrideParent="True" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="135890" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_wonder_age3" />
+	</variant>
+</instance>

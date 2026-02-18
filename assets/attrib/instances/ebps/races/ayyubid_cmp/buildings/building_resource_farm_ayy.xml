@@ -1,0 +1,22 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1432368975" List.ParentItemID="1432368975">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1525011964" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101141" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_resource_farm_control_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1432368975" List.ParentItemID="1432368975">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1907436574" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101141" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_resource_farm_control_abb" />
+	</variant>
+</instance>

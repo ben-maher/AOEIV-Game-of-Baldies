@@ -1,0 +1,42 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1152855297" List.ParentItemID="-1152855297">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="2125125085" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1815435484" List.ParentItemID="-1815435484">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_chemistry" List.ItemID="979554252" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_architecture_4" List.ItemID="-1166530667" />
+				<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\research\upgrade_cavalry_bloodline_cru" overrideParent="True" List.ItemID="1942394741" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_manatarms_elite_army_tactics" List.ItemID="434655109" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_incendiary" List.ItemID="2055525143" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_works" List.ItemID="478664760" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089043" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_tech_university_fre\building_tech_university_control_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1152855297" List.ParentItemID="-1152855297">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="1312260745" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1815435484" List.ParentItemID="-1815435484">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_chemistry" List.ItemID="-74958789" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_architecture_4" List.ItemID="-593867116" />
+					<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\research\upgrade_cavalry_bloodline_cru" overrideParent="True" List.ItemID="223976947" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_manatarms_elite_army_tactics" List.ItemID="1573538616" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_incendiary" List.ItemID="-1150992123" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_works" List.ItemID="458715403" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089043" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_tech_university_fre\building_tech_university_control_fre" />
+	</variant>
+</instance>

@@ -1,0 +1,96 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965" List.ParentItemID="519261965">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-155703522" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="565171784" List.ParentItemID="565171784">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\ayyubid_cmp\medical_centers_ayy" overrideParent="True" List.ItemID="10765488" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1529303587" List.ParentItemID="1529303587">
+			<list name="action_state_trees_run_once">
+				<group name="container" List.ItemID="1064993266" List.ParentItemID="1064993266">
+					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply\set_civ_dynamic_root\ayy_cmp" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1875812947" List.ParentItemID="-1875812947">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="-389734842" List.ParentItemID="-389734842">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_villager_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-430274810" List.ParentItemID="-430274810">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_scout_ayy" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="1603976703" List.ParentItemID="1603976703">
+			<list name="acceptable_types">
+				<enum name="acceptable_type" value="hold_spy" List.ItemID="-1471561916" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1473665785" List.ParentItemID="-1473665785">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1456965301" List.ParentItemID="-1456965301">
+					<uniqueid name="id" value="1073741927" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="2137727553" List.ParentItemID="2137727553">
+			<float name="range_metres" value="8" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101111" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_town_center_capital_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965" List.ParentItemID="519261965">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1917320669" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="565171784" List.ParentItemID="565171784">
+				<list name="abilities">
+					<instance_reference name="ability" value="abilities\always_on_abilities\ayyubid_cmp\medical_centers_ayy" overrideParent="True" List.ItemID="2118504099" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1529303587" List.ParentItemID="1529303587">
+				<list name="action_state_trees_run_once">
+					<group name="container" List.ItemID="1064993266" List.ParentItemID="1064993266">
+						<string name="state_tree" value="xp3_building_action_apply\buildings\town_center_action_apply\set_civ_dynamic_root\ayy_cmp" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1875812947" List.ParentItemID="-1875812947">
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="-389734842" List.ParentItemID="-389734842">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_villager_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-430274810" List.ParentItemID="-430274810">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_scout_ayy" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="1603976703" List.ParentItemID="1603976703">
+				<list name="acceptable_types">
+					<enum name="acceptable_type" value="hold_spy" List.ItemID="-1745423955" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1473665785" List.ParentItemID="-1473665785">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1456965301" List.ParentItemID="-1456965301">
+						<uniqueid name="id" value="1073741928" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="2137727553" List.ParentItemID="2137727553">
+				<float name="range_metres" value="8" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101111" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_town_center_capital_abb" />
+	</variant>
+</instance>

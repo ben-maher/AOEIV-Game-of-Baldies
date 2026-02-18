@@ -1,0 +1,4 @@
+<instance version="4" description="" template="ebps">
+	<uniqueid name="pbgid" value="9001457" />
+	<instance_reference name="parent_pbg" value="ebps\races\rogue\buildings\building_rogue_ally_landmark" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+</instance>

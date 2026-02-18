@@ -1,0 +1,32 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-478749961" List.ParentItemID="-478749961">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="2053366850" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1710736497" List.ParentItemID="-1710736497">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+				<instance_reference name="fence_cap_entity" value="ebps\races\ayyubid_cmp\buildings\building_defense_palisade_bastion_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101129" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_palisade_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-478749961" List.ParentItemID="-478749961">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="700776632" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1710736497" List.ParentItemID="-1710736497">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\ayyubid_cmp\buildings\building_defense_palisade_bastion_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101129" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_palisade_abb" />
+	</variant>
+</instance>

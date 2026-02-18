@@ -1,0 +1,86 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-72758508" List.ParentItemID="-72758508">
+			<file name="alternate_sua" value="art\civilizations\chinese\structures\stonewall\chi_stonewall_bastion_end\chi_stonewall_bastion_end" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-936535524" List.ParentItemID="-936535524">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="417586383" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="362742533" List.ParentItemID="362742533">
+			<instance_reference name="cap_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_bastion_east" overrideParent="True" />
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+				<template_reference name="gap_fillers" value="options\ebpextensions\hexmapext\gap_fillers">
+					<list name="visuals" overrideParent="True">
+						<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="586376074" List.ParentItemID="2005016817">
+							<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_1m\chi_stonewall_gapfill_1m" overrideParent="True" />
+							<float name="rotation_offset" value="90" />
+							<float name="visual_length" value="1" />
+						</template_reference>
+						<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="332982345" List.ParentItemID="1050268408">
+							<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_2m\chi_stonewall_gapfill_2m" overrideParent="True" />
+							<float name="rotation_offset" value="90" />
+							<float name="visual_length" value="2" />
+						</template_reference>
+						<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="1919142981" List.ParentItemID="-1639245560">
+							<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_3m\chi_stonewall_gapfill_3m" overrideParent="True" />
+							<float name="rotation_offset" value="90" />
+							<float name="visual_length" value="3" />
+						</template_reference>
+						<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="-1063290064" List.ParentItemID="1799650319">
+							<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_4m\chi_stonewall_gapfill_4m" overrideParent="True" />
+							<float name="rotation_offset" value="90" />
+							<float name="visual_length" value="4" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</template_reference>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101338" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_defense_wall_fre\building_defense_wall_bastion_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-72758508" List.ParentItemID="-72758508">
+				<file name="alternate_sua" value="art\civilizations\chinese\structures\stonewall\chi_stonewall_bastion_end\chi_stonewall_bastion_end" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-936535524" List.ParentItemID="-936535524">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1259825511" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="362742533" List.ParentItemID="362742533">
+				<instance_reference name="cap_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_bastion_east" overrideParent="True" />
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<template_reference name="gap_fillers" value="options\ebpextensions\hexmapext\gap_fillers">
+						<list name="visuals" overrideParent="True">
+							<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="-227284850" List.ParentItemID="2005016817">
+								<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_1m\chi_stonewall_gapfill_1m" overrideParent="True" />
+								<float name="rotation_offset" value="90" />
+								<float name="visual_length" value="1" />
+							</template_reference>
+							<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="-195342951" List.ParentItemID="1050268408">
+								<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_2m\chi_stonewall_gapfill_2m" overrideParent="True" />
+								<float name="rotation_offset" value="90" />
+								<float name="visual_length" value="2" />
+							</template_reference>
+							<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="512949034" List.ParentItemID="-1639245560">
+								<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_3m\chi_stonewall_gapfill_3m" overrideParent="True" />
+								<float name="rotation_offset" value="90" />
+								<float name="visual_length" value="3" />
+							</template_reference>
+							<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="-1439196857" List.ParentItemID="1799650319">
+								<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_4m\chi_stonewall_gapfill_4m" overrideParent="True" />
+								<float name="rotation_offset" value="90" />
+								<float name="visual_length" value="4" />
+							</template_reference>
+						</list>
+					</template_reference>
+				</template_reference>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101338" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_defense_wall_fre\building_defense_wall_bastion_fre" />
+	</variant>
+</instance>

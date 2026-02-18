@@ -1,0 +1,52 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1564013048" List.ParentItemID="-1564013048">
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_wonder_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1488008841" List.ParentItemID="-1488008841">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-857792443" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1740996208" List.ParentItemID="-1740996208">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\ayyubid_cmp\medical_centers_ayy" overrideParent="True" List.ItemID="-1650397288" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1726063607" List.ParentItemID="1726063607">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="1272380379" List.ParentItemID="1272380379">
+					<uniqueid name="id" value="1073741943" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101149" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_wonder_age4_great_mosque_control_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1564013048" List.ParentItemID="-1564013048">
+				<state_tree_node name="death_action_tree" value="xp3_building_death_actions\landmarks\landmarks_common\common_wonder_shared_death" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1488008841" List.ParentItemID="-1488008841">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-274860925" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1740996208" List.ParentItemID="-1740996208">
+				<list name="abilities">
+					<instance_reference name="ability" value="abilities\always_on_abilities\ayyubid_cmp\medical_centers_ayy" overrideParent="True" List.ItemID="-1303652522" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1726063607" List.ParentItemID="1726063607">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="1272380379" List.ParentItemID="1272380379">
+						<uniqueid name="id" value="1073741944" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101149" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_wonder_age4_great_mosque_control_abb" />
+	</variant>
+</instance>

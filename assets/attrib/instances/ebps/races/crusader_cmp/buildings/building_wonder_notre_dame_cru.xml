@@ -1,0 +1,28 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1564013048" List.ParentItemID="-1564013048">
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_wonder_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1488008841" List.ParentItemID="-1488008841">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1739710298" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089052" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_wonder_age4_la_grande_cathedral_fre\building_wonder_age4_la_grande_cathedral_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1564013048" List.ParentItemID="-1564013048">
+				<state_tree_node name="death_action_tree" value="xp3_building_death_actions\landmarks\landmarks_common\common_wonder_shared_death" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1488008841" List.ParentItemID="-1488008841">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1609475697" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089052" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_wonder_age4_la_grande_cathedral_fre\building_wonder_age4_la_grande_cathedral_fre" />
+	</variant>
+</instance>

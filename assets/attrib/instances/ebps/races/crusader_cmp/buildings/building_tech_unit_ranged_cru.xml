@@ -1,0 +1,22 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1027607061" List.ParentItemID="-1027607061">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="1170179512" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089042" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_tech_unit_ranged_fre\building_tech_unit_ranged_control_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1027607061" List.ParentItemID="-1027607061">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-897719979" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089042" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_tech_unit_ranged_fre\building_tech_unit_ranged_control_fre" />
+	</variant>
+</instance>

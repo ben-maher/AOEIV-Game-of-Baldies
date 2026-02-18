@@ -1,0 +1,60 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="95489877" List.ParentItemID="95489877">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1553926499" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="827068779" List.ParentItemID="827068779">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="790095590" List.ParentItemID="790095590">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_trade_cart_ayy" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1697199160" List.ParentItemID="1697199160">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1197809952" List.ParentItemID="-1197809952">
+					<uniqueid name="id" value="1073741909" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101137" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_econ_market_control_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="95489877" List.ParentItemID="95489877">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="536438450" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="2041455427" List.ParentItemID="2041455427">
+				<list name="abilities">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food_bulk" List.ItemID="-11835445" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone_bulk" List.ItemID="-2083871059" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood_bulk" List.ItemID="-1738875780" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food_bulk" List.ItemID="1464452796" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone_bulk" List.ItemID="-426330584" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood_bulk" List.ItemID="593605394" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="827068779" List.ParentItemID="827068779">
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="790095590" List.ParentItemID="790095590">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_trade_cart_ayy" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1697199160" List.ParentItemID="1697199160">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1197809952" List.ParentItemID="-1197809952">
+						<uniqueid name="id" value="1073741910" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101137" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_econ_market_control_abb" />
+	</variant>
+</instance>

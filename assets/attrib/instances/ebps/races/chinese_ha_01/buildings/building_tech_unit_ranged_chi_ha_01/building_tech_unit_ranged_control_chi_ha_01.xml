@@ -1,0 +1,252 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1096691397" List.ParentItemID="-1096691397">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2094156268" List.ParentItemID="-2094156268">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="638498652" List.ParentItemID="638498652">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1027607061" List.ParentItemID="-1027607061">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="881421352" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1568647967" List.ParentItemID="-1568647967">
+			<list name="ui_extra_infos" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1491118015" List.ParentItemID="1491118015">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_damage_i" List.ItemID="795742214" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_damage_ii" overrideParent="True" List.ItemID="1290652082" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_damage_iii" overrideParent="True" List.ItemID="-975494869" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_armor_i" List.ItemID="-911519210" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_armor_ii" overrideParent="True" List.ItemID="-848664495" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_armor_iii" overrideParent="True" List.ItemID="1725309972" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="2013696895" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_archer_silkstring" List.ItemID="1971058448" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_incendiary" List.ItemID="-1253942097" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_weapon_speed" List.ItemID="1641298804" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_crossbow_cranequin" List.ItemID="1705985267" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_works" List.ItemID="2075948572" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_roller_trigger" List.ItemID="-67168054" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_corned_gunpowder" List.ItemID="742153581" />
+			</list>
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed_chi" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="404367440" List.ParentItemID="404367440">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="-1410075778">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-889062520">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-1900091139">
+					<enum name="interaction_type" value="official_building_reserved_chi" overrideParent="True" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="-1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1131569299" List.ParentItemID="1131569299">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1805389727" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\building_generate_tax_chi" List.ItemID="-887982047" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-499680381" List.ParentItemID="-499680381">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\chinese\tech_ranged_chi" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1279699390" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="2030641175">
+					<group name="tier" List.ItemID="889169954">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\buildings\tech_unit_ranged_chi\tier3_tech_unit_ranged_control_chi" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="488441100">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\buildings\tech_unit_ranged_chi\tier4_tech_unit_ranged_control_chi" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-1489383925">
+					<group name="tier" List.ItemID="473152891">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_02" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="525757015">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_03" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1497150855">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_04" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1240048042" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses" overrideParent="True">
+				<template_reference name="district_bonus" value="district_bonus" comment="population" List.ItemID="1725578003">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements" overrideParent="True">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" comment="Landmark Academy" List.ItemID="70280036">
+								<list name="satisfying_entities">
+									<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age1_academy_chi\building_landmark_age1_academy_control_chi" overrideParent="True" List.ItemID="842129056" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073742014" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="chinese_influence" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="895005564" List.ListAction="Append">
+			<float name="range_metres" value="0" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<bool name="is_root_generator" value="False" />
+			<int name="district_palette_id" value="0" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1884213162" List.ListAction="Append">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="reinforce_radius" value="0" />
+			<list name="spawn_items">
+			</list>
+			<list name="bonus_xp_from_hold_list">
+			</list>
+			<list name="reinforce_requirements">
+			</list>
+			<bool name="spawn_to_hold_try_first" value="False" />
+			<list name="queue_requirements">
+			</list>
+			<bool name="can_rally" value="True" />
+			<template_reference name="animated_spawn_option" value="options\none">
+			</template_reference>
+			<int name="max_queue_size_override" value="-1" />
+			<string name="queue_requirements_openingbranch" value="" />
+			<string name="reinforce_requirements_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_ranged" overrideParent="True" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+			<bool name="enforce_minimum_clearance_at_spawn_positions" value="False" />
+			<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+			<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="0" />
+			<instance_reference name="rally_pass_type" value="" />
+			<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+			<bool name="can_spawn_if_neutral" value="False" />
+			<bool name="default_rally_points_allowed" value="True" />
+			<bool name="economic_rally_points_allowed" value="False" />
+			<bool name="always_use_economic_rally_points" value="False" />
+			<bool name="use_alternative_rally_point_system" value="False" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2666080" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_unit_ranged" />
+</instance>

@@ -1,0 +1,56 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="2022824018" List.ParentItemID="2022824018">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="1951797346" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="397040303" List.ParentItemID="397040303">
+			<list name="acceptable_types">
+				<enum name="acceptable_type" value="hold_spy" List.ItemID="909361364" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-231398338" List.ParentItemID="-231398338">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\ayyubid_cmp\medical_centers_ayy" overrideParent="True" List.ItemID="-2077782487" List.ParentItemID="-2077782487" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="981163254" List.ParentItemID="981163254">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="1387131932" List.ParentItemID="1387131932">
+					<uniqueid name="id" value="1073741901" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101127" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_keep_control_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="2022824018" List.ParentItemID="2022824018">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-801842002" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="397040303" List.ParentItemID="397040303">
+				<list name="acceptable_types">
+					<enum name="acceptable_type" value="hold_spy" List.ItemID="1048607021" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-231398338" List.ParentItemID="-231398338">
+				<list name="abilities">
+					<instance_reference name="ability" value="abilities\always_on_abilities\ayyubid_cmp\medical_centers_ayy" overrideParent="True" List.ItemID="-2077782487" List.ParentItemID="-2077782487" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="981163254" List.ParentItemID="981163254">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="1387131932" List.ParentItemID="1387131932">
+						<uniqueid name="id" value="1073741902" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101127" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_keep_control_abb" />
+	</variant>
+</instance>

@@ -1,0 +1,996 @@
+<instance version="6" description="Mongol market" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-705202416" List.ParentItemID="-705202416">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\buildings\building_econ_market_mongol" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1940419197" List.ParentItemID="-1940419197">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="95489877" List.ParentItemID="95489877">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="-1812671521" />
+				<enum name="unit_type" value="trade_post" List.ItemID="1450718422" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-855607058" />
+				<enum name="unit_type" value="packable_building" List.ItemID="162918385" />
+				<enum name="unit_type" value="economy_building" List.ItemID="-191038828" />
+				<enum name="unit_type" value="scar_market" List.ItemID="-1409784190" />
+				<enum name="unit_type" value="exchange" List.ItemID="29762779" />
+				<enum name="unit_type" value="market_keybinding" List.ItemID="1512317763" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol" List.ItemID="711653020" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="387816879" List.ParentItemID="387816879">
+			<state_tree_node name="can_be_cancelled_state_tree_conditions" value="entity_construction_queries_mon\Can_Cancel_Construction" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="202708967" List.ParentItemID="202708967">
+			<list name="ui_extra_infos" overrideParent="True">
+				<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-711414810">
+					<file name="icon" value="influence_buff" />
+					<locstring name="description" value="0" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="2041455427" List.ParentItemID="2041455427">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food" List.ItemID="1675723097" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood" List.ItemID="-79625276" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food" List.ItemID="-473630647" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood" List.ItemID="1949068698" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\mongol\pack_building_mon" overrideParent="True" List.ItemID="-50819925" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1980213720" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\mongol\cancel_unpacking_building_mon" List.ItemID="285592054" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\market_silk_road_passive_ui_mon" List.ItemID="2042387282" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone" List.ItemID="1797897536" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone" List.ItemID="-964995269" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\mongol\dummy_unpacking_building_mon" List.ItemID="938714503" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food_bulk" List.ItemID="1926691290" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone_bulk" List.ItemID="-747732622" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood_bulk" List.ItemID="-439339118" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food_bulk" List.ItemID="851242161" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone_bulk" List.ItemID="119150859" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood_bulk" List.ItemID="-868617269" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="827068779" List.ParentItemID="827068779">
+			<list name="spawn_items" overrideParent="True">
+				<group name="spawn_item" List.ItemID="-743433165">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\mongol\unit_trade_cart_mon" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_market\produce_trade_cart" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+							<int name="quick_commands_slot_index" value="0" overrideParent="True" />
+							<enum name="quick_commands_hotkey" value="x_quick_command_y" overrideParent="True" />
+							<int name="quick_commands_priority" value="5" overrideParent="True" />
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+							<int name="quick_commands_priority" value="5" />
+							<int name="quick_commands_slot_index" value="2" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+							<int name="nominal_index" value="0" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<file name="ui_icon_name" value="" />
+					<string name="ui_tooltip_data_template" value="" />
+				</group>
+				<group name="spawn_item" comment="Double unit spawn" List.ItemID="-571074340">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\mongol\unit_trade_cart_double_mon" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="menu\mon_improved_production" overrideParent="True" />
+					<int name="number_to_spawn" value="2" overrideParent="True" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="-30" overrideParent="True" />
+						<float name="stone" value="60" overrideParent="True" />
+						<float name="gold" value="-30" overrideParent="True" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_market\produce_trade_cart" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+							<group name="ui_position">
+								<int name="ui_position_row" value="1" overrideParent="True" />
+								<int name="ui_position_column" value="1" overrideParent="True" />
+							</group>
+							<int name="command_card_priority" value="1" overrideParent="True" />
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="" overrideParent="True">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Upgrade" overrideParent="True" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\mon_improved" overrideParent="True" />
+							<int name="nominal_index" value="0" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<file name="ui_icon_name" value="" />
+					<string name="ui_tooltip_data_template" value="" />
+				</group>
+			</list>
+			<instance_reference name="rally_pass_type" value="pass_types\vehicle" overrideParent="True" />
+			<bool name="economic_rally_points_allowed" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1530133137" List.ParentItemID="1530133137">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-1559779187" List.ListAction="Append">
+					<string name="state_tree" value="upgrade_winds_of_change_reapply\reapplybuffs" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" comment="Make sure the building and moving building are referencing the same schema, if they are using different schemas unpacking will break." List.ItemID="-427887940" List.ParentItemID="-427887940">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols\market_mon" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="1917628896" List.ParentItemID="1917628896">
+			<int name="music_importance" value="30" overrideParent="True" />
+			<int name="combat_importance" value="-30" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="2083314507" List.ParentItemID="2083314507">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_trader_silkroad_stone_improved_mon" List.ItemID="-177343658" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_trader_silkroad_stone_mon" List.ItemID="-1800314740" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" overrideParent="True" List.ItemID="-242015308" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" comment="Ovoo district bonus.&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" List.ItemID="-507182293">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" List.ItemID="-949212176">
+								<list name="satisfying_entities" overrideParent="True">
+									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-1844893643" />
+									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-2103816575" />
+									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_large_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-299813583" />
+									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_district_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="1473561908" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073742200" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="district_ovoo\root" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-148518519" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="288366362">
+					<group name="tier" List.ItemID="608127990">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\econ_market_mon\tier2_econ_market_mon" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="299623758">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\econ_market_mon\tier3_econ_market_mon" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-455369968">
+					<group name="tier" List.ItemID="1231235990">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\outskirts\general\mon_market_02" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" overrideParent="True" List.ItemID="1314171212" List.ListAction="Append">
+			<float name="range_metres" value="0" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<bool name="is_root_generator" value="False" />
+			<int name="district_palette_id" value="0" overrideParent="True" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="129989" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_market" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1923425315" List.ParentItemID="1923425315">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\buildings\building_econ_market_mongol" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-959975828" List.ParentItemID="-959975828">
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1556013822" List.ParentItemID="1556013822">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-782232281" List.ParentItemID="-782232281">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="1183479221" />
+					<enum name="unit_type" value="trade_post" List.ItemID="1767874295" />
+					<enum name="unit_type" value="siegeable" List.ItemID="1396549008" />
+					<enum name="unit_type" value="packable_building" List.ItemID="-117202841" />
+					<enum name="unit_type" value="economy_building" List.ItemID="2017081662" />
+					<enum name="unit_type" value="scar_market" List.ItemID="352818308" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\mongol" List.ItemID="-1077121568" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="682870845" List.ParentItemID="682870845">
+				<state_tree_node name="can_be_cancelled_state_tree_conditions" value="campaignMod_entity_construction_queries_mon\Can_Cancel_Construction" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-438774886" List.ParentItemID="-438774886">
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-119462705">
+						<file name="icon" value="influence_buff" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-594139099" List.ParentItemID="-594139099">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food" List.ItemID="1306686181" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood" List.ItemID="975222048" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food" List.ItemID="1083182324" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood" List.ItemID="2019972143" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\pack_building_mon" overrideParent="True" List.ItemID="416263285" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="967748133" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\cancel_unpacking_building_mon" List.ItemID="2061534632" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\mongol\market_silk_road_passive_ui_mon" List.ItemID="614070644" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone" List.ItemID="1072691410" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone" List.ItemID="-740819078" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\dummy_unpacking_building_mon" List.ItemID="-158194970" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food_bulk" List.ItemID="58815938" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone_bulk" List.ItemID="158998262" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood_bulk" List.ItemID="628824377" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food_bulk" List.ItemID="-506664758" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone_bulk" List.ItemID="741802480" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood_bulk" List.ItemID="389636711" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1232546365" List.ParentItemID="1232546365">
+				<list name="spawn_items" overrideParent="True">
+					<group name="spawn_item" List.ItemID="-1150678146">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\races\mongol\unit_trade_cart_mon" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_market\produce_trade_cart" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="ui_quick_commands_info">
+								<int name="quick_commands_slot_index" value="0" />
+								<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+								<int name="quick_commands_priority" value="5" />
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+								<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+								<int name="quick_commands_priority" value="5" />
+								<int name="quick_commands_slot_index" value="2" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="0" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<file name="ui_icon_name" value="" />
+						<string name="ui_tooltip_data_template" value="" />
+					</group>
+					<group name="spawn_item" comment="Double unit spawn" List.ItemID="-190777946">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\races\mongol\unit_trade_cart_double_mon" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="menu\mon_improved_production" overrideParent="True" />
+						<int name="number_to_spawn" value="2" overrideParent="True" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="-50" overrideParent="True" />
+							<float name="stone" value="100" overrideParent="True" />
+							<float name="gold" value="-50" overrideParent="True" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_market\produce_trade_cart" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+							<template_reference name="command_card_info" value="ui_command_card_info">
+								<group name="ui_position">
+									<int name="ui_position_row" value="1" />
+									<int name="ui_position_column" value="1" />
+								</group>
+								<int name="command_card_priority" value="1" />
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\mon_improved" />
+								<int name="nominal_index" value="0" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<file name="ui_icon_name" value="" />
+						<string name="ui_tooltip_data_template" value="" />
+					</group>
+				</list>
+				<instance_reference name="rally_pass_type" value="pass_types\vehicle" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="115031057" List.ParentItemID="115031057">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols\market_mon" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="2012011215" List.ParentItemID="2012011215">
+				<int name="music_importance" value="20" overrideParent="True" />
+				<int name="combat_importance" value="-10" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" overrideParent="True" List.ItemID="-75453743" List.ListAction="Append">
+				<bool name="update_on_upgrade_changed" value="False" />
+				<bool name="update_on_construction_complete" value="True" />
+				<list name="district_bonuses" overrideParent="True">
+					<template_reference name="district_bonus" value="district_bonus" comment="Ovoo district bonus.&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" List.ItemID="1357323394">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements">
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="77298096">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="633390950" />
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="1255552017" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742201" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_district_ovoo\root" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+					<template_reference name="district_bonus" value="district_bonus" comment="Stupa specialization bonus (Monasteries grant the Ovoo bonus).&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" overrideParent="True" List.ItemID="-1513991652">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-2006276165">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\races\mongol\research\upgrade_religious_monastery_ovoo_mon" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="1902737933">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="2096138270" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742202" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_district_ovoo\root" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1814790854" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="1026893433">
+						<group name="tier" List.ItemID="667295397">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\econ_market_mon\tier2_econ_market_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-882891862">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\econ_market_mon\tier3_econ_market_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="-1270061847">
+						<group name="tier" List.ItemID="1684967946">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\outskirts\general\mon_market_02" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" overrideParent="True" List.ItemID="77621621" List.ListAction="Append">
+				<float name="range_metres" value="0" overrideParent="True" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" />
+				<bool name="is_root_generator" value="False" />
+				<int name="district_palette_id" value="0" overrideParent="True" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="129989" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_market" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-705202416" List.ParentItemID="-705202416">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\buildings\building_econ_market_mongol" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1940419197" List.ParentItemID="-1940419197">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="95489877" List.ParentItemID="95489877">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="-1957038025" />
+					<enum name="unit_type" value="trade_post" List.ItemID="2115920091" />
+					<enum name="unit_type" value="siegeable" List.ItemID="-1908423673" />
+					<enum name="unit_type" value="packable_building" List.ItemID="2122291666" />
+					<enum name="unit_type" value="economy_building" List.ItemID="550118380" />
+					<enum name="unit_type" value="scar_market" List.ItemID="-912666017" />
+					<enum name="unit_type" value="exchange" List.ItemID="745006525" />
+					<enum name="unit_type" value="market_keybinding" List.ItemID="-970156596" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\mongol" List.ItemID="-1591129514" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="387816879" List.ParentItemID="387816879">
+				<state_tree_node name="can_be_cancelled_state_tree_conditions" value="xp3_entity_construction_queries_mon\Can_Cancel_Construction" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="202708967" List.ParentItemID="202708967">
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-55412301">
+						<file name="icon" value="influence_buff" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="2041455427" List.ParentItemID="2041455427">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_food" List.ItemID="-1589993403" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_wood" List.ItemID="-1221889632" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_food" List.ItemID="-578332034" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_wood" List.ItemID="2011746428" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\pack_building_mon" overrideParent="True" List.ItemID="2062107098" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1078632571" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\cancel_unpacking_building_mon" List.ItemID="-1623067975" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\mongol\market_silk_road_passive_ui_mon" List.ItemID="-1638205133" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_buy_stone" List.ItemID="1305567950" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_market_sell_stone" List.ItemID="-183345057" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\dummy_unpacking_building_mon" List.ItemID="2096639080" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="827068779" List.ParentItemID="827068779">
+				<list name="spawn_items" overrideParent="True">
+					<group name="spawn_item" List.ItemID="91464025">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\races\mongol\unit_trade_cart_mon" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_market\produce_trade_cart" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+								<int name="quick_commands_slot_index" value="0" overrideParent="True" />
+								<enum name="quick_commands_hotkey" value="x_quick_command_y" overrideParent="True" />
+								<int name="quick_commands_priority" value="5" overrideParent="True" />
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+								<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+								<int name="quick_commands_priority" value="5" />
+								<int name="quick_commands_slot_index" value="2" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+								<int name="nominal_index" value="0" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<file name="ui_icon_name" value="" />
+						<string name="ui_tooltip_data_template" value="" />
+					</group>
+					<group name="spawn_item" comment="Double unit spawn" List.ItemID="-1816649617">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\races\mongol\unit_trade_cart_double_mon" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="menu\mon_improved_production" overrideParent="True" />
+						<int name="number_to_spawn" value="2" overrideParent="True" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="-30" overrideParent="True" />
+							<float name="stone" value="60" overrideParent="True" />
+							<float name="gold" value="-30" overrideParent="True" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_market\produce_trade_cart" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+								<group name="ui_position">
+									<int name="ui_position_row" value="1" overrideParent="True" />
+									<int name="ui_position_column" value="1" overrideParent="True" />
+								</group>
+								<int name="command_card_priority" value="1" overrideParent="True" />
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\mon_improved" overrideParent="True" />
+								<int name="nominal_index" value="0" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<file name="ui_icon_name" value="" />
+						<string name="ui_tooltip_data_template" value="" />
+					</group>
+				</list>
+				<instance_reference name="rally_pass_type" value="pass_types\vehicle" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" comment="Make sure the building and moving building are referencing the same schema, if they are using different schemas unpacking will break." List.ItemID="-427887940" List.ParentItemID="-427887940">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols\market_mon" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="1917628896" List.ParentItemID="1917628896">
+				<int name="music_importance" value="30" overrideParent="True" />
+				<int name="combat_importance" value="-30" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="2083314507" List.ParentItemID="2083314507">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_trader_silkroad_stone_improved_mon" List.ItemID="-1744735642" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_trader_silkroad_stone_mon" List.ItemID="-1470086549" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" overrideParent="True" List.ItemID="-1619855104" List.ListAction="Append">
+				<bool name="update_on_upgrade_changed" value="False" />
+				<bool name="update_on_construction_complete" value="True" />
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" comment="Ovoo district bonus.&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" List.ItemID="-641056071">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements">
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="-696190458">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="1727333986" />
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="959498136" />
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_large_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-13753833" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742203" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="xp3_district_ovoo\root" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+					<template_reference name="district_bonus" value="district_bonus" comment="Stupa specialization bonus (Monasteries grant the Ovoo bonus).&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" overrideParent="True" List.ItemID="2080827037">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1125291365">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\races\mongol\research\upgrade_religious_monastery_ovoo_mon" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="-1745448954">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_district_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="1751850637" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742204" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="xp3_district_ovoo\root" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1605971877" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-610804187">
+						<group name="tier" List.ItemID="-719089512">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\econ_market_mon\tier2_econ_market_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-99523084">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\econ_market_mon\tier3_econ_market_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="1746778992">
+						<group name="tier" List.ItemID="-1481798373">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\outskirts\general\mon_market_02" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" overrideParent="True" List.ItemID="-2030916338" List.ListAction="Append">
+				<float name="range_metres" value="0" overrideParent="True" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" />
+				<bool name="is_root_generator" value="False" />
+				<int name="district_palette_id" value="0" overrideParent="True" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="129989" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_market" />
+	</variant>
+</instance>

@@ -1,0 +1,295 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1524391972" List.ParentItemID="1524391972">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1881356559" List.ParentItemID="-1881356559">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\english" List.ItemID="241188593" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="820923880" List.ParentItemID="820923880">
+			<list name="ui_extra_infos" overrideParent="True">
+				<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-886260036">
+					<file name="icon" value="influence_buff" overrideParent="True" />
+					<locstring name="description" value="0" />
+					<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
+						<list name="formatter_arguments" overrideParent="True">
+							<int name="int_value" value="20" overrideParent="True" List.ItemID="443587957" />
+							<int name="int_value" value="25" overrideParent="True" List.ItemID="-504728182" />
+							<int name="int_value" value="30" overrideParent="True" List.ItemID="593752133" />
+							<int name="int_value" value="30" overrideParent="True" List.ItemID="-602952482" />
+						</list>
+						<locstring name="formatter" value="0" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-260919717" List.ParentItemID="-260919717">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="183625884" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\english\mill_influence_eng" List.ItemID="318614712" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1663720115" List.ParentItemID="-1663720115">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_2" List.ItemID="410878829" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_3" List.ItemID="1832433393" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_4" List.ItemID="-1269233933" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_scout_forester" List.ItemID="416734145" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\unit\upgrade_unit_town_center_wheelbarrow_1" List.ItemID="-154806760" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_villager_hunting_gear_1" List.ItemID="-884411832" />
+				<instance_reference name="upgrade" value="upgrade\races\english\research\upgrade_farm_improved_enclosures_eng" List.ItemID="-360357275" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-111153485" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="881526963">
+					<group name="tier" List.ItemID="-274236814">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\econ_food_eng\tier1_econ_food_control_eng" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-251440107">
+					<group name="tier" List.ItemID="-85308556">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\core\outskirts\resource" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="-865009392" List.ListAction="Append">
+			<float name="range_metres" value="8" overrideParent="True" />
+			<bool name="is_root_generator" value="True" />
+			<int name="generator_value" value="0" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<int name="district_palette_id" value="1" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="170823" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_food" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-430481685" List.ParentItemID="-430481685">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2038601823" List.ParentItemID="-2038601823">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="-71778268" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1714080721" List.ParentItemID="-1714080721">
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="1559568274">
+						<file name="icon" value="influence_buff" overrideParent="True" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
+							<list name="formatter_arguments" overrideParent="True">
+								<int name="int_value" value="15" List.ItemID="1813770056" />
+							</list>
+							<locstring name="formatter" value="0" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1154466073" List.ParentItemID="1154466073">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="392057668" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\english\mill_influence_eng" List.ItemID="-1461159307" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="654980479" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="512934695">
+						<group name="tier" List.ItemID="1907451646">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\econ_food_eng\tier1_econ_food_control_eng" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="-85233362">
+						<group name="tier" List.ItemID="-1284836445">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\core\outskirts\resource" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="1512661173" List.ListAction="Append">
+				<float name="range_metres" value="8" overrideParent="True" />
+				<bool name="is_root_generator" value="True" />
+				<int name="generator_value" value="0" />
+				<bool name="disable_generation_on_spawn" value="False" />
+				<int name="district_palette_id" value="1" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="170823" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_food" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1524391972" List.ParentItemID="1524391972">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1881356559" List.ParentItemID="-1881356559">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="-1918169809" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="820923880" List.ParentItemID="820923880">
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="1934438753">
+						<file name="icon" value="influence_buff" overrideParent="True" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
+							<list name="formatter_arguments" overrideParent="True">
+								<int name="int_value" value="15" List.ItemID="1788805679" />
+								<int name="int_value" value="20" overrideParent="True" List.ItemID="-1300500868" />
+								<int name="int_value" value="25" overrideParent="True" List.ItemID="1152468315" />
+								<int name="int_value" value="30" overrideParent="True" List.ItemID="-522979471" />
+							</list>
+							<locstring name="formatter" value="0" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-260919717" List.ParentItemID="-260919717">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-298257478" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\english\mill_influence_eng" List.ItemID="46497351" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1663720115" List.ParentItemID="-1663720115">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_2" List.ItemID="-510292913" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_3" List.ItemID="-1852955316" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_4" List.ItemID="-906374503" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_scout_forester" List.ItemID="-2109406299" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\unit\upgrade_unit_town_center_wheelbarrow_1" List.ItemID="592767677" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_villager_hunting_gear_1" List.ItemID="-910605678" />
+					<instance_reference name="upgrade" value="upgrade\races\english\research\upgrade_farm_improved_enclosures_eng" List.ItemID="1690370973" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1440563034" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="1150138568">
+						<group name="tier" List.ItemID="597020686">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\econ_food_eng\tier1_econ_food_control_eng" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="1686745996">
+						<group name="tier" List.ItemID="-1979597958">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\core\outskirts\resource" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="-1089255701" List.ListAction="Append">
+				<float name="range_metres" value="8" overrideParent="True" />
+				<bool name="is_root_generator" value="True" />
+				<int name="generator_value" value="0" />
+				<bool name="disable_generation_on_spawn" value="False" />
+				<int name="district_palette_id" value="1" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="170823" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_food" />
+	</variant>
+</instance>

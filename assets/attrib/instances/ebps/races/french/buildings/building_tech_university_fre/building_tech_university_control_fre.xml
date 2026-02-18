@@ -1,0 +1,443 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="15803673" List.ParentItemID="15803673">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="479748847" List.ParentItemID="479748847">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="death_seconds" value="-1" overrideParent="True" />
+			<bool name="delete_when_dead" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1776023445" List.ParentItemID="-1776023445">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1152855297" List.ParentItemID="-1152855297">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\french" List.ItemID="-134757247" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="159945004" List.ParentItemID="159945004">
+			<float name="orientation" value="0" overrideParent="True" />
+			<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1002958582" List.ParentItemID="-1002958582">
+			<string name="selection_datatemplate" value="ResearchSelectionDataTemplate" overrideParent="True" />
+			<group name="ui_codex_info">
+				<bool name="exclusive" value="True" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1815435484" List.ParentItemID="-1815435484">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_chemistry" List.ItemID="84942304" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_architecture_4" List.ItemID="1779508592" />
+				<instance_reference name="upgrade" value="upgrade\races\french\research\upgrade_cavalry_bloodline_fre" List.ItemID="594485512" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_manatarms_elite_army_tactics" List.ItemID="1679282747" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_incendiary" List.ItemID="1802255671" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_works" List.ItemID="840400106" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_leadshot" List.ItemID="-1435883113" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_archer_silkstring" List.ItemID="-905409694" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="4435770" List.ParentItemID="4435770">
+			<list name="roads" overrideParent="True">
+				<template_reference name="road" value="roads\road_properties" List.ItemID="-639758016">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" overrideParent="True" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines" overrideParent="True">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="696995630">
+							<int name="draw_sort_order" value="100000" />
+							<float name="end_fade" value="0.4" />
+							<float name="width" value="3" overrideParent="True" />
+							<int name="texture_tiling" value="1" overrideParent="True" />
+							<file name="texture_filename" value="civilizations\dirt\road_4m_dirt_trail_a" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="161255346">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines" overrideParent="True">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="-29675138">
+							<int name="draw_sort_order" value="100000" />
+							<float name="end_fade" value="0.4" />
+							<float name="width" value="3" overrideParent="True" />
+							<int name="texture_tiling" value="1" overrideParent="True" />
+							<file name="texture_filename" value="civilizations\roads\roads_fre_common_a_age_02_3m" overrideParent="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="692529960">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines" overrideParent="True">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="-772147132">
+							<int name="draw_sort_order" value="100000" overrideParent="True" />
+							<float name="end_fade" value="0.25" overrideParent="True" />
+							<float name="width" value="3" overrideParent="True" />
+							<int name="texture_tiling" value="1" overrideParent="True" />
+							<file name="texture_filename" value="civilizations\roads\roads_fre_common_a_age_03_3m" overrideParent="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="-1369315341">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines" overrideParent="True">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="1744573284">
+							<int name="draw_sort_order" value="100000" overrideParent="True" />
+							<float name="end_fade" value="0.25" overrideParent="True" />
+							<float name="width" value="3" overrideParent="True" />
+							<int name="texture_tiling" value="1" overrideParent="True" />
+							<file name="texture_filename" value="civilizations\roads\roads_fre_fan_a_age_04_3m" overrideParent="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1214373328" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="1247563646">
+					<group name="tier" List.ItemID="956858501">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\buildings\tech_university_fre\tier4_tech_university_control_fre" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="222520993">
+					<group name="tier" List.ItemID="-1426374689">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\general\university" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="132746" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_university" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2093918889" List.ParentItemID="2093918889">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-935753417" List.ParentItemID="-935753417">
+				<bool name="can_repair" value="True" overrideParent="True" />
+				<float name="death_seconds" value="-1" overrideParent="True" />
+				<bool name="delete_when_dead" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1330955559" List.ParentItemID="-1330955559">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\french" List.ItemID="-778329164" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="684861278" List.ParentItemID="684861278">
+				<float name="orientation" value="0" overrideParent="True" />
+				<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1190747093" List.ParentItemID="-1190747093">
+				<string name="selection_datatemplate" value="ResearchSelectionDataTemplate" overrideParent="True" />
+				<group name="ui_codex_info">
+					<bool name="exclusive" value="True" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="917184575" List.ParentItemID="917184575">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_chemistry" List.ItemID="-1391556355" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_mathematics" List.ItemID="-628881622" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_architecture_4" List.ItemID="-1070978800" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_transport_construction_speed" List.ItemID="1242760988" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_transport_doused_armor" List.ItemID="1693475268" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_corned_gunpowder" List.ItemID="24210188" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="1058662619" List.ParentItemID="1058662619">
+				<list name="roads" overrideParent="True">
+					<template_reference name="road" value="roads\road_properties" List.ItemID="-1721426573">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" overrideParent="True" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines" overrideParent="True">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="-651096947">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.4" />
+								<float name="width" value="3" overrideParent="True" />
+								<int name="texture_tiling" value="1" overrideParent="True" />
+								<file name="texture_filename" value="civilizations\dirt\road_4m_dirt_trail_a" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="2098214586">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines" overrideParent="True">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="1683622128">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.4" />
+								<float name="width" value="3" overrideParent="True" />
+								<int name="texture_tiling" value="1" overrideParent="True" />
+								<file name="texture_filename" value="civilizations\roads\roads_fre_common_a_age_02_3m" overrideParent="True" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="2035210157">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines" overrideParent="True">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="-531389103">
+								<int name="draw_sort_order" value="100000" overrideParent="True" />
+								<float name="end_fade" value="0.25" overrideParent="True" />
+								<float name="width" value="3" overrideParent="True" />
+								<int name="texture_tiling" value="1" overrideParent="True" />
+								<file name="texture_filename" value="civilizations\roads\roads_fre_common_a_age_03_3m" overrideParent="True" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="1917221205">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines" overrideParent="True">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="765856223">
+								<int name="draw_sort_order" value="100000" overrideParent="True" />
+								<float name="end_fade" value="0.25" overrideParent="True" />
+								<float name="width" value="3" overrideParent="True" />
+								<int name="texture_tiling" value="1" overrideParent="True" />
+								<file name="texture_filename" value="civilizations\roads\roads_fre_fan_a_age_04_3m" overrideParent="True" />
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1665143147" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" List.ItemID="-1512662754">
+						<group name="tier" List.ItemID="613257046">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\buildings\tech_university_fre\tier4_tech_university_control_fre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="737839481">
+						<group name="tier" List.ItemID="-1172040181">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\general\university" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="132746" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_university" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="15803673" List.ParentItemID="15803673">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="479748847" List.ParentItemID="479748847">
+				<bool name="can_repair" value="True" overrideParent="True" />
+				<float name="death_seconds" value="-1" overrideParent="True" />
+				<bool name="delete_when_dead" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1776023445" List.ParentItemID="-1776023445">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1152855297" List.ParentItemID="-1152855297">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\french" List.ItemID="1375107406" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="159945004" List.ParentItemID="159945004">
+				<float name="orientation" value="0" overrideParent="True" />
+				<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1002958582" List.ParentItemID="-1002958582">
+				<string name="selection_datatemplate" value="ResearchSelectionDataTemplate" overrideParent="True" />
+				<group name="ui_codex_info">
+					<bool name="exclusive" value="True" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1815435484" List.ParentItemID="-1815435484">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_chemistry" List.ItemID="-498551439" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_architecture_4" List.ItemID="-1375153649" />
+					<instance_reference name="upgrade" value="upgrade\races\french\research\upgrade_cavalry_bloodline_fre" List.ItemID="789579386" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_manatarms_elite_army_tactics" List.ItemID="-2135391285" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_incendiary" List.ItemID="1056487520" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_works" List.ItemID="-1432027481" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="4435770" List.ParentItemID="4435770">
+				<list name="roads" overrideParent="True">
+					<template_reference name="road" value="roads\road_properties" List.ItemID="-1454846245">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" overrideParent="True" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines" overrideParent="True">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="-1470169149">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.4" />
+								<float name="width" value="3" overrideParent="True" />
+								<int name="texture_tiling" value="1" overrideParent="True" />
+								<file name="texture_filename" value="civilizations\dirt\road_4m_dirt_trail_a" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="-844729333">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines" overrideParent="True">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="-1931275081">
+								<int name="draw_sort_order" value="100000" />
+								<float name="end_fade" value="0.4" />
+								<float name="width" value="3" overrideParent="True" />
+								<int name="texture_tiling" value="1" overrideParent="True" />
+								<file name="texture_filename" value="civilizations\roads\roads_fre_common_a_age_02_3m" overrideParent="True" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="-1052102113">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines" overrideParent="True">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="1319235402">
+								<int name="draw_sort_order" value="100000" overrideParent="True" />
+								<float name="end_fade" value="0.25" overrideParent="True" />
+								<float name="width" value="3" overrideParent="True" />
+								<int name="texture_tiling" value="1" overrideParent="True" />
+								<file name="texture_filename" value="civilizations\roads\roads_fre_common_a_age_03_3m" overrideParent="True" />
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="road" value="roads\road_properties" List.ItemID="306434982">
+						<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<list name="curb_splines">
+						</list>
+						<list name="road_splines" overrideParent="True">
+							<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" overrideParent="True" List.ItemID="-1099584684">
+								<int name="draw_sort_order" value="100000" overrideParent="True" />
+								<float name="end_fade" value="0.25" overrideParent="True" />
+								<float name="width" value="3" overrideParent="True" />
+								<int name="texture_tiling" value="1" overrideParent="True" />
+								<file name="texture_filename" value="civilizations\roads\roads_fre_fan_a_age_04_3m" overrideParent="True" />
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="454747128" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" List.ItemID="611477139">
+						<group name="tier" List.ItemID="415530440">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\buildings\tech_university_fre\tier4_tech_university_control_fre" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="-1246577943">
+						<group name="tier" List.ItemID="-746999355">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\general\university" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="132746" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_university" />
+	</variant>
+</instance>
