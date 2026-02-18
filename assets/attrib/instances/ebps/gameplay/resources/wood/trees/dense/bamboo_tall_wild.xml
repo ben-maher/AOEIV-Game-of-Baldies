@@ -8,7 +8,8 @@
 			<file name="icon_name" value="gaia\bamboo_tall_wild" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773" List.ParentItemID="653873773">
-			<group name="on_depletion">
+			
+			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
 				<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\bamboo_tall_wild\bamboo_tall_wild_depleted" overrideParent="True" />
 			</group>
 			<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\bamboo_tall_wild\bamboo_tall_wild" overrideParent="True" />
@@ -34,7 +35,8 @@
 				<file name="icon_name" value="gaia\bamboo_tall_wild" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480" List.ParentItemID="217008480">
-				<group name="on_depletion">
+				
+			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
 					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\bamboo_tall_wild\bamboo_tall_wild_depleted" overrideParent="True" />
 				</group>
 				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\bamboo_tall_wild\bamboo_tall_wild" overrideParent="True" />

@@ -8,7 +8,8 @@
 			<file name="icon_name" value="gaia\mangrove_small" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773" List.ParentItemID="653873773">
-			<group name="on_depletion">
+			
+			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
 				<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\mangrove_small\mangrove_small_depleted" overrideParent="True" />
 			</group>
 			<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\mangrove_small\mangrove_small" overrideParent="True" />
@@ -26,7 +27,8 @@
 				<file name="icon_name" value="gaia\palm_date_small" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480" List.ParentItemID="217008480">
-				<group name="on_depletion">
+				
+			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
 					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\palm_date_small\palm_date_small_depleted" overrideParent="True" />
 				</group>
 				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\palm_date_small\palm_date_small" overrideParent="True" />

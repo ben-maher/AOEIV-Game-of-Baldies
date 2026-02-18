@@ -129,7 +129,8 @@
 			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627">
-			<group name="on_depletion">
+			
+			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
 				<file name="depleted_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\willow_med_wild\willow_med_wild_depleted" overrideParent="True" />
 			</group>
 			<file name="enabled_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\willow_med_wild\willow_med_wild" overrideParent="True" />
@@ -268,7 +269,8 @@
 				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627">
-				<group name="on_depletion">
+				
+			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion">
 					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\willow_med_wild\willow_med_wild_depleted" overrideParent="True" />
 				</group>
 				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_temperate_deciduous\trees\willow_med_wild\willow_med_wild" overrideParent="True" />

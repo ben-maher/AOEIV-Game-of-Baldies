@@ -129,7 +129,8 @@
 			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627">
-			<group name="on_depletion" overrideParent="True">
+			
+			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion" overrideParent="True">
 				<bool name="remove_from_pathing_when_depleted" value="True" />
 				<float name="linger_duration" value="-1" />
 				<bool name="selectable_when_depleted" value="False" />
@@ -272,7 +273,8 @@
 				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627">
-				<group name="on_depletion" overrideParent="True">
+				
+			<float name="initial_amount" value="1500" overrideParent="True" /><group name="on_depletion" overrideParent="True">
 					<bool name="remove_from_pathing_when_depleted" value="True" />
 					<float name="linger_duration" value="-1" />
 					<bool name="selectable_when_depleted" value="False" />
