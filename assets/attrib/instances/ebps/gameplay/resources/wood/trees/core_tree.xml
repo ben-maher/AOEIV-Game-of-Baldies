@@ -1,6 +1,6 @@
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
-		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1283091429">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="774620788">
 			<file name="alternate_sua" value="art\environment\common\trees\archetypes\base_tree\base_tree_1x1" />
 			<bool name="always_revealed_in_fow" value="False" />
 			<bool name="is_visible_in_game" value="True" />
@@ -15,12 +15,12 @@
 			<float name="entity_scale" value="100" />
 			<enum name="subclass_type" value="Tree" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="-1987632451">
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="306027026">
 			<float name="rotate_snap" value="360" />
 			<bool name="kill_paradrop" value="False" />
 			<enum name="transferable" value="None" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-341374611">
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1781474969">
 			<bool name="snap_to_terrain" value="True" />
 			<float name="extra_build_test_footprint_x" value="0" />
 			<float name="extra_build_test_footprint_z" value="0" />
@@ -36,12 +36,12 @@
 			<bool name="forced_axis_aligned_footprint" value="False" />
 			<bool name="remove_if_constructed_over" value="True" />
 			<list name="snap_to_surface_types">
-				<enum name="surface_type" value="Ground" List.ItemID="-1783672575" />
+				<enum name="surface_type" value="Ground" List.ItemID="1021904239" />
 			</list>
 			<bool name="snap_to_construction_grid" value="False" />
 			<bool name="despawn_if_constructed_over" value="False" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="980811237">
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1277123903">
 			<instance_reference name="hit_material" value="hit_material\wood" />
 			<template_reference name="projectile_reflect_option" value="options\none">
 			</template_reference>
@@ -64,13 +64,13 @@
 				<bool name="collide_with_missed_ranged_weapon_shots" value="True" />
 			</group>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1746455763">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1770082837">
 			<enum name="weapon_targeting" value="manual_only" />
 			<bool name="intersection_testing" value="True" />
 			<list name="unit_type_list">
-				<enum name="unit_type" value="gaia" List.ItemID="-1699680907" />
-				<enum name="unit_type" value="resource" List.ItemID="314404389" />
-				<enum name="unit_type" value="tree" List.ItemID="710577119" />
+				<enum name="unit_type" value="gaia" List.ItemID="-30647899" />
+				<enum name="unit_type" value="resource" List.ItemID="1102906854" />
+				<enum name="unit_type" value="tree" List.ItemID="907777393" />
 			</list>
 			<list name="race_type_list">
 			</list>
@@ -94,7 +94,7 @@
 			<list name="unit_type_list_ui_appear_as_only">
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1386568422">
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="973995323">
 			<bool name="ap_killed_kicker" value="True" />
 			<bool name="ap_loss_kicker" value="True" />
 			<float name="decorator_height" value="-1" />
@@ -219,9 +219,9 @@
 			<bool name="static_selection_bounds" value="True" />
 			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1359765434">
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1332698594">
 			<list name="type_list">
-				<group name="type" List.ItemID="-2008137817">
+				<group name="type" List.ItemID="287629785">
 					<enum name="interaction_type" value="resource_gather" />
 					<int name="prefer_number" value="4" />
 					<int name="max_number" value="-1" />
@@ -230,7 +230,7 @@
 					</template_reference>
 					<bool name="block_pathing_when_interacted" value="False" />
 				</group>
-				<group name="type" List.ItemID="-1634068715">
+				<group name="type" List.ItemID="-1885639835">
 					<enum name="interaction_type" value="resource_fell" />
 					<int name="prefer_number" value="4" />
 					<int name="max_number" value="-1" />
@@ -241,8 +241,8 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="1849172879">
-			<float name="initial_amount" value="1500" />
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773">
+			<float name="initial_amount" value="150" />
 			<float name="gather_distance" value="1" />
 			<instance_reference name="resource_sub_type" value="resource_sub_type\tree" />
 			<bool name="is_resource_spawner" value="False" />
@@ -273,7 +273,7 @@
 			<int name="num_gatherers_to_assign_by_vps" value="7" />
 			<bool name="ui_show_as_infinity" value="False" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1553241872">
+		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="181960080">
 			<bool name="cant_build" value="False" />
 			<group name="impass_simboxes">
 				<bool name="default_simbox" value="True" />
@@ -281,9 +281,9 @@
 				</list>
 			</group>
 			<list name="block_path">
-				<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="346946017" />
-				<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="1138746856" />
-				<instance_reference name="path_type" value="pass_types\water_default" List.ItemID="-1201624300" />
+				<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="-1689430416" />
+				<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="1771487188" />
+				<instance_reference name="path_type" value="pass_types\water_default" List.ItemID="243479078" />
 			</list>
 			<bool name="should_rasterize_partial_cells" value="False" />
 			<enum name="blocker_lifetime_type" value="match_entity" />
@@ -295,7 +295,7 @@
 			</group>
 			<bool name="attach_gap_fillers" value="False" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="1555697042">
+		<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="86957307">
 			<list name="additional_boundary_simboxes">
 			</list>
 			<list name="waypoint_caching">
@@ -305,7 +305,7 @@
 			<list name="center_cells">
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-76779603">
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-1711129674">
 			<list name="rtpc_events">
 			</list>
 			<list name="sound_banks">
@@ -314,10 +314,10 @@
 			<int name="music_importance" value="0" />
 			<int name="combat_importance" value="0" />
 			<list name="select_audible_to_relation_list">
-				<enum name="relationship_type" value="neutral" List.ItemID="706948791" />
+				<enum name="relationship_type" value="neutral" List.ItemID="715348172" />
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-767031097">
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1181276872">
 			<instance_reference name="schema" value="statemodel_schema\tree" />
 		</template_reference>
 	</list>
@@ -325,7 +325,7 @@
 	<instance_reference name="parent_pbg" value="" />
 	<variant name="xp3">
 		<list name="extensions">
-			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1358920399">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="452662694">
 				<file name="alternate_sua" value="art\environment\common\trees\archetypes\base_tree\base_tree_1x1" />
 				<bool name="always_revealed_in_fow" value="False" />
 				<bool name="is_visible_in_game" value="True" />
@@ -340,12 +340,12 @@
 				<float name="entity_scale" value="100" />
 				<enum name="subclass_type" value="Tree" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="-683684979">
+			<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="1872758206">
 				<float name="rotate_snap" value="360" />
 				<bool name="kill_paradrop" value="False" />
 				<enum name="transferable" value="None" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1281511991">
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1076123301">
 				<bool name="snap_to_terrain" value="True" />
 				<float name="extra_build_test_footprint_x" value="0" />
 				<float name="extra_build_test_footprint_z" value="0" />
@@ -361,12 +361,12 @@
 				<bool name="forced_axis_aligned_footprint" value="False" />
 				<bool name="remove_if_constructed_over" value="True" />
 				<list name="snap_to_surface_types">
-					<enum name="surface_type" value="Ground" List.ItemID="503372358" />
+					<enum name="surface_type" value="Ground" List.ItemID="2012597590" />
 				</list>
 				<bool name="snap_to_construction_grid" value="False" />
 				<bool name="despawn_if_constructed_over" value="False" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1525064141">
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1914784065">
 				<instance_reference name="hit_material" value="hit_material\wood" />
 				<template_reference name="projectile_reflect_option" value="options\none">
 				</template_reference>
@@ -389,13 +389,13 @@
 					<bool name="collide_with_missed_ranged_weapon_shots" value="True" />
 				</group>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="917713907">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1006231007">
 				<enum name="weapon_targeting" value="manual_only" />
 				<bool name="intersection_testing" value="True" />
 				<list name="unit_type_list">
-					<enum name="unit_type" value="gaia" List.ItemID="-193329386" />
-					<enum name="unit_type" value="resource" List.ItemID="804221118" />
-					<enum name="unit_type" value="tree" List.ItemID="-74668160" />
+					<enum name="unit_type" value="gaia" List.ItemID="1205314610" />
+					<enum name="unit_type" value="resource" List.ItemID="-354323291" />
+					<enum name="unit_type" value="tree" List.ItemID="-1205365784" />
 				</list>
 				<list name="race_type_list">
 				</list>
@@ -419,7 +419,7 @@
 				<list name="unit_type_list_ui_appear_as_only">
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1198835284">
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-522989721">
 				<bool name="ap_killed_kicker" value="True" />
 				<bool name="ap_loss_kicker" value="True" />
 				<float name="decorator_height" value="-1" />
@@ -544,9 +544,9 @@
 				<bool name="static_selection_bounds" value="True" />
 				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1528397280">
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="220297339">
 				<list name="type_list">
-					<group name="type" List.ItemID="-1553307249">
+					<group name="type" List.ItemID="487039403">
 						<enum name="interaction_type" value="resource_gather" />
 						<int name="prefer_number" value="4" />
 						<int name="max_number" value="-1" />
@@ -555,7 +555,7 @@
 						</template_reference>
 						<bool name="block_pathing_when_interacted" value="False" />
 					</group>
-					<group name="type" List.ItemID="-2038625111">
+					<group name="type" List.ItemID="1911968959">
 						<enum name="interaction_type" value="resource_fell" />
 						<int name="prefer_number" value="4" />
 						<int name="max_number" value="-1" />
@@ -566,7 +566,7 @@
 					</group>
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="1094808459">
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480">
 				<float name="initial_amount" value="150" />
 				<float name="gather_distance" value="1" />
 				<instance_reference name="resource_sub_type" value="resource_sub_type\tree" />
@@ -598,7 +598,7 @@
 				<int name="num_gatherers_to_assign_by_vps" value="7" />
 				<bool name="ui_show_as_infinity" value="False" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="750970848">
+			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="1002563832">
 				<bool name="cant_build" value="False" />
 				<group name="impass_simboxes">
 					<bool name="default_simbox" value="True" />
@@ -606,9 +606,9 @@
 					</list>
 				</group>
 				<list name="block_path">
-					<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="1117763498" />
-					<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="-405039639" />
-					<instance_reference name="path_type" value="pass_types\water_default" List.ItemID="1061764699" />
+					<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="-769716336" />
+					<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="268049532" />
+					<instance_reference name="path_type" value="pass_types\water_default" List.ItemID="281466900" />
 				</list>
 				<bool name="should_rasterize_partial_cells" value="False" />
 				<enum name="blocker_lifetime_type" value="match_entity" />
@@ -620,7 +620,7 @@
 				</group>
 				<bool name="attach_gap_fillers" value="False" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="-1314028897">
+			<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="654766858">
 				<list name="additional_boundary_simboxes">
 				</list>
 				<list name="waypoint_caching">
@@ -630,7 +630,7 @@
 				<list name="center_cells">
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-1384553386">
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-1196786661">
 				<list name="rtpc_events">
 				</list>
 				<list name="sound_banks">
@@ -639,10 +639,10 @@
 				<int name="music_importance" value="0" />
 				<int name="combat_importance" value="0" />
 				<list name="select_audible_to_relation_list">
-					<enum name="relationship_type" value="neutral" List.ItemID="1316953867" />
+					<enum name="relationship_type" value="neutral" List.ItemID="-904481007" />
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1600689812">
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="580922233">
 				<instance_reference name="schema" value="statemodel_schema\tree" />
 			</template_reference>
 		</list>
@@ -651,7 +651,7 @@
 	</variant>
 	<variant name="hre_brawl">
 		<list name="extensions">
-			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-663158844">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="407095336">
 				<file name="alternate_sua" value="art\environment\common\trees\archetypes\base_tree\base_tree_1x1" />
 				<bool name="always_revealed_in_fow" value="False" />
 				<bool name="is_visible_in_game" value="True" />
@@ -666,12 +666,12 @@
 				<float name="entity_scale" value="100" />
 				<enum name="subclass_type" value="Tree" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="-1193443298">
+			<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="-1231502149">
 				<float name="rotate_snap" value="360" />
 				<bool name="kill_paradrop" value="False" />
 				<enum name="transferable" value="None" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-641346473">
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1658439903">
 				<bool name="snap_to_terrain" value="True" />
 				<float name="extra_build_test_footprint_x" value="0" />
 				<float name="extra_build_test_footprint_z" value="0" />
@@ -687,12 +687,12 @@
 				<bool name="forced_axis_aligned_footprint" value="False" />
 				<bool name="remove_if_constructed_over" value="True" />
 				<list name="snap_to_surface_types">
-					<enum name="surface_type" value="Ground" List.ItemID="-2140056551" />
+					<enum name="surface_type" value="Ground" List.ItemID="1180032449" />
 				</list>
 				<bool name="snap_to_construction_grid" value="False" />
 				<bool name="despawn_if_constructed_over" value="False" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1577670140">
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1634306932">
 				<instance_reference name="hit_material" value="hit_material\wood" />
 				<template_reference name="projectile_reflect_option" value="options\none">
 				</template_reference>
@@ -715,13 +715,13 @@
 					<bool name="collide_with_missed_ranged_weapon_shots" value="True" />
 				</group>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-444241870">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-858606526">
 				<enum name="weapon_targeting" value="manual_only" />
 				<bool name="intersection_testing" value="True" />
 				<list name="unit_type_list">
-					<enum name="unit_type" value="gaia" List.ItemID="-1404696870" />
-					<enum name="unit_type" value="resource" List.ItemID="1847792064" />
-					<enum name="unit_type" value="tree" List.ItemID="-158296377" />
+					<enum name="unit_type" value="gaia" List.ItemID="2028559790" />
+					<enum name="unit_type" value="resource" List.ItemID="683435173" />
+					<enum name="unit_type" value="tree" List.ItemID="376675901" />
 				</list>
 				<list name="race_type_list">
 				</list>
@@ -745,7 +745,7 @@
 				<list name="unit_type_list_ui_appear_as_only">
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1728521346">
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1846270966">
 				<bool name="ap_killed_kicker" value="True" />
 				<bool name="ap_loss_kicker" value="True" />
 				<float name="decorator_height" value="-1" />
@@ -870,9 +870,9 @@
 				<bool name="static_selection_bounds" value="True" />
 				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1755839703">
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1686904480">
 				<list name="type_list">
-					<group name="type" List.ItemID="367608892">
+					<group name="type" List.ItemID="196719687">
 						<enum name="interaction_type" value="resource_gather" />
 						<int name="prefer_number" value="4" />
 						<int name="max_number" value="-1" />
@@ -881,7 +881,7 @@
 						</template_reference>
 						<bool name="block_pathing_when_interacted" value="False" />
 					</group>
-					<group name="type" List.ItemID="-2124222485">
+					<group name="type" List.ItemID="1196882205">
 						<enum name="interaction_type" value="resource_fell" />
 						<int name="prefer_number" value="4" />
 						<int name="max_number" value="-1" />
@@ -892,7 +892,7 @@
 					</group>
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="-716858730">
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="611721008">
 				<float name="initial_amount" value="150" />
 				<float name="gather_distance" value="1" />
 				<instance_reference name="resource_sub_type" value="resource_sub_type\tree" />
@@ -924,7 +924,7 @@
 				<int name="num_gatherers_to_assign_by_vps" value="7" />
 				<bool name="ui_show_as_infinity" value="False" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1142110803">
+			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="786069378">
 				<bool name="cant_build" value="False" />
 				<group name="impass_simboxes">
 					<bool name="default_simbox" value="True" />
@@ -932,9 +932,9 @@
 					</list>
 				</group>
 				<list name="block_path">
-					<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="-1732309349" />
-					<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="1849803843" />
-					<instance_reference name="path_type" value="pass_types\water_default" List.ItemID="153050116" />
+					<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="-1109514105" />
+					<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="-1483299238" />
+					<instance_reference name="path_type" value="pass_types\water_default" List.ItemID="72803958" />
 				</list>
 				<bool name="should_rasterize_partial_cells" value="False" />
 				<enum name="blocker_lifetime_type" value="match_entity" />
@@ -946,7 +946,7 @@
 				</group>
 				<bool name="attach_gap_fillers" value="False" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="1568338801">
+			<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="612105883">
 				<list name="additional_boundary_simboxes">
 				</list>
 				<list name="waypoint_caching">
@@ -956,7 +956,7 @@
 				<list name="center_cells">
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-1484667265">
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="449810858">
 				<list name="rtpc_events">
 				</list>
 				<list name="sound_banks">
@@ -965,10 +965,10 @@
 				<int name="music_importance" value="0" />
 				<int name="combat_importance" value="0" />
 				<list name="select_audible_to_relation_list">
-					<enum name="relationship_type" value="neutral" List.ItemID="203486591" />
+					<enum name="relationship_type" value="neutral" List.ItemID="538137319" />
 				</list>
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1704963612">
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="420499845">
 				<instance_reference name="schema" value="statemodel_schema\tree" />
 			</template_reference>
 		</list>

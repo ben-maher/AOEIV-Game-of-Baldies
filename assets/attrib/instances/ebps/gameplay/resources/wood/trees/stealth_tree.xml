@@ -1,0 +1,36 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="916703590" List.ParentItemID="916703590">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="gaia" List.ItemID="247134495" />
+				<enum name="unit_type" value="resource" List.ItemID="766271858" />
+				<enum name="unit_type" value="tree" List.ItemID="-1904391210" />
+				<enum name="unit_type" value="stealth_cover" List.ItemID="-1918693437" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\mesh_area_tag_ext" List.ItemID="-516882999" List.ListAction="Append">
+			<enum name="mesh_area_type" value="stealth_woods" />
+			<bool name="prevent_stomping_while_attached" value="False" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089328" />
+	<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\core_tree" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="916703590" List.ParentItemID="916703590">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="gaia" List.ItemID="1795818786" />
+					<enum name="unit_type" value="resource" List.ItemID="1444828189" />
+					<enum name="unit_type" value="tree" List.ItemID="1688012592" />
+					<enum name="unit_type" value="stealth_cover" List.ItemID="-1467651745" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\mesh_area_tag_ext" List.ItemID="1562141786" List.ListAction="Append">
+				<enum name="mesh_area_type" value="stealth_woods" />
+				<bool name="prevent_stomping_while_attached" value="False" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089328" />
+		<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\core_tree" />
+	</variant>
+</instance>

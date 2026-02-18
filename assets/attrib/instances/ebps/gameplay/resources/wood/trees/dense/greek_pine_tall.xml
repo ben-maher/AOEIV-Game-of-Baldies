@@ -1,0 +1,36 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions" comment="USES ACACIA tree - To be used with a Material _variation (material overwride)">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="774620788" List.ParentItemID="774620788">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\gameplay\resources\wood\trees\dense\acacia_tall_wild" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="973995323" List.ParentItemID="973995323">
+			<file name="icon_name" value="gaia\acacia_tall_wild" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="653873773" List.ParentItemID="653873773">
+			<group name="on_depletion">
+				<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\acacia_tall_wild\acacia_tall_wild_depleted" overrideParent="True" />
+			</group>
+			<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\acacia_tall_wild\acacia_tall_wild" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9002161" />
+	<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\core_tree" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="452662694" List.ParentItemID="452662694">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\gameplay\resources\wood\trees\dense\acacia_tall_wild" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-522989721" List.ParentItemID="-522989721">
+				<file name="icon_name" value="gaia\acacia_tall_wild" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="217008480" List.ParentItemID="217008480">
+				<group name="on_depletion">
+					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\acacia_tall_wild\acacia_tall_wild_depleted" overrideParent="True" />
+				</group>
+				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\acacia_tall_wild\acacia_tall_wild" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="9002161" />
+		<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\core_tree" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+</instance>
