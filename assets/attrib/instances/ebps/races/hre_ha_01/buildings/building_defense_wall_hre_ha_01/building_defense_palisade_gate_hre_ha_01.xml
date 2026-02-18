@@ -5,7 +5,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="204034348" List.ParentItemID="204034348">
 			<bool name="can_repair" value="True" overrideParent="True" />
-			<float name="hitpoints" value="9000" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1100494298" List.ParentItemID="1100494298">
 			<list name="race_type_list" overrideParent="True">
