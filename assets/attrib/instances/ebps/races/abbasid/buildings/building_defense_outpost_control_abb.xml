@@ -93,7 +93,7 @@
 				<bool name="browsable_in_editor" value="True" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2095670651" List.ParentItemID="2095670651">
-				<float name="hitpoints" value="5000" overrideParent="True" />
+				<float name="hitpoints" value="6000" overrideParent="True" />
 				<enum_table name="armor_scaler_by_damage_type">
 					<float name="Fire" value="0" overrideParent="True" />
 				</enum_table>

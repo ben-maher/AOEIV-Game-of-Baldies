@@ -14,7 +14,7 @@
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
-			<float name="hitpoints" value="5000" overrideParent="True" />
+			<float name="hitpoints" value="6000" overrideParent="True" />
 			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\outpost_death_actions\outpost_stone" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
