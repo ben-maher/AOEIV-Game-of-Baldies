@@ -2,6 +2,9 @@
 	<uniqueid name="pbgid" value="203943" />
 	<instance_reference name="parent_pbg" value="ebps\races\sultanate\buildings\building_defense_wall_sul\building_defense_wall_sul" mod="942db39de35c43f3933e4b2a9f4b4f31" />
 	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1930986963" List.ParentItemID="-1930986963">
+			<float name="hitpoints" value="9000" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1904123328" List.ParentItemID="-1904123328">
 			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
 				<template_reference name="gap_fillers" value="options\ebpextensions\hexmapext\gap_fillers">

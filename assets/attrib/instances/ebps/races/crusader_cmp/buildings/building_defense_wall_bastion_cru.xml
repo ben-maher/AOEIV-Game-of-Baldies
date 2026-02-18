@@ -3,6 +3,9 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-72758508" List.ParentItemID="-72758508">
 			<file name="alternate_sua" value="art\civilizations\chinese\structures\stonewall\chi_stonewall_bastion_end\chi_stonewall_bastion_end" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1456959780" List.ParentItemID="-1456959780">
+			<float name="hitpoints" value="9000" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-936535524" List.ParentItemID="-936535524">
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="417586383" />

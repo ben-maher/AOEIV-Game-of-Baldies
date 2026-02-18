@@ -1,253 +1,28 @@
 <instance version="4" description="" template="ebps">
 	<list name="extensions">
-		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1458620782" List.ParentItemID="1458620782">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="231109894" List.ParentItemID="231109894">
 			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\french\buildings\building_defense_wall_fre\building_defense_wall_stone_gate_fre" overrideParent="True" />
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 			<enum name="subclass_type" value="TemplarWall" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1525051852" List.ParentItemID="1525051852">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="423592052" List.ParentItemID="423592052">
 			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="9000" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1007414788" List.ParentItemID="1007414788">
 			<list name="race_type_list" overrideParent="True">
 				<instance_reference name="race_type" value="racebps\templar" overrideParent="True" List.ItemID="-424358410" />
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1872466745" List.ParentItemID="1872466745">
-			<list name="ui_extra_infos">
-				<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="1574302162" List.ListAction="Append">
-					<file name="icon" value="influence_decorator" overrideParent="True" />
-					<locstring name="description" value="0" />
-					<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
-						<list name="formatter_arguments">
-							<int name="int_value" value="25" overrideParent="True" List.ItemID="-1221477042" />
-						</list>
-						<locstring name="formatter" value="0" />
-					</template_reference>
-				</template_reference>
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="707587179" List.ParentItemID="707587179">
+		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="-1169347827" List.ParentItemID="-1169347827">
 			<float name="on_fire_threshold" value="59" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="771482978" List.ParentItemID="771482978">
 			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
 				<instance_reference name="blueprint_to_replace" value="ebps\races\templar\buildings\walls\building_defense_stone_wall_tem" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
 			</template_reference>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1807233198" List.ParentItemID="-1807233198">
-			<list name="abilities">
-				<instance_reference name="ability" value="abilities\always_on_abilities\templar\influence_enable_weapons_tem" List.ItemID="215911974" List.ListAction="Append" />
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="-468201932" List.ListAction="Append">
-			<list name="roads">
-				<template_reference name="road" value="roads\road_properties" List.ItemID="-146179013">
-					<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" />
-					<list name="curb_splines">
-					</list>
-					<list name="road_splines">
-						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="360222390">
-							<int name="draw_sort_order" value="100000" />
-							<float name="end_fade" value="0.4" />
-							<float name="width" value="3.5" />
-							<int name="texture_tiling" value="512" />
-							<file name="texture_filename" value="civilizations\dirt\road_4m_dirt_trail_a" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="road" value="roads\road_properties" List.ItemID="-1229330742">
-					<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" />
-					<list name="curb_splines">
-					</list>
-					<list name="road_splines">
-						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="458318987">
-							<int name="draw_sort_order" value="100000" />
-							<float name="end_fade" value="0.4" />
-							<float name="width" value="3" />
-							<int name="texture_tiling" value="1" />
-							<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_02_3m" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="road" value="roads\road_properties" List.ItemID="-500593770">
-					<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" />
-					<list name="curb_splines">
-					</list>
-					<list name="road_splines">
-						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="-1164572502">
-							<int name="draw_sort_order" value="100000" />
-							<float name="end_fade" value="0.2" />
-							<float name="width" value="3" />
-							<int name="texture_tiling" value="1" />
-							<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_03_3m" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="road" value="roads\road_properties" List.ItemID="477035313">
-					<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" />
-					<list name="curb_splines">
-					</list>
-					<list name="road_splines">
-						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="-1170855495">
-							<int name="draw_sort_order" value="100000" />
-							<float name="end_fade" value="0.2" />
-							<float name="width" value="3" />
-							<int name="texture_tiling" value="1" />
-							<file name="texture_filename" value="civilizations\roads\roads_eng_fishscale_a_age_04_3m" />
-						</template_reference>
-					</list>
-				</template_reference>
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-454677495" List.ListAction="Append">
-			<bool name="update_on_upgrade_changed" value="True" overrideParent="True" />
-			<bool name="update_on_construction_complete" value="True" />
-			<list name="district_bonuses" overrideParent="True">
-				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1328372274">
-					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
-						<list name="dynamic_requirements">
-						</list>
-						<list name="satisfying_entity_groups" overrideParent="True">
-							<group name="satisfying_entity_group" List.ItemID="2073505747">
-								<list name="satisfying_entities" overrideParent="True">
-									<instance_reference name="entity" value="ebps\races\templar\buildings\building_defense_fortress_tem" overrideParent="True" List.ItemID="1178459586" />
-									<instance_reference name="entity" value="ebps\races\templar\buildings\building_town_center_capital_tem" List.ItemID="826155909" />
-								</list>
-							</group>
-						</list>
-					</template_reference>
-					<uniqueid name="id" value="1073742343" />
-					<template_reference name="action_tree" value="state_tree_reference_info">
-						<state_tree_node name="ActionTree_OpeningBranch" value="stone_wall_influence_tem\root" overrideParent="True" />
-						<bool name="start_suspended" value="False" />
-					</template_reference>
-				</template_reference>
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="354798475" List.ListAction="Append">
-			<bool name="reject_attack_command" value="False" />
-			<list name="hardpoints">
-				<group name="hardpoint" overrideParent="True" List.ItemID="-1158943805">
-					<float name="parent_hardpoint" value="-1" />
-					<list name="weapon_table">
-						<group name="weapon" List.ItemID="294719777" List.ParentItemID="530902418">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="0" overrideParent="True" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="5.5" overrideParent="True" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-									<template_reference name="attach_data" value="attachments\attach_data">
-										<string name="marker_name_parent" value="" />
-										<string name="parent_rigidbody_target_name" value="" />
-										<enum name="game_object_attachment_type" value="scenegraph" />
-									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_stone_wall_arrows_tem" overrideParent="True" />
-									<group name="attachment_flags">
-										<bool name="sim_only" value="False" />
-										<bool name="no_pathfinding" value="False" />
-										<bool name="not_snappable" value="False" />
-										<bool name="restore_snap_to_ground_on_detach" value="False" />
-										<bool name="no_sim_update" value="True" />
-										<bool name="join_parent_squad" value="False" />
-										<bool name="redirect_damage_to_parent_entity" value="True" />
-										<bool name="assign_as_attachment_combat_leader" value="False" />
-										<bool name="assign_as_attachment_movement_leader" value="False" />
-										<bool name="receive_parent_animations" value="False" />
-										<bool name="receive_parent_death" value="False" />
-									</group>
-								</template_reference>
-								<list name="possible_blueprint_updates">
-								</list>
-							</template_reference>
-							<template_reference name="non_entity_weapon_wrapper" value="">
-							</template_reference>
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="True" />
-					<string name="base_marker" value="" />
-					<list name="preferred_inventory_item_categories">
-					</list>
-					<list name="firing_offset_markers">
-					</list>
-					<string name="offhand_marker" value="" />
-					<bool name="initialize_weapons_on_creation" value="False" overrideParent="True" />
-				</group>
-			</list>
-			<int name="sight_hardpoint" value="-1" />
-			<float name="block_frontal_arc" value="0" />
-			<int name="block_melee_blocks_per_sequence" value="0" />
-			<int name="block_melee_incoming_attack_sequence_length" value="1" />
-			<group name="attack_move">
-				<float name="attack_move_targeting_range" value="30" />
-				<float name="attack_move_priority_per_distance_meter" value="-1" />
-			</group>
-			<group name="idle_targeting">
-				<float name="idle_priority_per_angle_degree" value="-1.5" />
-				<float name="idle_priority_per_distance_meter" value="-1" />
-				<float name="idle_targeting_range" value="15" />
-				<float name="idle_priority_per_distance_unit_angle_multiplier" value="0" />
-			</group>
-			<float name="scan_interval_cached_target_invalid" value="2" />
-			<float name="scan_interval_cached_target_valid" value="2" />
-			<template_reference name="kill_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="" />
-				<bool name="start_suspended" value="False" />
-			</template_reference>
-			<string name="combat_choice_tree" value="" />
-			<int name="block_ranged_blocks_per_sequence" value="0" />
-			<int name="block_ranged_incoming_attack_sequence_length" value="1" />
-			<int name="block_projectile_incoming_attack_sequence_length" value="1" />
-			<int name="block_projectile_blocks_per_sequence" value="0" />
-			<bool name="unequip_weapons_on_death" value="True" />
-			<group name="combat_scan_intervals">
-				<group name="attack_move_scan_intervals">
-					<float name="interval_with_invalid_target" value="1" />
-					<float name="interval_with_valid_target" value="2" />
-					<float name="interval_with_valid_target_frequent" value="0.5" />
-					<float name="frequent_scan_radius" value="0" />
-				</group>
-				<group name="forced_engagement_scan_intervals">
-					<float name="interval_with_invalid_target" value="0.375" />
-					<float name="interval_with_valid_target" value="2" />
-				</group>
-				<group name="idle_scan_intervals">
-					<float name="interval_with_invalid_target" value="1" />
-					<float name="interval_with_valid_target" value="2" />
-					<float name="interval_with_valid_target_frequent" value="0.5" />
-					<float name="frequent_scan_radius" value="0" />
-				</group>
-			</group>
-			<bool name="ui_show_most_progressed_weapon_reload" value="False" />
-			<list name="target_scanning_priority_override">
-			</list>
-			<list name="block_ignore_damage_types">
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="1186424909" List.ListAction="Append">
-			<bool name="allow_weapon_target_scanning" value="False" />
-			<int name="history_size" value="2" />
-			<bool name="allow_entity_scan_close_enemies" value="False" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="-2021076740" List.ListAction="Append">
-			<float name="range_metres" value="0" />
-			<bool name="is_root_generator" value="False" />
-			<int name="generator_value" value="0" />
-			<bool name="disable_generation_on_spawn" value="False" />
-			<int name="district_palette_id" value="1" />
-			<list name="requirements">
-			</list>
-		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="5000222" />
-	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" mod="942db39de35c43f3933e4b2a9f4b4f31" />
 </instance>
