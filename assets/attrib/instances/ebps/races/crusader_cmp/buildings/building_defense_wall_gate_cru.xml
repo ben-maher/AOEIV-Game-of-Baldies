@@ -38,6 +38,7 @@
 			</template_reference>
 		</template_reference>
 	</list>
+	<uniqueid name="pbgid" value="2101340" />
 	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_defense_wall_fre\building_defense_wall_gate_fre" mod="942db39de35c43f3933e4b2a9f4b4f31" />
 	<variant name="xp3">
 		<list name="extensions">
@@ -79,6 +80,7 @@
 				</template_reference>
 			</template_reference>
 		</list>
+		<uniqueid name="pbgid" value="2101340" />
 		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_defense_wall_fre\building_defense_wall_gate_fre" mod="942db39de35c43f3933e4b2a9f4b4f31" />
 	</variant>
 </instance>

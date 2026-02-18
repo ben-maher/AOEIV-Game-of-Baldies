@@ -87,6 +87,7 @@
 			</list>
 		</template_reference>
 	</list>
+	<uniqueid name="pbgid" value="134930" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
 	<variant name="campaign">
 		<list name="extensions">
@@ -177,6 +178,7 @@
 				</list>
 			</template_reference>
 		</list>
+		<uniqueid name="pbgid" value="134930" />
 		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
 	</variant>
 	<variant name="hre_brawl">
@@ -276,6 +278,7 @@
 				</list>
 			</template_reference>
 		</list>
+		<uniqueid name="pbgid" value="134930" />
 		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" />
 	</variant>
 </instance>
