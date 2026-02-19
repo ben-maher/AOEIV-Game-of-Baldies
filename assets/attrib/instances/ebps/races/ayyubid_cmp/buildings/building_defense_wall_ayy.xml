@@ -1,0 +1,35 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1930986963" List.ParentItemID="-1930986963">
+			<float name="hitpoints" value="9000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="588046415" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1904123328" List.ParentItemID="-1904123328">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+				<instance_reference name="fence_cap_entity" value="ebps\races\ayyubid_cmp\buildings\building_defense_wall_bastion_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101133" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_wall_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1043807489" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1904123328" List.ParentItemID="-1904123328">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\ayyubid_cmp\buildings\building_defense_wall_bastion_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101133" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_wall_abb" />
+	</variant>
+</instance>

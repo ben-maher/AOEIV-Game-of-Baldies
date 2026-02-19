@@ -1,0 +1,150 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-845778417" List.ParentItemID="-845778417">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="ConstructibleResourceDeposit" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1623752631" List.ParentItemID="-1623752631">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1432368975" List.ParentItemID="1432368975">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\byzantine" overrideParent="True" List.ItemID="1983223016" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="471168502" List.ParentItemID="471168502">
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<group name="ui_codex_info">
+				<bool name="exclusive" value="False" overrideParent="True" />
+			</group>
+			<file name="icon_name" value="races\byzantine\buildings\olive_groves" overrideParent="True" />
+			<template_reference name="help_text_formatter" value="ui_text_formatter" overrideParent="True">
+				<list name="formatter_arguments">
+					<int name="int_value" value="20" overrideParent="True" List.ItemID="-887661998" />
+				</list>
+				<locstring name="formatter" value="0" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-109035009" List.ParentItemID="-109035009">
+			<bool name="can_repair" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-21135608" List.ParentItemID="-21135608">
+			<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="on_construction_complete_entity_state_tree_ref" value="field_stones_logic_byz\field_stones_small_byz" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="1868816774" List.ParentItemID="1868816774">
+			<instance_reference name="resource_sub_type" value="resource_sub_type\civs\byzantine\merc_byz" overrideParent="True" />
+			<template_reference name="resource_spline_option" value="options\resource_deposit\resource_spline_option">
+				<float name="spline_wobble_maximum" value="0.5" overrideParent="True" />
+				<float name="sub_splines_per_row" value="3" overrideParent="True" />
+				<float name="rotation_in_degrees_min" value="0" overrideParent="True" />
+				<float name="rotation_in_degrees_max" value="0" overrideParent="True" />
+				<list name="resource_animator_groups" removedIds="-146702028, -630683404">
+					<group name="resource_animator_group" List.ItemID="-755370518" List.ParentItemID="-755370518">
+						<list name="resource_animator_list">
+							<file name="resource_animator" value="art\environment\nat_economy\farm\olive_orchard\olive_orchard" overrideParent="True" List.ItemID="1662503554" List.ParentItemID="1662503554" />
+						</list>
+					</group>
+				</list>
+				<float name="distance_between_splines_maximum" value="2.4" comment="Distance between slines" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-618477640" List.ParentItemID="-618477640">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="707965517" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-956169503" List.ParentItemID="-956169503">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\byzantine\farm_byz" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="17699632" List.ParentItemID="17699632">
+			<string name="single_select_event" value="sfx_ui_depo_olive_grove_selection_play" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="-2072411886" List.ListAction="Append">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="243456241" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="1217529457">
+					<group name="tier" List.ItemID="2069228924">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\byzantine\buildings\resource_farm_byz\tier1_resource_farm_byz" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="1170019939">
+					<group name="tier" List.ItemID="1524411441">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\byzantine\outskirts\general\byz_farms" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1778708793" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses" overrideParent="True">
+				<template_reference name="district_bonus" value="district_bonus" comment="Cistern Influence" List.ItemID="-422095827">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" List.ItemID="1959606077">
+								<list name="satisfying_entities" overrideParent="True">
+									<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_cistern_byz" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-1589390995" />
+									<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_landmark_age2_cistern_byz" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="851764883" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073741957" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="cistern_influence_byz" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="-1946368861" List.ListAction="Append">
+			<float name="range_metres" value="0" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<bool name="is_root_generator" value="False" overrideParent="True" />
+			<int name="district_palette_id" value="0" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2104744" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_resource_farm" />
+</instance>

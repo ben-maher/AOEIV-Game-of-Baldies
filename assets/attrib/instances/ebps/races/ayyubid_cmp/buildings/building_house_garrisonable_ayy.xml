@@ -1,0 +1,38 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+			<string name="selection_datatemplate" value="ResearchSelectionDataTemplate" overrideParent="True" />
+			<string name="telemetry_name" value="Farmhouse" overrideParent="True" />
+			<string name="selection_group" value="farmhouse" overrideParent="True" />
+			<bool name="minimap_enable" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1247594668" List.ParentItemID="-1247594668">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-210269109" List.ParentItemID="-210269109">
+					<uniqueid name="id" value="1073741917" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2137762" />
+	<instance_reference name="parent_pbg" value="ebps\races\ayyubid_cmp\buildings\building_house_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+				<string name="selection_datatemplate" value="ResearchSelectionDataTemplate" overrideParent="True" />
+				<string name="telemetry_name" value="Farmhouse" overrideParent="True" />
+				<string name="selection_group" value="farmhouse" overrideParent="True" />
+				<bool name="minimap_enable" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1247594668" List.ParentItemID="-1247594668">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="-210269109" List.ParentItemID="-210269109">
+						<uniqueid name="id" value="1073741918" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2137762" />
+		<instance_reference name="parent_pbg" value="ebps\races\ayyubid_cmp\buildings\building_house_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+</instance>

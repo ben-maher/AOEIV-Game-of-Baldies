@@ -1,0 +1,281 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions" removedIds="-1682252423">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1853756747" List.ParentItemID="1853756747">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1338650760" List.ParentItemID="1338650760">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="5000" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_landmark_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="119825962" List.ParentItemID="119825962">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="1359473887" />
+				<enum name="unit_type" value="wonder" List.ItemID="-1008184751" />
+				<enum name="unit_type" value="wonder_dark_age" List.ItemID="-721827173" />
+				<enum name="unit_type" value="siegeable" List.ItemID="1996926292" />
+				<enum name="unit_type" value="select_special_building" List.ItemID="2145784459" />
+				<enum name="unit_type" value="landmark" List.ItemID="-1092015529" />
+				<enum name="unit_type" value="age1_landmark1" List.ItemID="-1986809756" />
+				<enum name="unit_type" value="audio_production_landmark" List.ItemID="-706515792" />
+				<enum name="unit_type" value="town_center_or_landmark" List.ItemID="-654410797" />
+				<enum name="unit_type" value="resource_generator" List.ItemID="1950113637" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="1451603018" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-514641933" List.ParentItemID="-514641933">
+			<float name="decorator_height" value="10" overrideParent="True" />
+			<file name="icon_name" value="races\chinese_historic\buildings\building_landmark_meditationgardens_chi" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.3" overrideParent="True" />
+			<group name="ui_codex_info">
+				<bool name="exclusive" value="True" overrideParent="True" />
+			</group>
+			<template_reference name="help_text_formatter" value="" overrideParent="True">
+			</template_reference>
+			<string name="telemetry_name" value="Meditation Gardens" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-1410531980" List.ParentItemID="-1410531980">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-950971157">
+					<enum name="reason" value="usage" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table" comment="Checks to see if itself is under construction, this is a Chinese-specific change from the other Landmarks that have a similar requirment (they can't build the other Landmarks of the Age, whereas the Chinese can).&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;---" overrideParent="True">
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-1471704180">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\races\chinese_ha_01\buildings\building_landmark_age1_academy_chi_ha_01\building_landmark_age1_meditation_gardens_control_chi_ha_01" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="False" overrideParent="True" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-1836559602">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table" overrideParent="True">
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-797935906">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\races\chinese_ha_01\buildings\building_landmark_age1_academy_chi_ha_01\building_landmark_age1_meditation_gardens_control_chi_ha_01" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="True" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_statemodelfloat" List.ItemID="-660119848">
+					<locstring name="ui_name" value="0" />
+					<enum name="reason" value="usage_and_display" />
+					<enum name="key" value="age1_wonders_built_chi" />
+					<enum name="data_source_type" value="self_datasource" />
+					<float name="default_value" value="0" />
+					<float name="compare_to_value" value="2" />
+					<enum name="comparison" value="less_than" />
+					<float name="ui_max_value" value="0" />
+					<float name="ui_min_value" value="0" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_any_in_list" comment="This requirement makes sure you cannot build this landmark when using a greater Starting Age" overrideParent="True" List.ItemID="-1430524669">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements" overrideParent="True">
+						<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-439915607">
+							<enum name="reason" value="usage_and_display" overrideParent="True" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\races\chinese_ha_01\buildings\building_landmark_age2_prefecture_chi_ha_01\building_landmark_age1_prefecture_chi_ha_01" overrideParent="True" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="True" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_not" List.ItemID="-1309428627">
+							<enum name="reason" value="usage_and_display" overrideParent="True" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table" overrideParent="True">
+								<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-487562006">
+									<enum name="reason" value="usage_and_display" overrideParent="True" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_structure" List.ItemID="-808143494">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<instance_reference name="structure_name" value="ebps\races\chinese_ha_01\buildings\building_town_center_chi_ha_01\building_town_center_capital_chi_ha_01" overrideParent="True" />
+					<int name="required_structure_count" value="1" />
+					<bool name="check_team" value="False" />
+					<bool name="require_construction_complete" value="True" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-68660537" List.ParentItemID="-68660537">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="-1696567265">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1263938523">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1469122038" List.ParentItemID="-1469122038">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1019930499" List.ParentItemID="-1019930499">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="while_construction_complete_entity_state_tree_ref" value="district_landmark_age1_construction_complete_chi" overrideParent="True" />
+				<string name="on_construction_complete_entity_state_tree_ref" value="meditation_gardens_resource_generation\tree_counting_wait_for_construction_complete" overrideParent="True" />
+			</group>
+			<group name="preview_upgrade_effects">
+				<template_reference name="area_info" value="options\area_info_options\circle_area_option" overrideParent="True">
+					<float name="outer_radius" value="32" overrideParent="True" />
+					<float name="inner_radius" value="0" />
+					<bool name="is_two_dimensional" value="True" />
+					<enum name="dynamic_radius_type" value="fixed" />
+				</template_reference>
+				<list name="preview_upgrade_effects_list">
+					<group name="preview_upgrade_effect" List.ItemID="-793339777" List.ListAction="Append">
+						<string name="off_key" value="" />
+						<string name="on_key" value="" />
+						<instance_reference name="reticule" value="ui_reticule\aura_ring" overrideParent="True" />
+						<float name="reticule_radius" value="2" overrideParent="True" />
+						<string name="statemachine_key" value="" />
+						<enum name="unit_type" value="tree" overrideParent="True" />
+					</group>
+					<group name="preview_upgrade_effect" List.ItemID="453817907" List.ListAction="Append">
+						<string name="off_key" value="" />
+						<string name="on_key" value="" />
+						<instance_reference name="reticule" value="ui_reticule\aura_ring" overrideParent="True" />
+						<float name="reticule_radius" value="6" overrideParent="True" />
+						<string name="statemachine_key" value="" />
+						<enum name="unit_type" value="gold" overrideParent="True" />
+					</group>
+					<group name="preview_upgrade_effect" List.ItemID="223450471" List.ListAction="Append">
+						<string name="off_key" value="" />
+						<string name="on_key" value="" />
+						<instance_reference name="reticule" value="ui_reticule\aura_ring" overrideParent="True" />
+						<float name="reticule_radius" value="6" overrideParent="True" />
+						<string name="statemachine_key" value="" />
+						<enum name="unit_type" value="stone" overrideParent="True" />
+					</group>
+					<group name="preview_upgrade_effect" List.ItemID="915964428" List.ListAction="Append">
+						<string name="off_key" value="" />
+						<string name="on_key" value="" />
+						<instance_reference name="reticule" value="ui_reticule\aura_ring" overrideParent="True" />
+						<float name="reticule_radius" value="2" overrideParent="True" />
+						<string name="statemachine_key" value="" />
+						<enum name="unit_type" value="forage_bush" overrideParent="True" />
+					</group>
+				</list>
+				<bool name="ignore_depleted_resources" value="True" overrideParent="True" />
+			</group>
+			<bool name="query_abilities_for_range_ui" value="False" overrideParent="True" />
+			<instance_reference name="ui_range" value="ui_reticule\default_range" overrideParent="True" />
+			<float name="ui_range_radius" value="32" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="203393663" List.ParentItemID="203393663">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\always_on_abilities\chinese_ha_01\meditation_gardens_resource_generation" List.ItemID="1988106178" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-255210680" List.ParentItemID="-255210680">
+			<list name="standard_upgrades" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="1440054338" List.ParentItemID="1440054338">
+			<file name="construction_stamp" value="art\stamps\scaffolding\chinese_ha\chi_cont_land_b_01" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1546127689" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="-272250403">
+					<group name="tier" List.ItemID="-1995620615">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese_ha_01\buildings\tier1_landmark_1b_chi_ha" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="1851988641">
+					<group name="tier" List.ItemID="-536551068">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese_ha_01\outskirts\landmarks\chi_ha_lan_01b" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="6065722" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_wonder_age1" />
+</instance>

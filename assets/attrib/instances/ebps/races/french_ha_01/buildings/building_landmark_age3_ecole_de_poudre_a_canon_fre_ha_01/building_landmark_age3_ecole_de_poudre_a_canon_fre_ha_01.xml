@@ -1,0 +1,48 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="665441583" List.ParentItemID="665441583">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-2076557720" List.ParentItemID="-2076557720">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="369223095" List.ParentItemID="369223095">
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1583915333" List.ParentItemID="-1583915333">
+									<instance_reference name="structure_name" value="ebps\races\french_ha_01\buildings\building_landmark_age3_ecole_de_poudre_a_canon_fre_ha_01\building_landmark_age3_ecole_de_poudre_a_canon_fre_ha_01" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-662408341" List.ParentItemID="-662408341">
+									<instance_reference name="structure_name" value="ebps\races\french_ha_01\buildings\building_landmark_age2_la_chateau_rouge_fre_ha_01\building_landmark_age2_la_chateau_rouge_fre_ha_01" overrideParent="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="77336098" List.ParentItemID="77336098">
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_landmark_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="555024994" List.ParentItemID="555024994">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\french_ha_01" overrideParent="True" List.ItemID="1266312133" List.ParentItemID="1266312133" />
+			</list>
+			<list name="unit_type_list">
+				<enum name="unit_type" value="production_building" List.ItemID="-443944759" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1326122823" List.ParentItemID="-1326122823">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="2146425522" List.ParentItemID="2146425522">
+					<instance_reference name="squad" value="sbps\races\french_ha_01\royal_artillery\unit_cannon_4_royal_fre_ha_01" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="852329042" List.ParentItemID="852329042">
+					<instance_reference name="squad" value="sbps\races\french_ha_01\royal_artillery\unit_ribauldequin_4_royal_fre_ha_01" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-1298343643" List.ParentItemID="-1298343643">
+					<instance_reference name="squad" value="sbps\races\french_ha_01\royal_artillery\unit_culverin_4_royal_fre_ha_01" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="3621045" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_landmark_age3_ecole_de_poudre_a_canon_fre\building_landmark_age3_ecole_de_poudre_a_canon_fre" />
+</instance>

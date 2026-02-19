@@ -1,0 +1,30 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">
+			<group name="sight_package">
+				<float name="inner_height" value="10" overrideParent="True" />
+			</group>
+			<group name="stealth_detection">
+				<float name="radius" value="30" overrideParent="True" />
+				<float name="throttle" value="0" overrideParent="True" />
+			</group>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2135846" />
+	<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\buildings\building_defense_outpost_cru" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="462979593" List.ParentItemID="462979593">
+				<group name="sight_package">
+					<float name="inner_height" value="10" overrideParent="True" />
+				</group>
+				<group name="stealth_detection">
+					<float name="radius" value="30" overrideParent="True" />
+					<float name="throttle" value="0" overrideParent="True" />
+				</group>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2135846" />
+		<instance_reference name="parent_pbg" value="ebps\races\crusader_cmp\buildings\building_defense_outpost_cru" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+</instance>

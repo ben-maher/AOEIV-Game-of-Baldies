@@ -1,0 +1,15 @@
+<instance version="4" description="Built on top of a stone pile" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-820704722" List.ParentItemID="-820704722">
+			<file name="alternate_sua" value="art\civilizations\mongols\structures\wonder_ovoo\mon_wonder_ovoo_control_age01\mon_wonder_ovoo_control_age01_large" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-225184026" List.ParentItemID="-225184026">
+			<group name="footprint_scale">
+				<float name="x" value="8" overrideParent="True" />
+				<float name="y" value="8" overrideParent="True" />
+			</group>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9001778" />
+	<instance_reference name="parent_pbg" value="ebps\races\mongol_ha_gol\buildings\building_stone_deposit_ovoo_mon_ha_gol" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+</instance>

@@ -1,0 +1,312 @@
+<instance version="4" description="Mongol house" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+			<file name="icon_name" value="races\mongols\buildings\ger" overrideParent="True" />
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<string name="telemetry_name" value="Ger" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" overrideParent="True" List.ItemID="-1131493931" List.ParentItemID="-1131493931">
+			<enum name="weapon_targeting" value="automatic" />
+			<bool name="intersection_testing" value="False" />
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="-802291860" />
+				<enum name="unit_type" value="house" List.ItemID="2080170728" />
+				<enum name="unit_type" value="resource_drop_off" List.ItemID="171330452" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-1631049382" />
+				<enum name="unit_type" value="emits_herding_interest" List.ItemID="-1767571039" />
+				<enum name="unit_type" value="ger" List.ItemID="116676251" />
+				<enum name="unit_type" value="scar_house" List.ItemID="1600748281" />
+				<enum name="unit_type" value="economy_building" overrideParent="True" List.ItemID="-1265542435" />
+				<enum name="unit_type" value="mill" List.ItemID="-1272145784" />
+				<enum name="unit_type" value="land_food_deposit_2_by_2" List.ItemID="-540461290" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol_ha_gol" overrideParent="True" List.ItemID="-2140560515" />
+			</list>
+			<list name="attack_target_restriction_on_attacker">
+			</list>
+			<list name="attack_target_restriction_on_victim">
+			</list>
+			<enum_table name="weapon_category_targeting_filter">
+				<bool name="1melee" value="False" overrideParent="True" />
+				<bool name="2ranged" value="False" overrideParent="True" />
+				<bool name="3siege" value="True" />
+				<bool name="4charge" value="True" />
+				<bool name="5brace" value="True" />
+				<bool name="6auto_ability_cast" value="True" />
+				<bool name="7single_cast_ability" value="True" />
+				<bool name="8dummy" value="False" />
+				<bool name="9idle" value="True" />
+			</enum_table>
+			<list name="unit_type_list_selection_keybind_only">
+			</list>
+			<list name="unit_type_list_ui_appear_as_only">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-349572381" List.ParentItemID="-349572381">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\buildings\building_house_mongol" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-589959009" List.ParentItemID="-589959009">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="death_seconds" value="-1" overrideParent="True" />
+			<bool name="delete_when_dead" value="False" overrideParent="True" />
+			<float name="hitpoints" value="1000" overrideParent="True" />
+			<bool name="remove_from_pathfinding_on_death" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-307639384" List.ParentItemID="-307639384">
+			<group name="time_cost">
+				<float name="time_seconds" value="20" overrideParent="True" />
+				<enum_table name="cost">
+					<float name="wood" value="50" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="54229194" List.ParentItemID="54229194">
+			<float name="orientation" value="0" overrideParent="True" />
+			<group name="placement_requirements">
+				<list name="placement_requirement_options">
+					<template_reference name="placement_requirement_option" value="options\placement\requirements\placement_requirement_pass_types_option" List.ItemID="1382891795" List.ParentItemID="1382891795">
+						<list name="forbidden_pass_types" overrideParent="True">
+						</list>
+					</template_reference>
+				</list>
+			</group>
+			<group name="facing_quadrants">
+				<group name="quadrants">
+					<enum name="front" value="None" overrideParent="True" />
+					<enum name="rear" value="None" overrideParent="True" />
+					<enum name="left" value="None" overrideParent="True" />
+					<enum name="right" value="None" overrideParent="True" />
+				</group>
+			</group>
+			<bool name="facing_surface_normal" value="False" overrideParent="True" />
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\gristmill_construction_complete" comment="The Ger is using the gristmill construction complete so that is sends out the impulse to herd any neutral sheep nearby on construction." overrideParent="True" />
+			</group>
+			<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1587650352" List.ParentItemID="1587650352">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="-1582010273">
+					<enum name="interaction_type" value="resource_drop_off" />
+					<int name="prefer_number" value="1" />
+					<int name="max_number" value="1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-745088711">
+					<enum name="interaction_type" value="resource_wait_to_drop_off" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\ebpextensions\interactive\node_list_option">
+						<list name="nodes">
+							<group name="node" List.ItemID="887728286">
+								<enum name="interaction_node_type" value="marker" />
+								<enum name="marker_type" value="interaction" />
+								<string name="marker_name" value="mkr_waiting" />
+							</group>
+						</list>
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-1316414004">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1954788083">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-923838">
+					<enum name="interaction_type" value="resource_go_to_wait" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-875310899">
+					<enum name="interaction_type" value="food_generation" />
+					<int name="prefer_number" value="3" />
+					<int name="max_number" value="3" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1568454312" List.ParentItemID="1568454312">
+			<instance_reference name="hit_material" value="hit_material\leather" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="183393405" List.ParentItemID="183393405">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-290320659" List.ParentItemID="-290320659">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1189092569" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" comment="Make sure the building and moving building are referencing the same schema, if they are using different schemas unpacking will break." List.ItemID="356598772" List.ParentItemID="356598772">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols\house_mon" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="97761903" List.ParentItemID="97761903">
+			<int name="music_importance" value="15" overrideParent="True" />
+			<int name="combat_importance" value="-15" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="-505557511" List.ParentItemID="-505557511">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" />
+			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\economy\upgrade_econ_resource_wood_harvest_rate_2_mon_ha_gol" overrideParent="True" List.ItemID="-240087588" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\economy\upgrade_econ_resource_wood_harvest_rate_3_mon_ha_gol" overrideParent="True" List.ItemID="722807637" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\economy\upgrade_econ_resource_wood_harvest_rate_4_mon_ha_gol" overrideParent="True" List.ItemID="-1087435916" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_econ_resource_wood_fell_rate_1_mon" overrideParent="True" List.ItemID="352718833" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_scout_forester_mon" overrideParent="True" List.ItemID="-719933823" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\unit\upgrade_unit_town_center_wheelbarrow_1_mon" overrideParent="True" List.ItemID="940991540" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_econ_villager_hunting_gear_1_mon" overrideParent="True" List.ItemID="-1617948970" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_econ_resource_gold_harvest_rate_2_mon" List.ItemID="1808176344" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_econ_resource_gold_harvest_rate_3_mon" List.ItemID="-161349989" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_econ_resource_gold_harvest_rate_4_mon" List.ItemID="202713288" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\economy\upgrade_econ_pasture_harvest_rate_2_mon_ha_gol" List.ItemID="1579810129" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\economy\upgrade_econ_pasture_harvest_rate_3_mon_ha_gol" List.ItemID="-1843499182" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\economy\upgrade_econ_ovoo_stone_rate_3_mon_ha_gol" List.ItemID="1747573718" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\economy\upgrade_econ_ovoo_stone_rate_4_mon_ha_gol" List.ItemID="1688837693" />
+			</list>
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="-1969202808" List.ListAction="Append">
+			<enum_table name="accepted_resources">
+				<bool name="action" value="False" />
+				<bool name="command" value="False" />
+				<bool name="popcap" value="False" />
+				<bool name="food" value="True" />
+				<bool name="wood" value="True" />
+				<bool name="stone" value="False" overrideParent="True" />
+				<bool name="gold" value="True" />
+				<bool name="militia_hre" value="False" />
+				<bool name="merc_byz" value="False" />
+			</enum_table>
+			<enum_table name="drop_off_time_seconds">
+				<float name="action" value="1" />
+				<float name="command" value="1" />
+				<float name="popcap" value="1" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="1" />
+				<float name="merc_byz" value="1" />
+			</enum_table>
+			<bool name="allow_any_resource_after_construct" value="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\stimulus_emission_ext" List.ItemID="-1190417705" List.ListAction="Append">
+			<list name="emittable_stimulus_types" comment="Tuned here: building_construction_complete\Master\emit_sheep_herd_stimulus\emit_sheep_herd_stimulus&#xD;&#xA;&#xD;&#xA;d:\projects\cardinal\assets\cardinal\statetrees\simulation\ebps\building_construction_complete.rdo">
+				<enum name="stimulus_type" value="herding_interest" List.ItemID="560175725" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1504304328" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="782400736">
+					<group name="tier" List.ItemID="-1396220386">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\buildings\house_mon_ha_gol\tier1_house_mon_ha_gol" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1482749244">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\buildings\house_mon_ha_gol\tier2_house_mon_ha_gol" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_feudal" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1896487079">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\buildings\house_mon_ha_gol\tier3_house_mon_ha_gol" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-56839954">
+					<group name="tier" List.ItemID="-34478019">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\outskirts\houses\mon_house_01" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="4298543" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_house" />
+</instance>

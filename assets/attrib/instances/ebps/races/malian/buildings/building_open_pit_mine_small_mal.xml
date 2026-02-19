@@ -1,0 +1,85 @@
+<instance version="4" description="Built on top of a stone pile" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="529744147" List.ParentItemID="529744147">
+			<group name="placement_requirements">
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_near_entity" List.ItemID="-1685109947" List.ParentItemID="-1685109947">
+						<list name="near_entity_requirement" overrideParent="True">
+							<template_reference name="required" value="requirements\required_unit_type" List.ItemID="1217081499">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<enum name="unit_type" value="gold" />
+								<template_reference name="qualify_option" value="options\none">
+								</template_reference>
+								<bool name="search_load_out" value="False" />
+							</template_reference>
+							<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="-131447243">
+								<locstring name="ui_name" value="0" />
+								<enum name="reason" value="usage" />
+								<enum name="key" value="gold_deposit_is_claimed" />
+								<enum name="data_source_type" value="entity_datasource" />
+								<bool name="default_value" value="False" />
+								<bool name="compare_to_value" value="False" />
+							</template_reference>
+							<template_reference name="required" value="requirements\required_unit_type" List.ItemID="-1396567082">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<enum name="unit_type" value="resource_small" overrideParent="True" />
+								<template_reference name="qualify_option" value="options\none">
+								</template_reference>
+								<bool name="search_load_out" value="False" />
+							</template_reference>
+							<template_reference name="required" value="requirements\required_not" List.ItemID="-1382096993">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirement_table">
+									<template_reference name="required" value="requirements\required_unit_type" List.ItemID="1871166822">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<enum name="unit_type" value="resource_tiny" />
+										<template_reference name="qualify_option" value="options\none">
+										</template_reference>
+										<bool name="search_load_out" value="False" />
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1606813016" List.ParentItemID="-1606813016">
+			<file name="alternate_sua" value="art\civilizations\malian\structures\mine\mal_mine_control_age01\mal_mine_control_age01" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1336682941" List.ParentItemID="1336682941">
+			<group name="footprint_scale">
+				<float name="x" value="6" overrideParent="True" />
+				<float name="y" value="6" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="760178952" List.ParentItemID="760178952">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-307133530" List.ParentItemID="-307133530">
+					<group name="tier" List.ItemID="-1390229407" List.ParentItemID="-1390229407">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\malian\buildings\econ_open_pit_mine_mal\tier1_econ_open_pit_mine_small_mal" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1342083797" List.ParentItemID="1342083797">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="1060856458" List.ParentItemID="1060856458">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="satisfying_entity_groups">
+							<group name="satisfying_entity_group" comment="House Influence&#xD;&#xA;&#xD;&#xA;" List.ItemID="2003350836" List.ParentItemID="2003350836">
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073742193" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2067413" />
+	<instance_reference name="parent_pbg" value="ebps\races\malian\buildings\building_open_pit_mine_mal" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+</instance>

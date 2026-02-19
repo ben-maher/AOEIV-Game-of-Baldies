@@ -1,0 +1,71 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="529366543" List.ParentItemID="529366543">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1844403090" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-2010798804" List.ParentItemID="-2010798804">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="1928337942" List.ParentItemID="1928337942">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_springald_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-348367809" List.ParentItemID="-348367809">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_mangonel_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="65476673" List.ParentItemID="65476673">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_trebuchet_ayy" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-263284602" List.ParentItemID="-263284602">
+					<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_culverin_ayy" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="148299659" List.ParentItemID="148299659">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1789389488" List.ParentItemID="-1789389488">
+					<uniqueid name="id" value="1073741941" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101148" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_unit_siege_control_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="529366543" List.ParentItemID="529366543">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="925302023" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-2010798804" List.ParentItemID="-2010798804">
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="1928337942" List.ParentItemID="1928337942">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_springald_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-348367809" List.ParentItemID="-348367809">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_mangonel_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1510226735" List.ParentItemID="1510226735">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_bombard_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="65476673" List.ParentItemID="65476673">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_trebuchet_ayy" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-263284602" List.ParentItemID="-263284602">
+						<instance_reference name="squad" value="sbps\races\ayyubid_cmp\unit_culverin_ayy" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="148299659" List.ParentItemID="148299659">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="-1789389488" List.ParentItemID="-1789389488">
+						<uniqueid name="id" value="1073741942" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101148" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_unit_siege_control_abb" />
+	</variant>
+</instance>

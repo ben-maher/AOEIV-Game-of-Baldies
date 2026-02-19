@@ -1,0 +1,79 @@
+<instance version="4" description="Mongol outpost" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1544196321" List.ParentItemID="1544196321">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\buildings\fortified_outpost_mon_ha_gol\tier1_fortified_outpost_mon_ha_gol" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1618369463" List.ParentItemID="-1618369463">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="150" overrideParent="True" />
+					<float name="stone" value="50" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
+			<float name="hitpoints" value="1700" overrideParent="True" />
+			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\outpost_death_actions\outpost_stone" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\mongol_ha_gol" List.ItemID="-353453863" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1221151512" List.ParentItemID="-1221151512">
+			<string name="decorator_data_template" value="GloriousChargeDecorator" overrideParent="True" />
+			<file name="icon_name" value="races\golden_horde\buildings\fortified_outpost" overrideParent="True" />
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="536671903" List.ParentItemID="536671903">
+			<list name="standard_upgrades" removedIds="1404602718, -370629295, -1417890251, 754288916">
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_arrowslits_mon" List.ItemID="1083297938" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_springald_mon" List.ItemID="-649677170" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" List.ItemID="-770015760" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\stone_upgrades\upgrade_outpost_glorious_charge_mon_ha_gol" List.ItemID="1915980989" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol_ha_gol\research\stone_upgrades\upgrade_defensive_improvement_mon_ha_gol" List.ItemID="1754375057" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="389041388" List.ParentItemID="389041388">
+			<group name="footprint_scale">
+				<float name="x" value="6" overrideParent="True" />
+				<float name="y" value="6" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1700796307" List.ParentItemID="1700796307">
+			<bool name="show_ability_range_in_construction_item_preview" value="True" overrideParent="True" />
+			<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
+				<float name="initial_health" value="170" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="32036034" List.ParentItemID="32036034">
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-589861990" List.ParentItemID="-589861990">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\timed_abilities\mongol_ha_gol\outpost_glorious_charge_mon_ha_gol" List.ItemID="-2131809047" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol_ha_gol\outpost_armor_aura_mon_ha_gol" List.ItemID="-994539632" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol_ha_gol\outpost_edict_display_only_mon_ha_gol" List.ItemID="704614220" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-560180147" List.ParentItemID="-560180147">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols_ha_gol\outpost_mon_ha_gol" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="988606352" List.ParentItemID="988606352">
+			<file name="construction_stamp" value="art\stamps\scaffolding\mongols\mon_ha_gol_outpost" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="-335381318" List.ListAction="Append">
+			<float name="range_metres" value="8" overrideParent="True" />
+			<bool name="is_root_generator" value="True" overrideParent="True" />
+			<int name="generator_value" value="0" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<int name="district_palette_id" value="1" overrideParent="True" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9003602" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" />
+</instance>

@@ -1,0 +1,182 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions" removedIds="543548375, 1886961674, 355740740">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1934521912" List.ParentItemID="-1934521912">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\buildings\leader_tent_cru" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-555824949" List.ParentItemID="-555824949">
+			<file name="icon_name" value="races\campaign\buildings\leader_tent_cru" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-655417179" List.ParentItemID="-655417179">
+			<enum name="weapon_targeting" value="automatic" overrideParent="True" />
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="928512209" List.ParentItemID="928512209" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-2121734655" List.ParentItemID="-2121734655">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="on_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\house_construction_complete\run_once" overrideParent="True" />
+				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\house_construction_complete\always_run" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1460126782" List.ParentItemID="-1460126782">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-828808966" List.ParentItemID="-828808966">
+					<group name="tier" List.ItemID="22955598" List.ParentItemID="22955598">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\buildings\leader_tent_cru" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1959145588" List.ListAction="Append">
+			<bool name="can_repair" value="False" />
+			<bool name="cuttable" value="False" />
+			<string name="death_event_name" value="Death" />
+			<float name="death_seconds" value="180" />
+			<bool name="delete_when_dead" value="True" />
+			<bool name="force_attacker_memory" value="False" />
+			<float name="hitpoints" value="1000" overrideParent="True" />
+			<bool name="is_invincible" value="False" />
+			<bool name="is_salvagable_wreck" value="False" />
+			<instance_reference name="rebuilt_entity" value="" />
+			<instance_reference name="rebuilt_squad" value="" />
+			<bool name="rebuilt_use_wreck_owner" value="False" />
+			<bool name="receive_weapon_cover_modifiers" value="True" />
+			<float name="regeneration" value="0" />
+			<bool name="regeneration_disabled" value="True" />
+			<bool name="remove_from_pathfinding_on_death" value="True" />
+			<bool name="reveal_to_all_on_death" value="False" />
+			<bool name="ui_can_scuttle" value="False" />
+			<float name="target_size" value="1" />
+			<float name="weapon_priority" value="0" />
+			<template_reference name="wreck_entity_option" value="options\none">
+			</template_reference>
+			<enum name="armor_type" value="None" />
+			<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+				<float name="armor" value="0" />
+			</template_reference>
+			<enum name="allegiance_override" value="none" />
+			<bool name="not_default_attackable" value="False" />
+			<bool name="can_be_damaged_by_ally" value="False" />
+			<enum_table name="armor_scaler_by_damage_type" overrideParent="True">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="50" />
+				<float name="Fire" value="0" />
+			</enum_table>
+			<state_tree_node name="death_action_tree" value="" />
+			<template_reference name="self_destruct_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="rebuilt_entity_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_received_damage_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
+			<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="0" />
+				<float name="Fire" value="0" />
+			</enum_table>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2135171" />
+	<instance_reference name="parent_pbg" value="ebps\races\ayyubid_cmp\buildings\building_leader_tent_ayy" />
+	<variant name="xp3">
+		<list name="extensions" removedIds="543548375, 1886961674, 355740740">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1934521912" List.ParentItemID="-1934521912">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\buildings\leader_tent_cru" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-555824949" List.ParentItemID="-555824949">
+				<file name="icon_name" value="races\campaign\buildings\leader_tent_cru" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-655417179" List.ParentItemID="-655417179">
+				<enum name="weapon_targeting" value="automatic" overrideParent="True" />
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="928512209" List.ParentItemID="928512209" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-2121734655" List.ParentItemID="-2121734655">
+				<group name="on_construction_complete_state_tree_refs">
+					<string name="on_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\house_construction_complete\run_once" overrideParent="True" />
+					<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\house_construction_complete\always_run" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1460126782" List.ParentItemID="-1460126782">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-828808966" List.ParentItemID="-828808966">
+						<group name="tier" List.ItemID="22955598" List.ParentItemID="22955598">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\crusader_cmp\buildings\leader_tent_cru" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-575362028" List.ListAction="Append">
+				<bool name="can_repair" value="False" />
+				<bool name="cuttable" value="False" />
+				<string name="death_event_name" value="Death" />
+				<float name="death_seconds" value="180" />
+				<bool name="delete_when_dead" value="True" />
+				<bool name="force_attacker_memory" value="False" />
+				<float name="hitpoints" value="1000" overrideParent="True" />
+				<bool name="is_invincible" value="False" />
+				<bool name="is_salvagable_wreck" value="False" />
+				<instance_reference name="rebuilt_entity" value="" />
+				<instance_reference name="rebuilt_squad" value="" />
+				<bool name="rebuilt_use_wreck_owner" value="False" />
+				<bool name="receive_weapon_cover_modifiers" value="True" />
+				<float name="regeneration" value="0" />
+				<bool name="regeneration_disabled" value="True" />
+				<bool name="remove_from_pathfinding_on_death" value="True" />
+				<bool name="reveal_to_all_on_death" value="False" />
+				<bool name="ui_can_scuttle" value="False" />
+				<float name="target_size" value="1" />
+				<float name="weapon_priority" value="0" />
+				<template_reference name="wreck_entity_option" value="options\none">
+				</template_reference>
+				<enum name="armor_type" value="None" />
+				<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+					<float name="armor" value="0" />
+				</template_reference>
+				<enum name="allegiance_override" value="none" />
+				<bool name="not_default_attackable" value="False" />
+				<bool name="can_be_damaged_by_ally" value="False" />
+				<enum_table name="armor_scaler_by_damage_type" overrideParent="True">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="50" />
+					<float name="Fire" value="0" />
+				</enum_table>
+				<state_tree_node name="death_action_tree" value="" />
+				<template_reference name="self_destruct_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="rebuilt_entity_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_received_damage_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
+				<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
+				<enum_table name="percentage_reduction_armor_by_damage_type">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="0" />
+					<float name="Fire" value="0" />
+				</enum_table>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2135171" />
+		<instance_reference name="parent_pbg" value="ebps\races\ayyubid_cmp\buildings\building_leader_tent_ayy" />
+	</variant>
+</instance>

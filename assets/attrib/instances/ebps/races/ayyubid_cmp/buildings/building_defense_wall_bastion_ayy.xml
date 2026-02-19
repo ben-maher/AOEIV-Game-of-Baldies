@@ -1,0 +1,25 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1456959780" List.ParentItemID="-1456959780">
+			<float name="hitpoints" value="9000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-936535524" List.ParentItemID="-936535524">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="449646551" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101134" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_wall_bastion_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-936535524" List.ParentItemID="-936535524">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1755064282" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101134" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_defense_wall_bastion_abb" />
+	</variant>
+</instance>

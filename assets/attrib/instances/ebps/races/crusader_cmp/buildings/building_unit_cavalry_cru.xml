@@ -1,0 +1,112 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1605745194" List.ParentItemID="-1605745194">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="1877660587" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="400767969" List.ParentItemID="400767969">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="-1172120032" List.ParentItemID="-1172120032">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_horseman_2_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1023038424" List.ParentItemID="1023038424">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_horseman_3_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1904589418" List.ParentItemID="1904589418">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_horseman_4_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-1473570733" List.ParentItemID="-1473570733">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_knight_2_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-820291697" List.ParentItemID="-820291697">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_knight_3_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="455361216" List.ParentItemID="455361216">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_knight_4_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-906990671" List.ParentItemID="-906990671">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_scout_cru" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1082436431" List.ParentItemID="-1082436431">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\units\upgrade_unit_horseman_3" List.ItemID="-1534695830" />
+				<instance_reference name="upgrade" value="upgrade\races\common\units\upgrade_unit_horseman_4" List.ItemID="1556908928" />
+				<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\units\upgrade_unit_knight_3_cru" overrideParent="True" List.ItemID="-1059530056" />
+				<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\units\upgrade_unit_knight_4_cru" overrideParent="True" List.ItemID="-1846531317" />
+				<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\research\upgrade_knight_cantled_saddle_cru" overrideParent="True" List.ItemID="-557405057" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_scout_los_increase" List.ItemID="1310399229" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1385321901" List.ParentItemID="-1385321901">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-464264857" List.ParentItemID="-464264857">
+					<uniqueid name="id" value="1073742026" />
+				</template_reference>
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="1335635950" List.ParentItemID="1335635950">
+					<uniqueid name="id" value="1073742027" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089046" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_unit_cavalry_fre\building_unit_cavalry_control_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1605745194" List.ParentItemID="-1605745194">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="298277228" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="400767969" List.ParentItemID="400767969">
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="-1172120032" List.ParentItemID="-1172120032">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_horseman_2_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1023038424" List.ParentItemID="1023038424">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_horseman_3_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1904589418" List.ParentItemID="1904589418">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_horseman_4_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-1473570733" List.ParentItemID="-1473570733">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_knight_2_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-820291697" List.ParentItemID="-820291697">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_knight_3_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="455361216" List.ParentItemID="455361216">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_knight_4_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-906990671" List.ParentItemID="-906990671">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_scout_cru" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1082436431" List.ParentItemID="-1082436431">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\units\upgrade_unit_horseman_3" List.ItemID="367829663" />
+					<instance_reference name="upgrade" value="upgrade\races\common\units\upgrade_unit_horseman_4" List.ItemID="1139977434" />
+					<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\units\upgrade_unit_knight_3_cru" overrideParent="True" List.ItemID="-1856275148" />
+					<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\units\upgrade_unit_knight_4_cru" overrideParent="True" List.ItemID="-1555703058" />
+					<instance_reference name="upgrade" value="upgrade\races\crusader_cmp\research\upgrade_knight_cantled_saddle_cru" overrideParent="True" List.ItemID="1835194395" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_scout_los_increase" List.ItemID="-2108010164" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-1385321901" List.ParentItemID="-1385321901">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="-464264857" List.ParentItemID="-464264857">
+						<uniqueid name="id" value="1073742028" />
+					</template_reference>
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="1335635950" List.ParentItemID="1335635950">
+						<uniqueid name="id" value="1073742029" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089046" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_unit_cavalry_fre\building_unit_cavalry_control_fre" />
+	</variant>
+</instance>
