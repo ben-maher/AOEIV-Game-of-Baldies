@@ -1,0 +1,64 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions" removedIds="-1653881340, -383417408, 1013408414">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="806002589" List.ParentItemID="806002589">
+			<list name="unit_type_list" removedIds="1910552699, -645253442, 282053772, -641255179, 1314551802, 1829718162">
+				<enum name="unit_type" value="scar_mercenary_house" List.ItemID="-409711314" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1895077351" List.ParentItemID="-1895077351">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="while_construction_complete_entity_state_tree_ref" value="" overrideParent="True" />
+				<string name="on_construction_complete_entity_state_tree_ref" value="" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-717814548" List.ParentItemID="-717814548">
+			<file name="icon_name" value="races\byzantine\buildings\mercenary_house" overrideParent="True" />
+			<group name="ui_codex_info">
+				<int name="priority" value="4700" overrideParent="True" />
+				<bool name="exclusive" value="True" overrideParent="True" />
+			</group>
+			<string name="selection_datatemplate" value="DisplayBriefTextOnlySelectionDataTemplate" overrideParent="True" />
+			<string name="telemetry_name" value="" overrideParent="True" />
+			<list name="ui_extra_infos" removedIds="-638502779">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1932041427" List.ParentItemID="-1932041427">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\dev\rogue\objective\merc_house_select_a_rogue" List.ItemID="1798490190" />
+				<instance_reference name="upgrade" value="upgrade\dev\rogue\objective\merc_house_select_b_rogue" overrideParent="True" List.ItemID="664788828" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="740484043" List.ParentItemID="740484043">
+			<list name="requirement_table" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1128843616" List.ParentItemID="-1128843616">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="2010673256" List.ParentItemID="2010673256">
+					<string name="state_tree" value="building_action_apply\buildings\merc_house_action_apply" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="706256240" List.ParentItemID="706256240">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\byzantine\unit_merc_house_byz" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="2113138510" List.ParentItemID="2113138510">
+			<string name="single_select_event" value="sfx_ui_tech_unit_mercenary_house_building_selection_play" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="-267708409" List.ParentItemID="-267708409">
+			<file name="construction_stamp" value="art\stamps\scaffolding\byzantine\byz_const_mercenary" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1361148423" List.ParentItemID="1361148423">
+			<list name="tier_group_list">
+				<list name="tier_group" removedIds="640308037, -871132080, 1490806107" List.ItemID="275214516" List.ParentItemID="275214516">
+					<group name="tier" List.ItemID="771790364" List.ParentItemID="771790364">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\byzantine\buildings\unit_mercenary_house_byz\tier2_mercenary_house_byz" overrideParent="True" />
+						<instance_reference name="statetree_tier_requirements_pbg" value="" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9002646" />
+	<instance_reference name="parent_pbg" value="ebps\races\byzantine\buildings\building_unit_infantry_control_byz" />
+</instance>

@@ -1,0 +1,720 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1562189569" List.ParentItemID="1562189569">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1664330566" List.ParentItemID="1664330566">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+			<float name="hitpoints" value="2000" overrideParent="True" />
+			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\daimyo_estate_death_action\hojo_death_actions" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="135251227" List.ParentItemID="135251227">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="806002589" List.ParentItemID="806002589">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\japanese_ha_sen" overrideParent="True" List.ItemID="-564501268" />
+			</list>
+			<list name="unit_type_list" removedIds="1314551802, 1910552699">
+				<enum name="unit_type" value="daimyo_estate" List.ItemID="-1666073498" List.ListAction="Append" />
+				<enum name="unit_type" value="daimyo_estate_hojo" List.ItemID="-400599957" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1895077351" List.ParentItemID="-1895077351">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="while_construction_complete_entity_state_tree_ref" value="daimyo_estate_construction_complete_jpn_ha_sen\hojo_estate_complete" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="62131284" List.ParentItemID="62131284">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="stone" value="125" overrideParent="True" />
+					<float name="wood" value="125" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-717814548" List.ParentItemID="-717814548">
+			<group name="ui_codex_info">
+				<bool name="exclusive" value="True" overrideParent="True" />
+				<int name="priority" value="4649" overrideParent="True" />
+			</group>
+			<file name="icon_name" value="races\sengoku\widget\hojo" overrideParent="True" />
+			<group name="selection_obb_size" comment="Using cutom obb for temporary selection usability">
+			</group>
+			<template_reference name="help_text_formatter" value="ui_text_formatter" overrideParent="True">
+				<list name="formatter_arguments">
+					<int name="int_value" value="1000" overrideParent="True" List.ItemID="1412709197" />
+					<int name="int_value" value="2" overrideParent="True" List.ItemID="1391440992" />
+					<int name="int_value" value="10" overrideParent="True" List.ItemID="1048246344" />
+				</list>
+				<locstring name="formatter" value="0" />
+			</template_reference>
+			<list name="ui_extra_infos" overrideParent="True">
+				<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="1873718764">
+					<file name="icon" value="influence_buff" overrideParent="True" />
+					<locstring name="description" value="0" />
+					<template_reference name="description_formatter" value="ui_text_formatter" overrideParent="True">
+						<list name="formatter_arguments" overrideParent="True">
+							<int name="int_value" value="20" overrideParent="True" List.ItemID="1317300438" />
+							<int name="int_value" value="1" overrideParent="True" List.ItemID="-697124843" />
+						</list>
+						<locstring name="formatter" value="0" />
+					</template_reference>
+				</template_reference>
+			</list>
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<string name="selection_group" value="hojo_daimyo_estate" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1653881340" List.ParentItemID="-1653881340">
+			<list name="spawn_items" overrideParent="True">
+				<group name="spawn_item" comment="Daimyo - Feudal Age" List.ItemID="-82320090">
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_daimyo_2_jpn_ha_sen" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_daimyo_estate\produce_daimyo" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="0" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" overrideParent="True" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<file name="ui_icon_name" value="" />
+					<string name="ui_tooltip_data_template" value="" />
+				</group>
+				<group name="spawn_item" comment="Spearman Levy" List.ItemID="638582167">
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\japanese_ha_sen\shogun_levies\unit_spearman_levy_jpn_ha_sen" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" overrideParent="True" />
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="1" overrideParent="True" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+						<instance_reference name="additional_squad" value="sbps\races\japanese_ha_sen\shogun_levies\unit_spearman_levy_jpn_ha_sen" overrideParent="True" List.ItemID="-1188997441" />
+						<instance_reference name="additional_squad" value="sbps\races\japanese_ha_sen\shogun_levies\unit_spearman_levy_jpn_ha_sen" overrideParent="True" List.ItemID="1604089995" />
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_daimyo_estate\produce_spearman_levy" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="2" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<file name="ui_icon_name" value="" />
+					<string name="ui_tooltip_data_template" value="" />
+				</group>
+				<group name="spawn_item" comment="Samurai Levy" List.ItemID="786122782">
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="2" overrideParent="True" />
+					</group>
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\japanese_ha_sen\shogun_levies\unit_samurai_levy_jpn_ha_sen" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" overrideParent="True" />
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="1" overrideParent="True" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+						<instance_reference name="additional_squad" value="sbps\races\japanese_ha_sen\shogun_levies\unit_samurai_levy_jpn_ha_sen" overrideParent="True" List.ItemID="-1115029561" />
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_daimyo_estate\produce_samurai_levy" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="4" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<file name="ui_icon_name" value="" />
+					<string name="ui_tooltip_data_template" value="" />
+				</group>
+			</list>
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_daimyo_estate\hojo_daimyo_estate" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1932041427" List.ParentItemID="-1932041427">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\japanese_ha_sen\research\clan_upgrades\upgrade_spearman_horseman_range_jpn_ha_sen" List.ItemID="1071113497" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese_ha_sen\research\clan_upgrades\upgrade_samurai_bow_jpn_ha_sen" List.ItemID="983078429" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese_ha_sen\research\clan_upgrades\upgrade_infantry_ranged_armor_jpn_ha_sen" List.ItemID="-1930664078" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="740484043" List.ParentItemID="740484043">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_not" comment="Requirement for hit max building count" List.ItemID="-172659078">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-180411288">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_hojo_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+							<int name="required_structure_count" value="3" overrideParent="True" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="False" overrideParent="True" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_all_in_list" comment="Requirement to prevent construction if two other clans have buildings." List.ItemID="214573950">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_any_in_list" List.ItemID="-389158371">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="2005067316">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_statemodelbool" List.ItemID="-803288023">
+											<locstring name="ui_name" value="0" />
+											<enum name="reason" value="usage" />
+											<enum name="key" value="built_takeda_daimyo_estate" overrideParent="True" />
+											<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+											<bool name="default_value" value="False" />
+											<bool name="compare_to_value" value="True" overrideParent="True" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_not" List.ItemID="-317295576">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_structure" List.ItemID="-62301752">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_oda_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+													<int name="required_structure_count" value="1" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+									<locstring name="ui_name_controller" value="0" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="713698373">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_statemodelbool" List.ItemID="1085554487">
+											<locstring name="ui_name" value="0" />
+											<enum name="reason" value="usage" />
+											<enum name="key" value="built_oda_daimyo_estate" overrideParent="True" />
+											<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+											<bool name="default_value" value="False" />
+											<bool name="compare_to_value" value="True" overrideParent="True" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_not" List.ItemID="903070971">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_structure" List.ItemID="2076438359">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_takeda_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+													<int name="required_structure_count" value="1" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+									<locstring name="ui_name_controller" value="0" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1116166053">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_statemodelbool" List.ItemID="804656281">
+											<locstring name="ui_name" value="0" />
+											<enum name="reason" value="usage" />
+											<enum name="key" value="built_takeda_daimyo_estate" overrideParent="True" />
+											<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+											<bool name="default_value" value="False" />
+											<bool name="compare_to_value" value="False" overrideParent="True" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_statemodelbool" List.ItemID="-785792142">
+											<locstring name="ui_name" value="0" />
+											<enum name="reason" value="usage" />
+											<enum name="key" value="built_oda_daimyo_estate" overrideParent="True" />
+											<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+											<bool name="default_value" value="False" />
+											<bool name="compare_to_value" value="False" overrideParent="True" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_any_in_list" List.ItemID="-822237012">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirements">
+												<template_reference name="requirement" value="requirements\required_not" List.ItemID="-258466605">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirement_table">
+														<template_reference name="required" value="requirements\required_structure" List.ItemID="128677608">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_oda_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+															<int name="required_structure_count" value="1" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+													</list>
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_not" List.ItemID="1366265316">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirement_table">
+														<template_reference name="required" value="requirements\required_structure" List.ItemID="-480316688">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_takeda_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+															<int name="required_structure_count" value="1" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+													</list>
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+									<locstring name="ui_name_controller" value="0" />
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_not" List.ItemID="-7411499">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_all_in_list" comment="Requires that you don't already have both of the other estates." List.ItemID="1415105346">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements" overrideParent="True">
+										<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1550049781">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_oda_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+											<int name="required_structure_count" value="1" />
+											<bool name="check_team" value="False" />
+											<bool name="require_construction_complete" value="False" overrideParent="True" />
+											<group name="include_pbg_parenting">
+												<bool name="include_child_pbgs" value="False" />
+												<bool name="include_parent_pbgs" value="False" />
+											</group>
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-661816643">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_takeda_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+											<int name="required_structure_count" value="1" />
+											<bool name="check_team" value="False" />
+											<bool name="require_construction_complete" value="False" overrideParent="True" />
+											<group name="include_pbg_parenting">
+												<bool name="include_child_pbgs" value="False" />
+												<bool name="include_parent_pbgs" value="False" />
+											</group>
+										</template_reference>
+									</list>
+									<locstring name="ui_name_controller" value="0" />
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_not" List.ItemID="-1828444002">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_all_in_list" List.ItemID="20666690">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_statemodelbool" List.ItemID="1579911244">
+											<locstring name="ui_name" value="0" />
+											<enum name="reason" value="usage" />
+											<enum name="key" value="built_takeda_daimyo_estate" overrideParent="True" />
+											<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+											<bool name="default_value" value="False" />
+											<bool name="compare_to_value" value="True" overrideParent="True" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_statemodelbool" List.ItemID="-1970585534">
+											<locstring name="ui_name" value="0" />
+											<enum name="reason" value="usage" />
+											<enum name="key" value="built_oda_daimyo_estate" overrideParent="True" />
+											<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+											<bool name="default_value" value="False" />
+											<bool name="compare_to_value" value="True" overrideParent="True" />
+										</template_reference>
+									</list>
+									<locstring name="ui_name_controller" value="0" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<locstring name="ui_name_controller" value="0" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_any_in_list" comment="Requirement to prevent the third building if a clan has become the shogunate" List.ItemID="-1425540672">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_not" List.ItemID="2034774672">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_structure" List.ItemID="-1820063054">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_hojo_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+									<int name="required_structure_count" value="2" overrideParent="True" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="False" overrideParent="True" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_all_in_list" comment="Requirement to prevent the third building if a clan has become the shogunate" List.ItemID="-908550719">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_not" List.ItemID="256043189">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_structure" List.ItemID="-311004928">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_takeda_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+											<int name="required_structure_count" value="3" overrideParent="True" />
+											<bool name="check_team" value="False" />
+											<bool name="require_construction_complete" value="False" overrideParent="True" />
+											<group name="include_pbg_parenting">
+												<bool name="include_child_pbgs" value="False" />
+												<bool name="include_parent_pbgs" value="False" />
+											</group>
+										</template_reference>
+									</list>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_not" List.ItemID="1278439099">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_structure" List.ItemID="1372116656">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="structure_name" value="ebps\races\japanese_ha_sen\buildings\building_unit_daimyo_estate_oda_jpn_ha_sen" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+											<int name="required_structure_count" value="3" overrideParent="True" />
+											<bool name="check_team" value="False" />
+											<bool name="require_construction_complete" value="False" overrideParent="True" />
+											<group name="include_pbg_parenting">
+												<bool name="include_child_pbgs" value="False" />
+												<bool name="include_parent_pbgs" value="False" />
+											</group>
+										</template_reference>
+									</list>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_all_in_list" comment="Requires no other shogunate " List.ItemID="-897478849">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_statemodelbool" List.ItemID="-927243850">
+											<locstring name="ui_name" value="0" />
+											<enum name="reason" value="usage" />
+											<enum name="key" value="established_oda_shogunate" overrideParent="True" />
+											<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+											<bool name="default_value" value="False" />
+											<bool name="compare_to_value" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_statemodelbool" List.ItemID="-1868325181">
+											<locstring name="ui_name" value="0" />
+											<enum name="reason" value="usage" />
+											<enum name="key" value="established_takeda_shogunate" overrideParent="True" />
+											<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+											<bool name="default_value" value="False" />
+											<bool name="compare_to_value" value="False" />
+										</template_reference>
+									</list>
+									<locstring name="ui_name_controller" value="0" />
+								</template_reference>
+							</list>
+							<locstring name="ui_name_controller" value="0" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-127352765">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+					<bool name="include_completed" value="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1128843616" List.ParentItemID="-1128843616">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="2010673256" List.ParentItemID="2010673256">
+					<string name="state_tree" value="building_action_apply\buildings\daimyo_estate_action_apply" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="384170568" List.ParentItemID="384170568">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="-293596732">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="964082570">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-2061871191">
+					<enum name="interaction_type" value="deposit_relic" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1132786092" List.ParentItemID="-1132786092">
+			<list name="abilities" removedIds="1787698090">
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese_ha_sen\clan_levels\clan_level_hojo_1_jpn_ha_sen" List.ItemID="1811002674" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese_ha_sen\clan_levels\clan_level_hojo_2_jpn_ha_sen" List.ItemID="1173120968" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese_ha_sen\clan_levels\clan_level_hojo_3_jpn_ha_sen" List.ItemID="1328701697" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese_ha_sen\daimyo_estate_influence_jpn_ha_sen" List.ItemID="-1520001299" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-896145889" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="706256240" List.ParentItemID="706256240">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\japanese_ha_sen\daimyo_estate_jpn_ha_sen" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="2113138510" List.ParentItemID="2113138510">
+			<string name="single_select_event" value="sfx_ui_unit_daimyo_estate_building_selection_play" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="-267708409" List.ParentItemID="-267708409">
+			<file name="construction_stamp" value="art\stamps\scaffolding\japanese\jpn_ha_sen_daimyo" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1212600148" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="956666162">
+					<group name="tier" List.ItemID="-2110246062">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese_ha_sen\buildings\unit_daimyo_estate_jpn\tier1_unit_daimyo_estate_control_jpn" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-388111716">
+					<group name="tier" List.ItemID="1389679627">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese_ha_sen\outskirts\jpn_ha_sen_daimyo" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="139835871" List.ListAction="Append">
+			<float name="range_metres" value="12" overrideParent="True" />
+			<bool name="is_root_generator" value="True" overrideParent="True" />
+			<int name="generator_value" value="0" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<int name="district_palette_id" value="0" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9003593" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_unit_infantry" />
+</instance>

@@ -1,0 +1,44 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="54159115" List.ParentItemID="54159115">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-2023987384" List.ParentItemID="-2023987384">
+			<bool name="self_construct" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1783436774" List.ParentItemID="1783436774">
+			<file name="icon_name" value="races\common\buildings\trading_post" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.35" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-758337112" List.ParentItemID="-758337112">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="-590244703">
+					<group name="tier" List.ItemID="1399143358">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\neutral\buildings\tier1_building_trade_post_east" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="693824878" List.ParentItemID="693824878">
+			<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2138609" />
+	<instance_reference name="parent_pbg" value="ebps\races\neutral\buildings\building_trade_post_core" />
+</instance>

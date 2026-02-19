@@ -1,0 +1,439 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="231109894" List.ParentItemID="231109894">
+			<file name="alternate_sua" value="art\civilizations\chinese\structures\wonder_greatwall\wonder_greatwall" overrideParent="True" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\chinese\buildings\building_wonder_age4_great_wall_chi" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="Building" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="423592052" List.ParentItemID="423592052">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="7500" overrideParent="True" />
+			<float name="weapon_priority" value="80" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_landmark_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="785318672" List.ParentItemID="785318672">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1007414788" List.ParentItemID="1007414788">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="1534429706" />
+				<enum name="unit_type" value="wonder" List.ItemID="654029325" />
+				<enum name="unit_type" value="defensive_structure" List.ItemID="1647097145" />
+				<enum name="unit_type" value="gate" List.ItemID="-374188815" />
+				<enum name="unit_type" value="stone_gate" List.ItemID="-464401764" />
+				<enum name="unit_type" value="wonder_castle_age" overrideParent="True" List.ItemID="2103714777" />
+				<enum name="unit_type" value="siegeable" List.ItemID="234819485" />
+				<enum name="unit_type" value="landmark" List.ItemID="635388243" />
+				<enum name="unit_type" value="audio_production_landmark" List.ItemID="-1378256452" />
+				<enum name="unit_type" value="town_center_or_landmark" List.ItemID="-602141800" />
+				<enum name="unit_type" value="great_wall_gatehouse" List.ItemID="-211839387" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="-1512169472" />
+			</list>
+			<list name="unit_type_list_selection_keybind_only" overrideParent="True">
+				<enum name="unit_type" value="select_special_building" List.ItemID="-2057852548" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="181315137" List.ParentItemID="181315137">
+			<float name="replace_ghost_distance" value="10" overrideParent="True" />
+			<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
+				<float name="initial_health" value="750" overrideParent="True" />
+			</template_reference>
+			<string name="tooltip_data_template" value="BuildingWonderDataTemplate" overrideParent="True" />
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="on_construction_plan_complete_global_state_tree_ref" value="" overrideParent="True" />
+				<string name="while_construction_complete_entity_state_tree_ref" value="great_wall_construction_complete_chi" overrideParent="True" />
+			</group>
+			<instance_reference name="ui_range" value="ui_reticule\weapon_range" overrideParent="True" />
+			<bool name="query_weapon_for_range_ui" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1899440902" List.ParentItemID="-1899440902">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="2400" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="stone" value="0" overrideParent="True" />
+					<float name="gold" value="1200" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="250" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-143395425" List.ParentItemID="-143395425">
+			<group name="sight_package">
+				<float name="inner_radius" value="20" overrideParent="True" />
+				<float name="outer_radius" value="40" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1732655808" List.ParentItemID="-1732655808">
+			<float name="decorator_height" value="12" overrideParent="True" />
+			<file name="icon_name" value="races\chinese\buildings\building_landmark_age3_great_wall" overrideParent="True" />
+			<file name="minimap_icon" value="minimap\landmark" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.3" overrideParent="True" />
+			<enum name="selection_method" value="selection_precise_and_secondary" overrideParent="True" />
+			<string name="selection_datatemplate" value="BuildingWonderDataTemplate" overrideParent="True" />
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<enum name="map_mark" value="CustomStructure" overrideParent="True" />
+			<group name="ui_codex_info">
+				<int name="priority" value="3750" overrideParent="True" />
+				<bool name="exclusive" value="True" overrideParent="True" />
+			</group>
+			<template_reference name="help_text_formatter" value="ui_text_formatter" overrideParent="True">
+				<list name="formatter_arguments" overrideParent="True">
+					<int name="int_value" value="25" overrideParent="True" List.ItemID="-1445930637" />
+				</list>
+				<locstring name="formatter" value="0" />
+			</template_reference>
+			<string name="telemetry_name" value="Great Wall Gatehouse" overrideParent="True" />
+			<bool name="use_construction_range_on_selection" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1114294630" List.ParentItemID="1114294630">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="1184120291">
+					<enum name="reason" value="usage" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table" comment="Checks to see if itself is under construction, this is a Chinese-specific change from the other Landmarks that have a similar requirment (they can't build the other Landmarks of the Age, whereas the Chinese can).&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;---" overrideParent="True">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-2125779666">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1676491114">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="True" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1227870566">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="False" overrideParent="True" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1770954617">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_statemodelfloat" List.ItemID="-711508676">
+					<locstring name="ui_name" value="0" />
+					<enum name="reason" value="usage_and_display" />
+					<enum name="key" value="age3_wonders_built_chi" />
+					<enum name="data_source_type" value="self_datasource" />
+					<float name="default_value" value="0" />
+					<float name="compare_to_value" value="2" />
+					<enum name="comparison" value="less_than" />
+					<float name="ui_max_value" value="0" />
+					<float name="ui_min_value" value="0" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_any_in_list" comment="This requirement makes sure you cannot build this landmark when using a greater Starting Age" overrideParent="True" List.ItemID="-551636963">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements" overrideParent="True">
+						<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1632994696">
+							<enum name="reason" value="usage_and_display" overrideParent="True" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\races\chinese\buildings\building_landmark_age3_sprit_way_chi\building_landmark_age3_spirit_way_control_chi" overrideParent="True" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="True" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_not" List.ItemID="-1224675245">
+							<enum name="reason" value="usage_and_display" overrideParent="True" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table" overrideParent="True">
+								<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="667220829">
+									<enum name="reason" value="usage_and_display" overrideParent="True" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not" List.ItemID="593410427">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_win_condition_game_mode_type" List.ItemID="-451496091">
+							<string name="game_mode_type" value="rogue_mode" overrideParent="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="-1169347827" List.ParentItemID="-1169347827">
+			<float name="on_fire_damage_per_sec" value="10" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="771482978" List.ParentItemID="771482978">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+				<instance_reference name="blueprint_to_replace" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_chi" overrideParent="True" />
+				<template_reference name="permitted_replacement_option" value="options\ebpextensions\hexmapext\permitted_replacement_options\cannot_be_replaced" overrideParent="True">
+				</template_reference>
+			</template_reference>
+			<bool name="should_be_killed_by_neighbour_slots" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1162177930" List.ParentItemID="-1162177930">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="914360349">
+					<string name="state_tree" value="building_action_apply\buildings\gate_action_apply" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-675927089">
+					<string name="state_tree" value="great_wall_block_scuttle_chi" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1416694632" List.ParentItemID="-1416694632">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_gate_auto_toggle" List.ItemID="2117975834" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1689418773" List.ParentItemID="-1689418773">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="-1159777012">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-846653396">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-594015990" List.ParentItemID="-594015990">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\chinese\great_wall_chi" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="2131626061" List.ParentItemID="2131626061">
+			<string name="single_select_event" value="sfx_ui_landmark_building_selection_play" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="470208800" List.ParentItemID="470208800">
+			<file name="construction_stamp" value="art\stamps\scaffolding\chinese\chi_great_wall" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="145549" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="62127964" List.ParentItemID="62127964">
+				<file name="alternate_sua" value="art\civilizations\chinese\structures\wonder_greatwall\wonder_greatwall" overrideParent="True" />
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\chinese\buildings\building_wonder_age4_great_wall_chi" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="732626525" List.ParentItemID="732626525">
+				<bool name="can_repair" value="True" overrideParent="True" />
+				<float name="hitpoints" value="5000" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+					<float name="Fire" value="0" overrideParent="True" />
+				</enum_table>
+				<state_tree_node name="death_action_tree" value="campaignMod_building_death_actions\landmarks\landmarks_age3\chi_great_wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1830608845" List.ParentItemID="1830608845">
+				<enum name="weapon_targeting" value="automatic" overrideParent="True" />
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="2010084489" />
+					<enum name="unit_type" value="wonder" List.ItemID="-964238854" />
+					<enum name="unit_type" value="defensive_structure" List.ItemID="-431991763" />
+					<enum name="unit_type" value="gate" List.ItemID="1446625958" />
+					<enum name="unit_type" value="stone_gate" List.ItemID="-1966592753" />
+					<enum name="unit_type" value="wonder_castle_age" overrideParent="True" List.ItemID="484940743" />
+					<enum name="unit_type" value="siegeable" List.ItemID="-844234870" />
+					<enum name="unit_type" value="landmark" List.ItemID="-439128045" />
+					<enum name="unit_type" value="town_center_or_landmark" List.ItemID="1093649249" List.ParentItemID="1555270002" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\chinese" List.ItemID="-1477151826" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="728361708" List.ParentItemID="728361708">
+				<float name="replace_ghost_distance" value="10" overrideParent="True" />
+				<string name="tooltip_data_template" value="BuildingWonderDataTemplate" overrideParent="True" />
+				<group name="on_construction_complete_state_tree_refs">
+					<string name="on_construction_plan_complete_global_state_tree_ref" value="" overrideParent="True" />
+					<string name="while_construction_complete_entity_state_tree_ref" value="district_landmark_age3_construction_complete_chi" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="2128300782" List.ParentItemID="2128300782">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="food" value="1600" overrideParent="True" />
+						<float name="wood" value="0" overrideParent="True" />
+						<float name="stone" value="0" overrideParent="True" />
+						<float name="gold" value="1200" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="250" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1674813337" List.ParentItemID="1674813337">
+				<file name="icon_name" value="races\chinese\buildings\building_landmark_age3_great_wall" overrideParent="True" />
+				<file name="minimap_icon" value="minimap\landmark" overrideParent="True" />
+				<float name="minimap_icon_scale" value="0.5" overrideParent="True" />
+				<string name="selection_datatemplate" value="BuildingWonderDataTemplate" overrideParent="True" />
+				<bool name="is_unique_to_race" value="True" overrideParent="True" />
+				<enum name="map_mark" value="CustomStructure" overrideParent="True" />
+				<group name="ui_codex_info">
+					<int name="priority" value="3750" overrideParent="True" />
+					<bool name="exclusive" value="True" overrideParent="True" />
+				</group>
+				<template_reference name="help_text_formatter" value="ui_text_formatter" overrideParent="True">
+					<list name="formatter_arguments" overrideParent="True">
+						<int name="int_value" value="100" List.ItemID="2109348348" />
+						<int name="int_value" value="50" List.ItemID="1565369227" />
+					</list>
+					<locstring name="formatter" value="0" />
+				</template_reference>
+				<string name="telemetry_name" value="Great Wall Gatehouse" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-343747523" List.ParentItemID="-343747523">
+				<list name="requirement_table" overrideParent="True">
+					<template_reference name="required" value="requirements\required_not" List.ItemID="33537748">
+						<enum name="reason" value="usage_and_display" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<list name="requirement_table" comment="Checks to see if itself is under construction, this is a Chinese-specific change from the other Landmarks that have a similar requirment (they can't build the other Landmarks of the Age, whereas the Chinese can).&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;---" overrideParent="True">
+							<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="1662923248">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1406016092">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="True" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-269632818">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="False" overrideParent="True" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1174871320">
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+						<bool name="include_completed" value="True" />
+					</template_reference>
+					<template_reference name="required" value="requirements\required_statemodelfloat" List.ItemID="1711814442">
+						<locstring name="ui_name" value="0" />
+						<enum name="reason" value="usage_and_display" />
+						<enum name="key" value="age3_wonders_built_chi" />
+						<enum name="data_source_type" value="self_datasource" />
+						<float name="default_value" value="0" />
+						<float name="compare_to_value" value="2" />
+						<enum name="comparison" value="less_than" />
+						<float name="ui_max_value" value="0" />
+						<float name="ui_min_value" value="0" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="493564899" List.ParentItemID="493564899">
+				<float name="on_fire_damage_per_sec" value="10" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-541082090" List.ParentItemID="-541082090">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_chi" overrideParent="True" />
+					<template_reference name="permitted_replacement_option" value="options\ebpextensions\hexmapext\permitted_replacement_options\cannot_be_replaced" overrideParent="True">
+					</template_reference>
+				</template_reference>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-166755917" List.ParentItemID="-166755917">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="-750013546">
+						<string name="state_tree" value="campaignMod_building_action_apply\buildings\gate_action_apply" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="815157784">
+						<string name="state_tree" value="campaignMod_great_wall_block_scuttle_chi" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1405653516" List.ParentItemID="-1405653516">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_gate_auto_toggle" List.ItemID="-1532653540" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\chinese\greatwall_chi" List.ItemID="2050305061" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1732825759" List.ParentItemID="-1732825759">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\chinese\great_wall_chi" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-434365534" List.ParentItemID="-434365534">
+				<string name="single_select_event" value="sfx_ui_landmark_building_selection_play" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="145549" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall_gate" mod="942db39de35c43f3933e4b2a9f4b4f31" />
+	</variant>
+</instance>

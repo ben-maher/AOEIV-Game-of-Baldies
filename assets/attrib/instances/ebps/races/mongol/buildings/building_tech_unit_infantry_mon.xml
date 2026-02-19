@@ -1,0 +1,728 @@
+<instance version="6" description="Mongol blacksmith" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1270876202" List.ParentItemID="-1270876202">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\buildings\building_tech_unit_infantry_mongol" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="740902838" List.ParentItemID="740902838">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1798353110" List.ParentItemID="-1798353110">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="803037956" />
+				<enum name="unit_type" value="research_building" List.ItemID="1159222671" />
+				<enum name="unit_type" value="blacksmith" List.ItemID="1727003738" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-275893110" />
+				<enum name="unit_type" value="packable_building" List.ItemID="-1665341538" />
+				<enum name="unit_type" value="scar_blacksmith" List.ItemID="369636470" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol" List.ItemID="1857949457" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1970437960" List.ParentItemID="1970437960">
+			<state_tree_node name="can_be_cancelled_state_tree_conditions" value="entity_construction_queries_mon\Can_Cancel_Construction" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1946099574" List.ParentItemID="-1946099574">
+			<file name="icon_name" value="races\common\buildings\blacksmith" overrideParent="True" />
+			<file name="portrait_icon" value="" overrideParent="True" />
+			<list name="ui_extra_infos" overrideParent="True">
+				<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="365495335">
+					<file name="icon" value="influence_buff" />
+					<locstring name="description" value="0" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1768352645" List.ParentItemID="-1768352645">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_damage_i" overrideParent="True" List.ItemID="745003938" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_damage_ii" overrideParent="True" List.ItemID="1791181257" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_damage_iii_mon" overrideParent="True" List.ItemID="-2145280466" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_armor_i" overrideParent="True" List.ItemID="-1420742908" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_armor_ii" overrideParent="True" List.ItemID="1902529608" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_armor_iii_mon" overrideParent="True" List.ItemID="120005502" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_engineers" List.ItemID="1831636831" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_military_academy" overrideParent="True" List.ItemID="1053249137" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_manatarms_elite_army_tactics_mon" List.ItemID="-1166031328" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_mon" overrideParent="True" List.ItemID="-1857085882" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_improved_siege_engineers_mon" List.ItemID="-999386031" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_military_academy_improved_mon" List.ItemID="1321321146" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_improved_mon" List.ItemID="623797975" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_manatarms_elite_army_tactics_improved_mon" List.ItemID="-243627919" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_armor_i" List.ItemID="-1097974748" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_armor_ii" List.ItemID="-2012781824" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_ranged_armor_iii_mon" List.ItemID="-996251319" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_damage_i" List.ItemID="1719356532" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_damage_ii" List.ItemID="6445653" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_ranged_damage_iii_mon" List.ItemID="1838352545" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_siege_chemistry_mon" List.ItemID="-105543865" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_ranged_incendiary_mon" List.ItemID="-462512738" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_siege_works_mon" overrideParent="True" List.ItemID="-1756450814" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_siege_works_improved_mon" overrideParent="True" List.ItemID="1956565534" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_ranged_leadshot_mon" List.ItemID="261402937" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_ranged_archer_silkstring_mon" List.ItemID="-1516829906" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1566784400" List.ParentItemID="-1566784400">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="612201064" List.ListAction="Append">
+					<string name="state_tree" value="upgrade_winds_of_change_reapply\reapplybuffs" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-769801208" List.ParentItemID="-769801208">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1756406900" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\mongol\pack_building_mon" overrideParent="True" List.ItemID="-889433670" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\mongol\cancel_unpacking_building_mon" List.ItemID="-489171970" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\mongol\dummy_unpacking_building_mon" List.ItemID="1421271725" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1509755434" List.ParentItemID="1509755434">
+			<state_tree_node name="fallback_default_move_command_conditions" value="entity_construction_queries_mon\Can_Queue_Move_Commands" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" comment="Make sure the building and moving building are referencing the same schema, if they are using different schemas unpacking will break." List.ItemID="-2135547562" List.ParentItemID="-2135547562">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols\tech_infantry_mon" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="672783316" List.ParentItemID="672783316">
+			<int name="music_importance" value="30" overrideParent="True" />
+			<int name="combat_importance" value="-30" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1583084712" List.ListAction="Append">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="reinforce_radius" value="0" />
+			<list name="spawn_items">
+			</list>
+			<list name="bonus_xp_from_hold_list">
+			</list>
+			<list name="reinforce_requirements">
+			</list>
+			<bool name="spawn_to_hold_try_first" value="False" />
+			<list name="queue_requirements">
+			</list>
+			<bool name="can_rally" value="True" />
+			<template_reference name="animated_spawn_option" value="options\none">
+			</template_reference>
+			<int name="max_queue_size_override" value="-1" />
+			<string name="queue_requirements_openingbranch" value="" />
+			<string name="reinforce_requirements_openingbranch" value="" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+			<bool name="enforce_minimum_clearance_at_spawn_positions" value="True" />
+			<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+			<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="30" />
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+			<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+			<bool name="can_spawn_if_neutral" value="False" />
+			<bool name="default_rally_points_allowed" value="True" />
+			<bool name="economic_rally_points_allowed" value="False" />
+			<bool name="always_use_economic_rally_points" value="False" />
+			<bool name="use_alternative_rally_point_system" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="594337673" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="608799928">
+					<group name="tier" List.ItemID="-303573961">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\tech_unit_infantry_mon\tier2_tech_unit_infantry_mon" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="-312802286">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\tech_unit_infantry_mon\tier3_tech_unit_infantry_mon" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-1235180791">
+					<group name="tier" List.ItemID="1737336974">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\outskirts\military\mon_military_01" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" overrideParent="True" List.ItemID="1878583072" List.ListAction="Append">
+			<float name="range_metres" value="0" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<bool name="is_root_generator" value="False" />
+			<int name="district_palette_id" value="0" overrideParent="True" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" overrideParent="True" List.ItemID="1863812545" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses" overrideParent="True">
+				<template_reference name="district_bonus" value="district_bonus" comment="Ovoo district bonus.&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" List.ItemID="1520420147">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" List.ItemID="-1595082947">
+								<list name="satisfying_entities" overrideParent="True">
+									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="1313757735" />
+									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-341929768" />
+									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_large_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-711000712" />
+									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_district_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="658377967" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073742215" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="district_ovoo\root" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="129991" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_unit_infantry" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2134145929" List.ParentItemID="2134145929">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\buildings\building_tech_unit_infantry_mongol" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1803428534" List.ParentItemID="1803428534">
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1540822530" List.ParentItemID="1540822530">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1514221344" List.ParentItemID="-1514221344">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="-1603935823" />
+					<enum name="unit_type" value="research_building" List.ItemID="-838858390" />
+					<enum name="unit_type" value="blacksmith" List.ItemID="-211815370" />
+					<enum name="unit_type" value="siegeable" List.ItemID="1963014176" />
+					<enum name="unit_type" value="packable_building" List.ItemID="-1184689555" />
+					<enum name="unit_type" value="scar_blacksmith" List.ItemID="-611039693" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\mongol" List.ItemID="-175471436" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-746176918" List.ParentItemID="-746176918">
+				<state_tree_node name="can_be_cancelled_state_tree_conditions" value="campaignMod_entity_construction_queries_mon\Can_Cancel_Construction" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="189157371" List.ParentItemID="189157371">
+				<file name="icon_name" value="races\common\buildings\blacksmith" overrideParent="True" />
+				<file name="portrait_icon" value="" overrideParent="True" />
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-11682162">
+						<file name="icon" value="influence_buff" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1263569907" List.ParentItemID="-1263569907">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_damage_i" overrideParent="True" List.ItemID="567283472" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_damage_ii" overrideParent="True" List.ItemID="1748812510" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_damage_iii_mon" overrideParent="True" List.ItemID="-878513092" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_armor_i" overrideParent="True" List.ItemID="-235173810" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_armor_ii" overrideParent="True" List.ItemID="1781797484" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_armor_iii_mon" overrideParent="True" List.ItemID="67588073" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_engineers" List.ItemID="1593452305" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_military_academy" overrideParent="True" List.ItemID="1937618351" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_cavalry_barding_mon" overrideParent="True" List.ItemID="-252996667" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_cavalry_grapered_lance_mon" List.ItemID="-359468696" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_spearman_elite_spear_tactics_mon" List.ItemID="794346493" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_mon" overrideParent="True" List.ItemID="-1759053955" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_damage_i_improved_mon" overrideParent="True" List.ItemID="583991353" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_damage_ii_improved_mon" overrideParent="True" List.ItemID="119687363" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_damage_iii_improved_mon" List.ItemID="10091014" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_armor_i_improved_mon" List.ItemID="-183241210" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_armor_ii_improved_mon" List.ItemID="-463703449" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_armor_iii_improved_mon" overrideParent="True" List.ItemID="1691963485" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_improved_siege_engineers_mon" List.ItemID="1395703245" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_military_academy_improved_mon" List.ItemID="1254677846" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_cavalry_barding_improved_mon" List.ItemID="401949356" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_improved_mon" List.ItemID="-1590378185" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_spearman_elite_spear_tactics_improved_mon" List.ItemID="-1199886693" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_cavalry_grapered_lance_improved_mon" List.ItemID="1423997686" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1871614655" List.ParentItemID="-1871614655">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1155872977" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\pack_building_mon" overrideParent="True" List.ItemID="1079863930" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\cancel_unpacking_building_mon" List.ItemID="-1450276521" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\dummy_unpacking_building_mon" List.ItemID="1956725694" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="956252755" List.ParentItemID="956252755">
+				<state_tree_node name="fallback_default_move_command_conditions" value="campaignMod_entity_construction_queries_mon\Can_Queue_Move_Commands" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1323327209" List.ParentItemID="1323327209">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols\tech_infantry_mon" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-423856262" List.ListAction="Append">
+				<bool name="must_be_in_supply" value="False" />
+				<float name="reinforce_radius" value="0" />
+				<list name="spawn_items">
+				</list>
+				<list name="bonus_xp_from_hold_list">
+				</list>
+				<list name="reinforce_requirements">
+				</list>
+				<bool name="spawn_to_hold_try_first" value="False" />
+				<list name="queue_requirements">
+				</list>
+				<bool name="can_rally" value="True" />
+				<template_reference name="animated_spawn_option" value="options\none">
+				</template_reference>
+				<int name="max_queue_size_override" value="-1" />
+				<string name="queue_requirements_openingbranch" value="" />
+				<string name="reinforce_requirements_openingbranch" value="" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+				<bool name="enforce_minimum_clearance_at_spawn_positions" value="True" />
+				<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+				<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="30" />
+				<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+				<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+				<bool name="can_spawn_if_neutral" value="False" />
+				<bool name="default_rally_points_allowed" value="True" />
+				<bool name="economic_rally_points_allowed" value="False" />
+				<bool name="always_use_economic_rally_points" value="False" />
+				<bool name="use_alternative_rally_point_system" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1622741060" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1618778778">
+						<group name="tier" List.ItemID="1063696905">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\tech_unit_infantry_mon\tier2_tech_unit_infantry_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-852932451">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\tech_unit_infantry_mon\tier3_tech_unit_infantry_mon" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="1481662608">
+						<group name="tier" List.ItemID="-603856340">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\outskirts\military\mon_military_01" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" overrideParent="True" List.ItemID="-382130345" List.ListAction="Append">
+				<float name="range_metres" value="0" overrideParent="True" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" />
+				<bool name="is_root_generator" value="False" />
+				<int name="district_palette_id" value="0" overrideParent="True" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" overrideParent="True" List.ItemID="-1328197045" List.ListAction="Append">
+				<bool name="update_on_upgrade_changed" value="False" />
+				<bool name="update_on_construction_complete" value="True" />
+				<list name="district_bonuses" overrideParent="True">
+					<template_reference name="district_bonus" value="district_bonus" comment="Ovoo district bonus.&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" List.ItemID="1368149339">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements">
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="1894995760">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="1701269014" />
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="146154542" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742216" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_district_ovoo\root" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+					<template_reference name="district_bonus" value="district_bonus" comment="Stupa specialization bonus (Monasteries grant the Ovoo bonus).&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" overrideParent="True" List.ItemID="1331854296">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1760885764">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\races\mongol\research\upgrade_religious_monastery_ovoo_mon" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="-1623305758">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-1255571778" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742217" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_district_ovoo\root" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="129991" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_unit_infantry" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1270876202" List.ParentItemID="-1270876202">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\buildings\building_tech_unit_infantry_mongol" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="740902838" List.ParentItemID="740902838">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1798353110" List.ParentItemID="-1798353110">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="1478879719" />
+					<enum name="unit_type" value="research_building" List.ItemID="-2063606734" />
+					<enum name="unit_type" value="blacksmith" List.ItemID="1093032319" />
+					<enum name="unit_type" value="siegeable" List.ItemID="1128370712" />
+					<enum name="unit_type" value="packable_building" List.ItemID="-1661865241" />
+					<enum name="unit_type" value="scar_blacksmith" List.ItemID="570649175" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\mongol" List.ItemID="1581834426" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1970437960" List.ParentItemID="1970437960">
+				<state_tree_node name="can_be_cancelled_state_tree_conditions" value="xp3_entity_construction_queries_mon\Can_Cancel_Construction" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1946099574" List.ParentItemID="-1946099574">
+				<file name="icon_name" value="races\common\buildings\blacksmith" overrideParent="True" />
+				<file name="portrait_icon" value="" overrideParent="True" />
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="-737608904">
+						<file name="icon" value="influence_buff" />
+						<locstring name="description" value="0" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1768352645" List.ParentItemID="-1768352645">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_damage_i" overrideParent="True" List.ItemID="2052177353" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_damage_ii" overrideParent="True" List.ItemID="-1846172791" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_damage_iii_mon" overrideParent="True" List.ItemID="512495558" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_armor_i" overrideParent="True" List.ItemID="-1455852960" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_melee_armor_ii" overrideParent="True" List.ItemID="-243628689" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_melee_armor_iii_mon" overrideParent="True" List.ItemID="-25651199" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_siege_engineers" List.ItemID="100370033" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_military_academy" overrideParent="True" List.ItemID="-409460364" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_manatarms_elite_army_tactics_mon" List.ItemID="-378851806" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_mon" overrideParent="True" List.ItemID="1555180817" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_improved_siege_engineers_mon" List.ItemID="776701653" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_military_academy_improved_mon" List.ItemID="-605816676" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_improved_mon" List.ItemID="2115617160" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_manatarms_elite_army_tactics_improved_mon" List.ItemID="245762507" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_armor_i" List.ItemID="1691038311" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_armor_ii" List.ItemID="1983135853" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_ranged_armor_iii_mon" List.ItemID="-1281803147" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_damage_i" List.ItemID="-175537776" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_ranged_damage_ii" List.ItemID="-184494675" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_ranged_damage_iii_mon" List.ItemID="413786814" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_siege_chemistry_mon" List.ItemID="-1444887492" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_ranged_incendiary_mon" List.ItemID="-72186675" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_siege_works_mon" overrideParent="True" List.ItemID="-1602536046" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_siege_works_improved_mon" overrideParent="True" List.ItemID="397683188" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-769801208" List.ParentItemID="-769801208">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-315708216" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\pack_building_mon" overrideParent="True" List.ItemID="-810244757" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\cancel_unpacking_building_mon" List.ItemID="356254003" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\mongol\dummy_unpacking_building_mon" List.ItemID="-2121328742" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1509755434" List.ParentItemID="1509755434">
+				<state_tree_node name="fallback_default_move_command_conditions" value="xp3_entity_construction_queries_mon\Can_Queue_Move_Commands" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" comment="Make sure the building and moving building are referencing the same schema, if they are using different schemas unpacking will break." List.ItemID="-2135547562" List.ParentItemID="-2135547562">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols\tech_infantry_mon" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="672783316" List.ParentItemID="672783316">
+				<int name="music_importance" value="30" overrideParent="True" />
+				<int name="combat_importance" value="-30" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-2028446242" List.ListAction="Append">
+				<bool name="must_be_in_supply" value="False" />
+				<float name="reinforce_radius" value="0" />
+				<list name="spawn_items">
+				</list>
+				<list name="bonus_xp_from_hold_list">
+				</list>
+				<list name="reinforce_requirements">
+				</list>
+				<bool name="spawn_to_hold_try_first" value="False" />
+				<list name="queue_requirements">
+				</list>
+				<bool name="can_rally" value="True" />
+				<template_reference name="animated_spawn_option" value="options\none">
+				</template_reference>
+				<int name="max_queue_size_override" value="-1" />
+				<string name="queue_requirements_openingbranch" value="" />
+				<string name="reinforce_requirements_openingbranch" value="" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+				<bool name="enforce_minimum_clearance_at_spawn_positions" value="True" />
+				<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+				<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="30" />
+				<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+				<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+				<bool name="can_spawn_if_neutral" value="False" />
+				<bool name="default_rally_points_allowed" value="True" />
+				<bool name="economic_rally_points_allowed" value="False" />
+				<bool name="always_use_economic_rally_points" value="False" />
+				<bool name="use_alternative_rally_point_system" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-166749214" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="940396376">
+						<group name="tier" List.ItemID="-472565064">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\tech_unit_infantry_mon\tier2_tech_unit_infantry_mon" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-1426523514">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\buildings\tech_unit_infantry_mon\tier3_tech_unit_infantry_mon" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="1909494775">
+						<group name="tier" List.ItemID="-142178942">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol\outskirts\military\mon_military_01" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" overrideParent="True" List.ItemID="-938661356" List.ListAction="Append">
+				<float name="range_metres" value="0" overrideParent="True" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" />
+				<bool name="is_root_generator" value="False" />
+				<int name="district_palette_id" value="0" overrideParent="True" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" overrideParent="True" List.ItemID="619615771" List.ListAction="Append">
+				<bool name="update_on_upgrade_changed" value="False" />
+				<bool name="update_on_construction_complete" value="True" />
+				<list name="district_bonuses" overrideParent="True">
+					<template_reference name="district_bonus" value="district_bonus" comment="Ovoo district bonus.&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" List.ItemID="433995196">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements">
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="-1085288117">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="230124125" />
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="850342676" />
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_large_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-1554386457" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742218" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="xp3_district_ovoo\root" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+					<template_reference name="district_bonus" value="district_bonus" comment="Stupa specialization bonus (Monasteries grant the Ovoo bonus).&#xD;&#xA;&#xD;&#xA;Production buildings can produce double units at the cost of stone.&#xD;&#xA;&#xD;&#xA;Upgrade bonus at the cost of stone.&#xD;&#xA;" overrideParent="True" List.ItemID="-1900757800">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1948909946">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\races\mongol\research\upgrade_religious_monastery_ovoo_mon" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" List.ItemID="-1137472368">
+									<list name="satisfying_entities" overrideParent="True">
+										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_district_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="1080520948" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073742219" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="xp3_district_ovoo\root" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="129991" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_unit_infantry" />
+	</variant>
+</instance>

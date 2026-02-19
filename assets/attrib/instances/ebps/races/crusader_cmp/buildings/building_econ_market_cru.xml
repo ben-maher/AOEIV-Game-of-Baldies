@@ -1,0 +1,22 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="95489877" List.ParentItemID="95489877">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="359488771" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089030" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_econ_market_fre\building_econ_market_control_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="95489877" List.ParentItemID="95489877">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-395696975" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089030" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_econ_market_fre\building_econ_market_control_fre" />
+	</variant>
+</instance>

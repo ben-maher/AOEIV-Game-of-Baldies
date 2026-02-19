@@ -1,0 +1,306 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-845778417" List.ParentItemID="-845778417">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="ConstructibleResourceDeposit" overrideParent="True" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\mongol\buildings\building_house_mongol" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1623752631" List.ParentItemID="-1623752631">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			<group name="footprint_scale">
+				<float name="x" value="6" overrideParent="True" />
+				<float name="y" value="6" overrideParent="True" />
+			</group>
+			<bool name="snap_to_terrain" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1432368975" List.ParentItemID="1432368975">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\mongol_ha_gol" overrideParent="True" List.ItemID="-2078510648" />
+			</list>
+			<list name="unit_type_list" removedIds="-1608464035">
+				<enum name="unit_type" value="pasture_mon_ha_gol" List.ItemID="1069849948" List.ListAction="Append" />
+				<enum name="unit_type" value="farm" List.ItemID="-812252030" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1174300992" List.ParentItemID="-1174300992">
+			<group name="impass_simboxes">
+				<bool name="default_simbox" value="False" overrideParent="True" />
+			</group>
+			<list name="block_path" overrideParent="True">
+				<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="335424177" List.ParentItemID="1098324723" />
+				<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="107541334" List.ParentItemID="-491220010" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="471168502" List.ParentItemID="471168502">
+			<string name="hotkey_name" value="Q" overrideParent="True" />
+			<file name="icon_name" value="races\golden_horde\buildings\stockyard" overrideParent="True" />
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-109035009" List.ParentItemID="-109035009">
+			<float name="hitpoints" value="700" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-21135608" List.ParentItemID="-21135608">
+			<group name="facing_quadrants">
+				<int name="search_radius_metres" value="32" overrideParent="True" />
+				<int name="radius_metres" value="12" overrideParent="True" />
+			</group>
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="while_construction_complete_entity_state_tree_ref" value="" overrideParent="True" />
+			</group>
+			<list name="ignorable_entity_types" removedIds="-1357742183">
+			</list>
+			<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
+				<float name="initial_health" value="70" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="816602380" List.ParentItemID="816602380">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="250" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="20" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="863703939" List.ParentItemID="863703939">
+			<list name="type_list">
+				<group name="type" List.ItemID="962343485" List.ParentItemID="962343485">
+					<int name="prefer_number" value="4" overrideParent="True" />
+					<int name="max_number" value="4" overrideParent="True" />
+				</group>
+				<group name="type" List.ItemID="-1039975566" List.ParentItemID="-1039975566">
+					<int name="prefer_number" value="4" overrideParent="True" />
+					<int name="max_number" value="4" overrideParent="True" />
+				</group>
+				<group name="type" List.ItemID="1231152984" List.ListAction="Append">
+					<enum name="interaction_type" value="resource_drop_off" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="-1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\ebpextensions\interactive\node_list_option" overrideParent="True">
+						<list name="nodes">
+						</list>
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-103365177" List.ListAction="Append">
+					<enum name="interaction_type" value="resource_wait_to_drop_off" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\ebpextensions\interactive\node_list_option">
+						<list name="nodes">
+						</list>
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-1919823033" List.ListAction="Append">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="1868816774" List.ParentItemID="1868816774">
+			<template_reference name="resource_spline_option" value="options\resource_deposit\resource_spline_option">
+				<float name="edge_padding" value="1" overrideParent="True" />
+				<float name="distance_between_splines_minimum" value="3" overrideParent="True" />
+				<float name="distance_between_splines_maximum" value="5" overrideParent="True" />
+				<list name="resource_animator_groups" overrideParent="True">
+				</list>
+				<float name="desired_row_count" value="2" overrideParent="True" />
+				<float name="sub_splines_per_row" value="2" overrideParent="True" />
+				<float name="spline_wobble_maximum" value="0.8" overrideParent="True" />
+				<float name="rotation_in_degrees_min" value="0" overrideParent="True" />
+				<float name="rotation_in_degrees_max" value="0" overrideParent="True" />
+				<group name="animator_variable_names">
+					<string name="depleted_state_name" value="gatherable" overrideParent="True" />
+					<string name="gatherable_state_name" value="gatherable" overrideParent="True" />
+					<string name="growing_state_name" value="gatherable" overrideParent="True" />
+					<string name="growth_value_name" value="gatherable" overrideParent="True" />
+					<string name="gathered_value_name" value="gatherable" overrideParent="True" />
+				</group>
+				<float name="layout_box_width" value="16" comment="Size" overrideParent="True" />
+				<float name="layout_box_height" value="16" comment="Size" overrideParent="True" />
+			</template_reference>
+			<float name="base_regrowth_rate" value="1" overrideParent="True" />
+			<enum name="resource_gather_job" value="gather_pasture" overrideParent="True" />
+			<float name="initial_amount" value="100000" overrideParent="True" />
+			<instance_reference name="resource_sub_type" value="resource_sub_type\civs\mongol_ha_gol\pasture" overrideParent="True" />
+			<bool name="ui_show_as_infinity" value="True" overrideParent="True" />
+			<int name="num_gatherers_to_assign_by_ai" value="4" overrideParent="True" />
+			<int name="num_gatherers_to_assign_by_vps" value="4" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="578843091" List.ParentItemID="578843091">
+			<list name="action_state_trees" removedIds="-1820758222">
+			</list>
+			<list name="action_state_trees_run_once">
+				<group name="container" List.ItemID="-1948906645" List.ListAction="Append">
+					<string name="state_tree" value="building_action_apply\buildings\pasture_mon_ha_gol_action_apply" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-618477640" List.ParentItemID="-618477640">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol_ha_gol\stockyard_gold_edict_mon_ha_gol" List.ItemID="-1954558798" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-956169503" List.ParentItemID="-956169503">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\mongols_ha_gol\farm_mon_ha_gol" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="17699632" List.ParentItemID="17699632">
+			<string name="single_select_event" value="sfx_ui_resource_pasture_building_selection_play" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="688344239" List.ParentItemID="688344239">
+			<enum_table name="accepted_resources">
+				<bool name="food" value="True" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="1273141707" List.ListAction="Append">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1588227988" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="-1521265307">
+					<group name="tier" List.ItemID="1939639615">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\mongol_ha_gol\buildings\resource_pasture_mong_ha_gol\tier1_resource_pasture_mon_ha_gol" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" List.ItemID="1532502000">
+					<group name="tier" List.ItemID="1974801813">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\malian\outskirts\general\mal_ranch" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="1449978411" List.ListAction="Append">
+			<list name="roads">
+				<template_reference name="road" value="roads\road_properties" List.ItemID="-504890606" List.ParentItemID="-26016089">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="2056906206" List.ParentItemID="114438399">
+							<int name="draw_sort_order" value="0" />
+							<float name="end_fade" value="0.4" />
+							<float name="width" value="2" />
+							<int name="texture_tiling" value="1" />
+							<file name="texture_filename" value="civilizations\dirt\road_2m_dirt_path_a" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="-949050148" List.ParentItemID="739235342">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1563163682" List.ParentItemID="-808197608">
+							<int name="draw_sort_order" value="0" />
+							<float name="end_fade" value="0.2" />
+							<float name="width" value="2.5" />
+							<int name="texture_tiling" value="1" />
+							<file name="texture_filename" value="civilizations\roads\paths_eng_common_a_age_02_2m_path" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="2038360527" List.ParentItemID="-1817563739">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1257882903" List.ParentItemID="-1905171016">
+							<int name="draw_sort_order" value="0" />
+							<float name="end_fade" value="0.3" />
+							<float name="width" value="2.5" />
+							<int name="texture_tiling" value="1" />
+							<file name="texture_filename" value="civilizations\roads\paths_eng_common_a_age_03_2m_path" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="road" value="roads\road_properties" List.ItemID="1852573596" List.ParentItemID="-77242613">
+					<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" />
+					<list name="curb_splines">
+					</list>
+					<list name="road_splines">
+						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="216171571" List.ParentItemID="143863419">
+							<int name="draw_sort_order" value="0" />
+							<float name="end_fade" value="0.3" />
+							<float name="width" value="2.5" />
+							<int name="texture_tiling" value="1" />
+							<file name="texture_filename" value="civilizations\roads\paths_eng_common_a_age_03_2m_path" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1085599858" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-989145366">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements">
+						</list>
+						<list name="satisfying_entity_groups">
+							<group name="satisfying_entity_group" List.ItemID="1305948705">
+								<list name="satisfying_entities">
+									<instance_reference name="entity" value="ebps\races\mongol_ha_gol\buildings\building_fortified_outpost_mon_ha_gol" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="599428105" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073742283" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="khan_edict_influence_mon_ha_gol\root" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="-296007137" List.ListAction="Append">
+			<float name="range_metres" value="0" />
+			<bool name="is_root_generator" value="False" />
+			<int name="generator_value" value="0" />
+			<bool name="disable_generation_on_spawn" value="False" />
+			<int name="district_palette_id" value="1" overrideParent="True" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9001697" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_resource_farm" />
+</instance>

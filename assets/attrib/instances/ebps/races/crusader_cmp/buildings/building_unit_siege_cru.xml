@@ -1,0 +1,60 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="529366543" List.ParentItemID="529366543">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1975068858" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-2010798804" List.ParentItemID="-2010798804">
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="-984078395" List.ParentItemID="-984078395">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_springald_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1775135656" List.ParentItemID="1775135656">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_mangonel_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="-2049920199" List.ParentItemID="-2049920199">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_trebuchet_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1860414344" List.ParentItemID="1860414344">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_cannon_cru" overrideParent="True" />
+				</group>
+				<group name="spawn_item" List.ItemID="1920524754" List.ParentItemID="1920524754">
+					<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_ribauldequin_cru" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089051" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_unit_siege_fre\building_unit_siege_control_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="529366543" List.ParentItemID="529366543">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1111608928" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-2010798804" List.ParentItemID="-2010798804">
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="-984078395" List.ParentItemID="-984078395">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_springald_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1775135656" List.ParentItemID="1775135656">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_mangonel_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="-2049920199" List.ParentItemID="-2049920199">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_trebuchet_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1860414344" List.ParentItemID="1860414344">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_cannon_cru" overrideParent="True" />
+					</group>
+					<group name="spawn_item" List.ItemID="1920524754" List.ParentItemID="1920524754">
+						<instance_reference name="squad" value="sbps\races\crusader_cmp\unit_ribauldequin_cru" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089051" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_unit_siege_fre\building_unit_siege_control_fre" />
+	</variant>
+</instance>

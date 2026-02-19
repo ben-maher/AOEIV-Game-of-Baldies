@@ -1,0 +1,86 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions" removedIds="-1427242785">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-1138756103" List.ParentItemID="-1138756103">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-1132164974" List.ParentItemID="-1132164974">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="-1026590189" List.ParentItemID="-1026590189">
+							<instance_reference name="structure_name" value="ebps\races\ayyubid_cmp\buildings\building_house_of_wisdom_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="442418202" List.ParentItemID="442418202">
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_landmark_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="31700595" List.ParentItemID="31700595">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="813694493" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-335360918" List.ParentItemID="-335360918">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\ayyubid_cmp\medical_centers_ayy" overrideParent="True" List.ItemID="236386495" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="96610941" List.ParentItemID="96610941">
+			<list name="standard_upgrades" removedIds="-73938480">
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\house_of_wisdom\upgrade_add_trade_wing_ayy" overrideParent="True" List.ItemID="-1675742729" List.ParentItemID="-1675742729" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\house_of_wisdom\upgrade_add_trade_wing_feudal_ayy" overrideParent="True" List.ItemID="-147479108" List.ParentItemID="-147479108" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\house_of_wisdom\upgrade_add_trade_wing_castle_ayy" overrideParent="True" List.ItemID="-1117274480" List.ParentItemID="-1117274480" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\house_of_wisdom\upgrade_add_trade_wing_imperial_ayy" overrideParent="True" List.ItemID="-187829519" List.ParentItemID="-187829519" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_econ_agriculture_ayy" overrideParent="True" List.ItemID="1154749725" List.ParentItemID="1154749725" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_cul_ancient_relics_ayy" overrideParent="True" List.ItemID="-1231259275" List.ParentItemID="-1231259275" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_cul_medical_centers_ayy" overrideParent="True" List.ItemID="149283455" List.ParentItemID="149283455" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_food_reserves_ayy" overrideParent="True" List.ItemID="1445193714" List.ParentItemID="1445193714" />
+				<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_siege_construction_speed_ayy" List.ItemID="-1347662790" List.ListAction="Append" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2101113" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_house_of_wisdom_control_abb" />
+	<variant name="xp3">
+		<list name="extensions" removedIds="-1427242785">
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-1138756103" List.ParentItemID="-1138756103">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_not" List.ItemID="-1132164974" List.ParentItemID="-1132164974">
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_structure" List.ItemID="-1026590189" List.ParentItemID="-1026590189">
+								<instance_reference name="structure_name" value="ebps\races\ayyubid_cmp\buildings\building_house_of_wisdom_ayy" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="442418202" List.ParentItemID="442418202">
+				<state_tree_node name="death_action_tree" value="xp3_building_death_actions\landmarks\landmarks_common\common_landmark_shared_death" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="31700595" List.ParentItemID="31700595">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-608265011" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-335360918" List.ParentItemID="-335360918">
+				<list name="abilities">
+					<instance_reference name="ability" value="abilities\always_on_abilities\ayyubid_cmp\medical_centers_ayy" overrideParent="True" List.ItemID="930241819" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="96610941" List.ParentItemID="96610941">
+				<list name="standard_upgrades" removedIds="-73938480">
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\house_of_wisdom\upgrade_add_trade_wing_ayy" overrideParent="True" List.ItemID="-1675742729" List.ParentItemID="-1675742729" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\house_of_wisdom\upgrade_add_trade_wing_feudal_ayy" overrideParent="True" List.ItemID="-147479108" List.ParentItemID="-147479108" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\house_of_wisdom\upgrade_add_trade_wing_castle_ayy" overrideParent="True" List.ItemID="-1117274480" List.ParentItemID="-1117274480" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\house_of_wisdom\upgrade_add_trade_wing_imperial_ayy" overrideParent="True" List.ItemID="-187829519" List.ParentItemID="-187829519" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_econ_agriculture_ayy" overrideParent="True" List.ItemID="1154749725" List.ParentItemID="1154749725" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_cul_ancient_relics_ayy" overrideParent="True" List.ItemID="-1231259275" List.ParentItemID="-1231259275" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_cul_medical_centers_ayy" overrideParent="True" List.ItemID="149283455" List.ParentItemID="149283455" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_food_reserves_ayy" overrideParent="True" List.ItemID="1445193714" List.ParentItemID="1445193714" />
+					<instance_reference name="upgrade" value="upgrade\races\ayyubid_cmp\research\upgrade_siege_construction_speed_ayy" List.ItemID="-1655667660" List.ListAction="Append" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2101113" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_house_of_wisdom_control_abb" />
+	</variant>
+</instance>

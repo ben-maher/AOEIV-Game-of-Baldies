@@ -1,0 +1,25 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
+			<float name="hitpoints" value="7500" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1186003392" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2089020" />
+	<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_defense_outpost_fre\building_defense_outpost_fre" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-33111220" List.ParentItemID="-33111220">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\crusader_cmp" overrideParent="True" List.ItemID="-1218281420" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2089020" />
+		<instance_reference name="parent_pbg" value="ebps\races\french\buildings\building_defense_outpost_fre\building_defense_outpost_fre" />
+	</variant>
+</instance>
