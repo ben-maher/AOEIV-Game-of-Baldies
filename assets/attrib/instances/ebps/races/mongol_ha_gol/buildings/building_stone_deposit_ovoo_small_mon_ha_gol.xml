@@ -1,4 +1,0 @@
-<instance version="4" description="Built on top of a stone pile" template="ebps">
-	<uniqueid name="pbgid" value="5650019" />
-	<instance_reference name="parent_pbg" value="ebps\races\mongol_ha_gol\buildings\building_stone_deposit_ovoo_mon_ha_gol" mod="942db39de35c43f3933e4b2a9f4b4f31" />
-</instance>

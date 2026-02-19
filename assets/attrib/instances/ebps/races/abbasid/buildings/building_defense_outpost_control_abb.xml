@@ -62,7 +62,6 @@
 						<list name="satisfying_entity_groups" overrideParent="True">
 							<group name="satisfying_entity_group" comment="Place of Knowledge&#xD;&#xA;" overrideParent="True" List.ItemID="4999528">
 								<list name="satisfying_entities">
-									<instance_reference name="entity" value="ebps\races\abbasid\buildings\building_house_of_wisdom_control_abb" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-1387061055" />
 								</list>
 							</group>
 						</list>
@@ -151,7 +150,6 @@
 							<list name="satisfying_entity_groups" overrideParent="True">
 								<group name="satisfying_entity_group" comment="Place of Knowledge&#xD;&#xA;" overrideParent="True" List.ItemID="-1223435332">
 									<list name="satisfying_entities">
-										<instance_reference name="entity" value="ebps\races\abbasid\buildings\building_house_of_wisdom_control_abb" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="1492915507" />
 									</list>
 								</group>
 							</list>
@@ -240,7 +238,6 @@
 							<list name="satisfying_entity_groups" overrideParent="True">
 								<group name="satisfying_entity_group" comment="Place of Knowledge&#xD;&#xA;" overrideParent="True" List.ItemID="-927422489">
 									<list name="satisfying_entities">
-										<instance_reference name="entity" value="ebps\races\abbasid\buildings\building_house_of_wisdom_control_abb" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-613941157" />
 									</list>
 								</group>
 							</list>

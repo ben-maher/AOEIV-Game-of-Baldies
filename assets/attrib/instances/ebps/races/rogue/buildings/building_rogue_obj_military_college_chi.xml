@@ -1,9 +1,0 @@
-<instance version="4" description="" template="ebps">
-	<list name="extensions">
-		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1211791339" List.ParentItemID="-1211791339">
-			<float name="ui_range_radius" comment="10 is the setting for deep strike radius, if this number need to be changed, then deep strike radius needs to request programming support" />
-		</template_reference>
-	</list>
-	<uniqueid name="pbgid" value="9002295" />
-	<instance_reference name="parent_pbg" value="ebps\races\rogue\buildings\building_rogue_obj_military_college" mod="942db39de35c43f3933e4b2a9f4b4f31" />
-</instance>

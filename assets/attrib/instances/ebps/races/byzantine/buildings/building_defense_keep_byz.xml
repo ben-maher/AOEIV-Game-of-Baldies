@@ -178,8 +178,6 @@
 						<list name="satisfying_entity_groups" overrideParent="True">
 							<group name="satisfying_entity_group" List.ItemID="-1894620206">
 								<list name="satisfying_entities" overrideParent="True">
-									<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_cistern_byz" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-1484493472" />
-									<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_landmark_age2_cistern_byz" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="1956410978" />
 								</list>
 							</group>
 						</list>

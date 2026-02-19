@@ -72,10 +72,6 @@
 						<list name="satisfying_entity_groups" overrideParent="True">
 							<group name="satisfying_entity_group" List.ItemID="1134547880">
 								<list name="satisfying_entities" overrideParent="True">
-									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="59504451" />
-									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-1981565698" />
-									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_large_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="1513743174" />
-									<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_district_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-293080727" />
 								</list>
 							</group>
 						</list>
@@ -187,8 +183,6 @@
 							<list name="satisfying_entity_groups" overrideParent="True">
 								<group name="satisfying_entity_group" List.ItemID="353464395">
 									<list name="satisfying_entities" overrideParent="True">
-										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-1831068458" />
-										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="1514626545" />
 									</list>
 								</group>
 							</list>
@@ -220,7 +214,6 @@
 							<list name="satisfying_entity_groups" overrideParent="True">
 								<group name="satisfying_entity_group" List.ItemID="549796993">
 									<list name="satisfying_entities" overrideParent="True">
-										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-147822607" />
 									</list>
 								</group>
 							</list>
@@ -309,9 +302,6 @@
 							<list name="satisfying_entity_groups" overrideParent="True">
 								<group name="satisfying_entity_group" List.ItemID="149321293">
 									<list name="satisfying_entities" overrideParent="True">
-										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-7616300" />
-										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_stupa_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="-1149672658" />
-										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_stone_deposit_ovoo_large_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" List.ItemID="1325074614" />
 									</list>
 								</group>
 							</list>
@@ -343,7 +333,6 @@
 							<list name="satisfying_entity_groups" overrideParent="True">
 								<group name="satisfying_entity_group" List.ItemID="-1146524266">
 									<list name="satisfying_entities" overrideParent="True">
-										<instance_reference name="entity" value="ebps\races\mongol\buildings\building_unit_religious_district_mon" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-1708285460" />
 									</list>
 								</group>
 							</list>
