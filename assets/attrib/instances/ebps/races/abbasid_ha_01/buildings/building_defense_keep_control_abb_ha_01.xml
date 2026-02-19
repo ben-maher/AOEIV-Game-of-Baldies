@@ -114,7 +114,6 @@
 						<list name="satisfying_entity_groups" overrideParent="True">
 							<group name="satisfying_entity_group" comment="Place of Knowledge&#xD;&#xA;" overrideParent="True" List.ItemID="1989813163">
 								<list name="satisfying_entities">
-									<instance_reference name="entity" value="ebps\races\abbasid_ha_01\buildings\building_house_of_wisdom_control_abb_ha_01" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" List.ItemID="-1379645014" />
 								</list>
 							</group>
 						</list>
