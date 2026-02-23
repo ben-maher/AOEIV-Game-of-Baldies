@@ -35,7 +35,7 @@
 		</enum_table>
 		<group name="race_population_cap_table">
 			<float name="base_medic_cap" value="0" />
-			<float name="base_personnel_cap" value="200" />
+			<float name="base_personnel_cap" value="1000" />
 			<float name="base_vehicle_cap" value="30" />
 			<float name="max_medic_cap" value="0" />
 			<float name="max_personnel_cap" value="1000" />
