@@ -10,17 +10,18 @@ A small **Age of Empires IV Content Editor** mod (“tuning pack”) made for ou
 - Increases the population cap to **1000**.
 
 ### 2) Richer resource nodes (more resources per deposit)
-Increases the **total resources available per node** by modifying the `initial_amount` in `resource_deposit_ext` for:
-- Gold deposits (large + small)
-- Stone deposits (large + small)
+This mod increases the **total resources available per node** (amount in the ground, not gather rate):
+- **Gold**: **40,000** (small) / **80,000** (large)
+- **Stone**: **40,000** (small) / **80,000** (large)
 
-This changes the *amount in the ground*, not gather rate.
+### 3) Trees have more wood
+- **Trees**: **150 → 1500** per tree
 
-### 3) Wall HP adjustment
-- Sets **Stone Wall segment** hitpoints to **6000** via:
-  - `assets/attrib/instances/ebps/races/core/buildings/building_defense_wall.xml`
-
-Note: Walls are defined in `races/core` in this project, so this change should apply game-wide unless a specific civilization overrides wall EBPS elsewhere.
+### 4) Defensive structures are tougher
+- **Stone Wall segments**: **3000 → 9000** HP
+- **Stone Wall gates**: **3000 → 9000** HP
+- **Outposts**: **750 → 7500** HP
+- **Keeps**: **4000 → 15000** HP
 
 ## Files of interest
 
@@ -35,8 +36,10 @@ Note: Walls are defined in `races/core` in this project, so this change should a
 - `assets/attrib/instances/ebps/gameplay/resources/stone/resource_stone_deposit_small.xml`
 
 ### Defensive structures
-- `assets/attrib/instances/ebps/races/core/buildings/building_defense_wall.xml`
-- `assets/attrib/instances/ebps/races/core/buildings/building_defense_keep.xml`
+- Walls / gates / bastions / outposts / keeps live under:
+  - `assets/attrib/instances/ebps/races/**/buildings/**`
+- Core references (not necessarily authoritative if per-race overrides exist):
+  - `assets/attrib/instances/ebps/races/core/buildings/`
 
 ## Editing tips
 - In the Content Editor, make sure you are browsing **base game assets**, then **copy/override** into the mod.
