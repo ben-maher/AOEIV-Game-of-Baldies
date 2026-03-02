@@ -165,6 +165,18 @@
 				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1923806473" List.ParentItemID="-1923806473">
 					<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
 				</template_reference>
+				<template_reference name="required" value="requirements\required_structure" List.ItemID="-2001211542" List.ListAction="Append">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="3" mod="942db39de35c43f3933e4b2a9f4b4f31" overrideParent="True" />
+					<instance_reference name="structure_name" value="" />
+					<int name="required_structure_count" value="4" overrideParent="True" />
+					<bool name="check_team" value="False" />
+					<bool name="require_construction_complete" value="True" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="397040303" List.ParentItemID="397040303">
